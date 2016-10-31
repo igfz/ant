@@ -1,6 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import { Icon,Row,Col,Button } from 'antd'
-import {Link } from 'react-router'
+import {
+	Link,
+	Router,
+	Route,
+	IndexRoute,
+	browserHistory,
+	hashHistory
+} from 'react-router'
 
 import Demo from './Demo'
 import Detail from './Detail'

@@ -7,6 +7,11 @@ import App from 'App'
 import Index from 'Index'
 import ProductDesc from 'ProductDesc'
 
+import Demo from 'ProductDesc/Main/Demo'
+import Detail from 'ProductDesc/Main/Detail'
+import Doc from 'ProductDesc/Main/Doc'
+import Sdk from 'ProductDesc/Main/Sdk'
+
 import configureStore from './store/configureStore'
 
 import {
@@ -30,7 +35,12 @@ ReactDOM.render(
 		<Router history={history}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Index}/>
-			<Route path="product" component={ProductDesc}/>
+			<Route path="/product" component={ProductDesc}>
+				<IndexRoute component={Detail}/>
+				<Route path="/product/demo" component={Demo}/>
+				<Route path="/product/sdk" component={Sdk}/>
+				<Route path="/product/document" component={Doc}/>
+			</Route>
 			<Route path="/gameDetail/" component={GameDetail}/>
 		</Route>
 		</Router>
