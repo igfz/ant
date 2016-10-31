@@ -13,7 +13,7 @@ import {
 import _catalog from './api/catalog.json' //模拟同构数据
 
 import {
-	Router,
+	Router, 
 	Route,
 	IndexRoute,
 	browserHistory,
