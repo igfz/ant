@@ -12,7 +12,7 @@ export default class Footer extends Component {
 			    <Row type="flex" align="top" justify="center" className={styles.self}>
 			    	<Col xs={1} sm={1} md={1} lg={1}>
 			      </Col>
-			      <Col xs={12} sm={8} md={8} lg={8}>
+			      <Col xs={14} sm={8} md={8} lg={8}>
 				      	<h3>产品功能</h3>
 				      	<Row>
 				      		<Col span={7}>
@@ -44,7 +44,7 @@ export default class Footer extends Component {
 						      </Col>
 						    </Row>
 			      </Col>
-			      <Col xs={11} sm={5} md={5} lg={5}>
+			      <Col xs={9} sm={5} md={5} lg={5}>
 				      <h3>我们的优势</h3>
 				      	<ul>
 				      		<li>最简单的部署</li>
@@ -55,7 +55,7 @@ export default class Footer extends Component {
 			      </Col>
 			    	<Col xs={1} sm={0} md={0} lg={0}>
 			      </Col>
-			      <Col xs={12} sm={5} md={5} lg={5}>
+			      <Col xs={14} sm={5} md={5} lg={5}>
 				      <h3>帮助与支持</h3>
 				      	<ul>
 				      		<li>开发者文档</li>
@@ -64,7 +64,7 @@ export default class Footer extends Component {
 				      		<li>费用相关</li>
 				      	</ul>
 			      </Col>
-			      <Col xs={11} sm={5} md={5} lg={5}>
+			      <Col xs={9} sm={5} md={5} lg={5}>
 				      <h3>联系我们</h3>
 				      	<ul>
 				      		<li>电话: 400-7766-981</li>
