@@ -1,0 +1,9 @@
+.notify{width:100%;height:50px;background:rgba(0,0,0,.1);font-size:14px;color:#fff;position: absolute;margin-top:-100px;}
+.notify .inf{max-width:1200px;line-height:50px;margin:auto;}
+.notify .inf>li{display:inline-block;margin-right:50px;}
+.notify .inf>li:first-child{margin-right:30px;}
+
+@media screen and (max-width: 768px) {
+	.notify{height:25px;font-size:10px;margin-top:-50px;}
+	.notify .inf{line-height:25px;}
+}

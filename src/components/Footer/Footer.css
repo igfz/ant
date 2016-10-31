@@ -1,0 +1,19 @@
+.footer{padding:3% 4%;font-size:14px;background:#232831;color:#ccc;}
+.lh50{line-height:48px;text-align:center;}
+.footer .href{padding:0 1%;color:currentColor}
+.copy{line-height:24px;text-align:center;}
+.copy span{display:inline-block;}
+
+.selfBox{background:#282E39;}
+.self{max-width:1200px;padding:1.6% 0;margin:0 auto;}
+.self h3{font-size:18px;line-height:32px;color:#fff;font-weight:500}
+.self ul{display:inline-block;vertical-align:top;margin-top:10%;color:#B3B3B3}
+.self li{font-size:14px;line-height:30px;}
+
+@media screen and (max-width: 768px) {
+  .footer{padding:5% 2%;font-size:10px;}
+  .self{padding:1.6% 1%;}
+  .self>div{margin-top:3%}
+  .self h3{font-size:12px;}
+	.self li{font-size:10px;line-height:24px;}
+}

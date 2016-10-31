@@ -1,5 +1,32 @@
 
-.gametable {
-
+.bannerBox{
+	background-color: #00a0e9;
 }
-
+.banner {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #00a0e9;
+	padding: 20px 0;
+}
+.banner h1{
+	color: #fff;
+	font-size: 26px;
+	padding: 10px 0;
+}
+.banner p{
+	color: #fff;
+	font-size: 18px;
+	padding: 10px 0;
+}
+.banner button{
+	font-size:14px;
+	padding: 8px 34px;
+	margin: 10px 10px;
+}
+.buttonBox{
+	padding:0 300px;
+}
+.gametable{
+	width: 960px;
+	margin: 0 auto;
+}

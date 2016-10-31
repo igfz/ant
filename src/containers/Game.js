@@ -25,7 +25,6 @@ class Game extends Component {
        curCatalogID = {catalogFilter}
        onSwitchCatalog={(id) => this.handleSwitchCatalog(id)}
        />
-       <br/>
        <GameListContainer />
 
        <Footer />

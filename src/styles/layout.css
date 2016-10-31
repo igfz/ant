@@ -7,3 +7,22 @@
   border: 1px solid #003957;
   border-top-width: 0;
 }
+
+
+@charset "UTF-8";
+body,ul,form{margin:0;padding:0;}dl,dd,h1,h2,h3,h4,h5,p,hr{margin:0;}
+body{font-family:"Helvetica Neue",Helvetica,STHeiTi,sans-serif;line-height:1.5;font-size:14px;color:#333;-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;}h1,h2,h3,h4,h5{font-weight:400}table{border-collapse:collapse;border-spacing:0}img,hr{border:0}li{list-style:none}input,textarea{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;outline:0}a{-webkit-touch-callout:none;text-decoration:none;}:focus{outline:0;}em,i{font-style:normal}b{font-weight:normal}
+a{color:#333}em{color:#D41E23}::-webkit-input-placeholder{color:#bbb}
+h1{font-size:.36rem}h2{font-size:.34rem}h3,h4,.f16{font-size:.32rem}h5,.f14{font-size:.28rem;}.f12{font-size:.24rem}.f10{font-size:.20rem}.f8{font-size:.16rem}
+.g6{color:#666}.gb{color:#bbb}.wh{color:#f8f8f8}.red{color:#D41E23}.tc{text-align:center}
+/* 文字颜色：由深至浅 #333 > #666 > #bbb > #f8f8f8 */
+.bc{display:-webkit-box;-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:center;}
+.nowrap{max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.dn{display:none;}.l{float:left;}.r{float:right;}.pn{pointer-events:none;}
+/* 清除浮动,父元素class="cf" */
+.cf:after{content:'';display:table;clear:both;}
+
+/* 1像素的横线，父元素class="brd" backface 解决webkit动画后无法.5像素的bug*/
+.brd{position:relative;}
+.brd:before{content:'';width:100%;position:absolute;left:0;top:0;border-top:1px solid #bbb;-webkit-transform-origin:0 0;-webkit-transform:scaleY(.5);-webkit-backface-visibility:hidden;}
+.brd.dashed:before{border-top:1px dashed #bbb;}

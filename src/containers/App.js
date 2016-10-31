@@ -1,10 +1,18 @@
 import React from 'react'
+import { Row, Col,Button,Icon } from 'antd'
+import Navigator from 'Navigator'
+import Footer from 'Footer'
 
-
-export default function  App({ children }) {
+export default function App({ children }) {
   return (
     <div>
-      <div style={{ marginTop: '1.5em' }}>{children}</div>
+
+			<Navigator />
+
+      <div>{children}</div>
+
+			<Footer />
+
     </div>
   )
 }

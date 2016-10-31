@@ -11,16 +11,6 @@ class GameListContainer extends Component {
     const { items, isFetching} = this.props
     return (
         <GameTable isFetching = {isFetching} >
-        {items.map(item =>
-          <GameItem
-            time={item.time}
-            league={item.league}
-            teamHost={item.team_host}
-            teamGuest={item.team_guest}
-            matchId = {item.id}
-            key={item.id}
-          />
-        )}
         </GameTable>
     )
   }
