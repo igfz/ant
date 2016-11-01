@@ -19,16 +19,28 @@ export default class Biz extends Component {
 
 	renderItems(items,index){
 		return(
-      <Col xs={12} sm={6} md={6} lg={6}  className={styles.featureIteam} key = {index}>
+      <Col xs={24} sm={24} md={6} lg={6}  className={styles.featureIteam} key = {index}>
 	      <div className = {styles.icon}>
       	</div>
         <h2>{items.title}</h2>
         <p>{items.desc}</p>
+
+        <Row type="flex" justify="space-between" className={styles.buttonBoxO}>
+        	<Col span={11}>
+          	<Button size="large" type="ghost">产品详情</Button>
+          </Col>
+          <Col span={2}>
+          </Col>
+          <Col span={11}>
+          	<Button size="large" type="ghost">Demo</Button>
+          </Col>
+        </Row>
+
         <div className = {styles.detail}>
           <h3>{items.subtitle}</h3>
           <p>支持平台：{items.platform}</p>
           <p>采用技术：{items.tech}</p>
-          <Row type="flex" justify="center"  gutter={16} className={styles.buttonBox}>
+          <Row type="flex" justify="center" gutter={16} className={styles.buttonBoxI}>
           	<Col span={12}>
             	<Button type="primary">产品详情</Button>
             </Col>

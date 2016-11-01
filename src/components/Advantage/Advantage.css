@@ -17,7 +17,7 @@
 @media screen and (max-width: 768px) {
 	.desc>li{height:180px;}
 	.cont{height:calc(180px - 6%);padding:3% 0;}
-	.cont h3{font-size:24px;margin-top:12%;}
-	.cont p{font-size:10px;margin-top:7%;}
+	.cont h3{font-size:22px;margin-top:12%;}
+	.cont p{font-size:12px;margin-top:7%;}
   .btn{width:120px;height:34px;font-size:15px;margin:50px calc(50% - 60px)}
 }

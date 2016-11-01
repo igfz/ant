@@ -32,23 +32,23 @@ export default class Advantage extends Component {
 				<ul className={styles.desc}>
 					<li>
 						<Row  className={styles.cont} id = "anim1">
-							<Col span = {9} push = {2}>
+							<Col xs={{span:10,push:1}} span = {9} push = {2}>
 								<h3>最简单的部署</h3>
 								<p>
 									无需购买任何硬件，无需配备专业IT工程师， 就能得到最新的技术应用
 								</p>
 							</Col>
-							<Col span = {7} push = {6}>
+							<Col xs={{span:9,push:4}} span = {7} push = {6}>
 								<img style={{"width":"100%","height":"360px"}} src="http://m.8win.com/info/img/default-s.png" />
 							</Col>
 						</Row>
 					</li>
 					<li>
 						<Row  className={styles.cont} id = "anim2">
-							<Col span = {7} push = {2}>
+							<Col xs={{span:9,push:1}} span = {7} push = {2}>
 								<img style={{"width":"100%","height":"360px"}} src="http://m.8win.com/info/img/default-s.png" />
 							</Col>
-							<Col span = {9} push = {6}>
+							<Col xs={{span:10,push:4}} span = {9} push = {6}>
 								<h3>更低廉的费用</h3>
 								<p>
 									无需一次性高额投资，无需考虑成本折旧， 减轻运营资金压力
@@ -58,13 +58,13 @@ export default class Advantage extends Component {
 					</li>
 					<li>
 						<Row  className={styles.cont} id = "anim3"> 
-							<Col span = {9} push = {2}>
+							<Col xs={{span:10,push:1}} span = {9} push = {2}>
 								<h3>更专业的服务</h3>
 								<p>
 									无需专业的数学人才，成熟的竞猜游戏模型 给您强有力的支持
 								</p>
 							</Col>
-							<Col span = {7} push = {6}>
+							<Col xs={{span:9,push:4}} span = {7} push = {6}>
 								<img style={{"width":"100%","height":"360px"}} src="http://m.8win.com/info/img/default-s.png" />
 							</Col>
 						</Row>

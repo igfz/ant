@@ -16,9 +16,8 @@
 @media screen and (max-width: 768px) {
 	.caroWrap .item{height:215px;}
 	.banner{height:215px;}
-	.banner h3{font-size:25px;}
-	.banner p{font-size:10px;line-height:24px;}
-	.banner button{font-size:10px;}
-	.img{height:120px;}
+	.banner h3{font-size:25px;margin-top:3%;}
+	.banner p{font-size:14px;line-height:22px;}
+	.banner button{font-size:12px;}
 	.ears{display:none}
 }

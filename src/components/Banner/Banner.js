@@ -40,14 +40,14 @@ export default class Banner extends Component {
 					<div className={styles.blue}>
 						<div className={styles.item}>
 							<Row  className={styles.banner}>
-								<Col span = {12} push = {1}>
+								<Col xs={21} sm={21} md={12} lg={12} push = {1}>
 									<h3>彩票服务</h3>
 									<p>
 										涵盖中国体育彩票下，竞彩足篮球、传统足彩、北京单场的全玩法赛程、固定奖金和SP值服务
 									</p>
 									<Button type="ghost">了解更多</Button>
 								</Col>
-								<Col span = {7} push = {4}>
+								<Col xs={0} sm={0} md={7} lg={7} push = {4}>
 									<div className={styles.img}></div>
 								</Col>
 							</Row>
@@ -56,14 +56,14 @@ export default class Banner extends Component {
 					<div className={styles.red}>
 						<div className={styles.item}>
 							<Row  className={styles.banner}>
-								<Col span = {12} push = {1}>
+								<Col xs={21} sm={21} md={12} lg={12} push = {1}>
 									<h3>竞猜游戏</h3>
 									<p>
 										让您的直播，社区，资讯等应用轻松接入竞猜业务提供独家专业的赛程，赔率，风控及操盘服务
 									</p>
 									<Button type="ghost">了解更多</Button>
 								</Col>
-								<Col span = {7} push = {4}>
+								<Col xs={0} sm={0} md={7} lg={7} push = {4}>
 									<div className={styles.img}></div>
 								</Col>
 							</Row>
@@ -72,14 +72,14 @@ export default class Banner extends Component {
 					<div className={styles.purple}>
 						<div className={styles.item}>
 							<Row  className={styles.banner}>
-								<Col span = {12} push = {1}>
+								<Col xs={21} sm={21} md={12} lg={12} push = {1}>
 									<h3>数据资讯</h3>
 									<p>
 										涵盖盘赔、基本面、爆料、预测等多方位数据资讯服务，贯穿赛前、赛中、赛后
 									</p>
 									<Button type="ghost">了解更多</Button>
 								</Col>
-								<Col span = {7} push = {4}>
+								<Col xs={0} sm={0} md={7} lg={7} push = {4}>
 									<div className={styles.img}></div>
 								</Col>
 							</Row>
