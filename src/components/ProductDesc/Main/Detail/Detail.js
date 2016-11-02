@@ -7,7 +7,7 @@ export default class Detail extends Component {
 
 	render() {
 		return (
-			<dl>
+			<dl className={styles.article}>
 				<dt>产品详情</dt>
 				<dd>React Router is built In a nutshell, a history knows how to listen to the browsers address
 				bar for changes and parses the URL into a `location` object that the

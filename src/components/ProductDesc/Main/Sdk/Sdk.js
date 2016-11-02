@@ -7,26 +7,26 @@ export default class Sdk extends Component {
 
 	render() {
 		return (
-			<dl>
+			<dl className={styles.article}>
 				<dt>SDK下载</dt>
 				<dd>
 					<Row type="flex" justify="space-between">
-						<Col span={5}  className={styles.item}>
+						<Col xs={24} sm={23} md={5} lg={5} className={styles.item}>
 							<div className={styles.icon}></div>
 							<h4>Objective-C(IOS/Mac)</h4>
 							<Button type='ghost'>立即下载</Button>
 						</Col>
-						<Col span={5}  className={styles.item}>
+						<Col xs={24} sm={23} md={5} lg={5} className={styles.item}>
 							<div className={styles.icon}></div>
 							<h4>Java</h4>
 							<Button type='ghost'>立即下载</Button>
 						</Col>
-						<Col span={5}  className={styles.item}>
+						<Col xs={24} sm={23} md={5} lg={5} className={styles.item}>
 							<div className={styles.icon}></div>
 							<h4>Java(服务端)</h4>
 							<Button type='ghost'>立即下载</Button>
 						</Col>
-						<Col span={5}  className={styles.item}>
+						<Col xs={24} sm={23} md={5} lg={5} className={styles.item}>
 							<div className={styles.icon}></div>
 							<h4>PHP(服务端)</h4>
 							<Button type='ghost'>立即下载</Button>

@@ -7,7 +7,7 @@ export default class Demo extends Component {
 
 	render() {
 		return (
-			<dl>
+			<dl className={styles.article}>
 				<dt>Demo演示</dt>
 				<dd>
 					<div className={styles.show}>
@@ -15,7 +15,7 @@ export default class Demo extends Component {
 						</iframe>
 					</div>
 					<Row type="flex" justify="space-between">
-						<Col span={11} className={styles.item}>
+						<Col span={23} className={styles.item}>
 							<Row>
 								<Col span={8} className={styles.iconI}>
 									<Icon type="apple-o" />
@@ -23,17 +23,17 @@ export default class Demo extends Component {
 								<Col span={16}>
 									<h4>iOS demo下载</h4>
 				          <Row type="flex" justify="space-around" className={styles.buttonBox}>
-				          	<Col span={9}>
+				          	<Col span={10}>
 				            	<Button size='large' type='ghost'>使用说明</Button>
 				            </Col>
-				            <Col span={9}>
+				            <Col span={10}>
 				            	<Button className={styles.blue} size='large' type='primary'>立即下载</Button>
 				            </Col>
 				          </Row>
 								</Col>
 							</Row>
 						</Col>
-						<Col span={11} className={styles.item}>
+						<Col span={23} className={styles.item}>
 							<Row>
 								<Col span={8} className={styles.iconA}>
 									<Icon type="android" />
@@ -41,10 +41,10 @@ export default class Demo extends Component {
 								<Col span={16}>
 									<h4>Android demo下载</h4>
 				          <Row type="flex" justify="space-around" className={styles.buttonBox}>
-				          	<Col span={9}>
+				          	<Col span={10}>
 				            	<Button size='large' type='ghost'>使用说明</Button>
 				            </Col>
-				            <Col span={9}>
+				            <Col span={10}>
 				            	<Button className={styles.green} size='large' type='primary'>立即下载</Button>
 				            </Col>
 				          </Row>

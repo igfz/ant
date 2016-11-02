@@ -1,4 +1,6 @@
-.show{width:348px;height:700px;margin:50px auto 100px;}
+.article dt{color:#999;font-size:26px;}
+.article dd{color:#333;font-size:16px;padding:30px 0 70px;}
+.show{width:348px;height:700px;margin:50px auto 80px;}
 .show iframe{border:none;}
 .item{border:solid 1px #ccc;height:150px;}
 .iconI{color:#fff;text-align:center;line-height:150px;font-size:48px;background:#2f79e9;}
@@ -8,3 +10,12 @@
 .item button{width:100%;}
 .blue{background:#2f79e9;border-color:#2f79e9;}
 .green{background:#00b56a;border-color:#00b56a;}
+
+@media screen and (max-width: 768px) {
+	.article dt{font-size:18px;margin-top:25px;}
+	.article dd{font-size:14px;padding:25px 0 25px;}
+	.show{width:220px;height:390px;margin:30px auto 60px;}
+	.item{height:88px;margin-top:25px;}
+	.iconI,.iconA{line-height:86px;font-size:28px;}
+	.item h4{font-size:16px;padding:14px 0 10px;}
+}
