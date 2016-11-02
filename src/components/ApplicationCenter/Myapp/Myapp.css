@@ -1,0 +1,13 @@
+
+.top{margin-bottom:10px;}
+.top h2{font-size:26px;color:#999;font-weight:500;}
+.top button{background-color:#2E8BFF;width:100%;font-size:20px;}
+.warp{border:solid 1px #E6E6E6;margin-top:50px;}
+.name{background-color:#2E8BFF;}
+.name p{font-size:16px;line-height:28px;text-align:center;color:#fff;margin:10px 0 20px}
+.icon{width:80px;height:90px;background-color:pink;margin:40px auto 0;}
+.num{position:relative;}
+.num:after{content:'';height:50px;position:absolute;top:70px;right:0;border-left:solid 1px #E6E6E6;}
+.num p{font-size:16px;color:#999;margin:60px 0 10px;text-align:center;}
+.num h3{font-size:36px;color:#666;text-align:center;}
+.set button{border-color:#2E8BFF;color:#2E8BFF;width:150px;margin:70px auto 0;display:block;padding:10px;font-size:16px;}

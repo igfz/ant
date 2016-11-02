@@ -6,11 +6,18 @@ import GameDetail from 'GameDetail'
 import App from 'App'
 import Index from 'Index'
 import ProductDesc from 'ProductDesc'
+import ApplicationCenter from 'ApplicationCenter'
 
 import Demo from 'ProductDesc/Main/Demo'
 import Detail from 'ProductDesc/Main/Detail'
 import Doc from 'ProductDesc/Main/Doc'
 import Sdk from 'ProductDesc/Main/Sdk'
+
+import Myapp from 'ApplicationCenter/Myapp'
+import AppSet from 'applicationCenter/AppSet'
+import BaseInfo from 'applicationCenter/AppSet/BaseInfo'
+import AppKey from 'applicationCenter/AppSet/AppKey'
+import AppService from 'applicationCenter/AppSet/AppService'
 
 import configureStore from './store/configureStore'
 
@@ -40,6 +47,14 @@ ReactDOM.render(
 				<Route path="/product/demo" component={Demo}/>
 				<Route path="/product/sdk" component={Sdk}/>
 				<Route path="/product/document" component={Doc}/>
+			</Route>
+			<Route path="/application" component={ApplicationCenter}>
+				<IndexRoute component={Myapp}/>
+				<Route path="/application/seting" component={AppSet}>
+					<IndexRoute component={BaseInfo}/>
+					<Route path="/application/seting/key" component={AppKey }/>
+					<Route path="/application/seting/service" component={AppService}/>
+				</Route>
 			</Route>
 			<Route path="/gameDetail/" component={GameDetail}/>
 		</Route>

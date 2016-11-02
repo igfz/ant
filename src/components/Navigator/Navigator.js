@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react'
 import styles from './Navigator.css'
 import { Row, Col, Icon, Button,Menu, Dropdown } from 'antd'
+import {Link } from 'react-router'
 
 const menu = (
 		<Menu>
@@ -21,7 +22,7 @@ class Navigator extends Component {
 		return (
 			<header>
 				<Row type="flex" className={styles.row}>
-					<Col xs={11} sm={11} md={5} lg={5}><Icon type="cloud-o" className={styles.cloud}/>SAAS服务</Col>
+					<Col xs={11} sm={11} md={5} lg={5}><Icon type="cloud-o" className={styles.cloud}/><Link to="/application">SAAS服务</Link></Col>
 					<Col xs={9} sm={9} md={0} lg={0}></Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>服务预算</Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>文档中心<Icon type="down" className={styles.down} /></Col>
