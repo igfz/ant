@@ -2,3 +2,7 @@
 .box{margin-top:30px;}
 .box li{margin-top:20px;}
 .words{display:inline-block;font-size:16px;color:#333;padding-left:20px;line-height:22px;vertical-align:bottom;}
+
+@media screen and (max-width: 768px) {
+	.title{font-size:18px;margin-top:25px;}
+}

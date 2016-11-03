@@ -9,7 +9,7 @@ export default function ProductDesc({ children }) {
 
 			<Banner />
 
-			<div style={{'maxWidth':'1200px','minHeight':'1200px','margin':'55px auto'}}>
+			<div style={{'maxWidth':'1200px','minHeight':'1200px','margin':'4% auto'}}>
 
 				{children}
 				

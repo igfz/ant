@@ -11,13 +11,13 @@ export default class ProductDesc extends Component {
 				<div className={styles.bannerBox}>
 					<div className={styles.item}>
 						<Row  className={styles.banner}>
-							<Col span = {12} push = {1}>
+							<Col xs={21} sm={21} md={12} lg={12} push = {1}>
 								<h3>应用中心</h3>
 								<p>
 									近百种足篮赛事赛程 足球拥有13种赛前玩法，19种赛中玩法 玩法赔率即时更新
 								</p>
 							</Col>
-							<Col span = {7} push = {4}>
+							<Col xs={0} sm={0} md={7} lg={7} push = {4}>
 								<div className={styles.img}></div>
 							</Col>
 						</Row>

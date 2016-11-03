@@ -8,4 +8,10 @@
 .img{width:100%;height:370px;background:url("http://m.8win.com/info/img/default-s.png") no-repeat;background-size:cover;}
 
 
-.wrap{max-width:1200px;min-height:1200px;margin:55px auto}
+@media screen and (max-width: 768px) {
+	.top{height:215px;}
+	.banner{height:215px;}
+	.banner h3{font-size:25px;margin-top:3%;}
+	.banner p{font-size:14px;line-height:22px;} 
+	.banner button{font-size:12px;margin-top:8px;}
+}
