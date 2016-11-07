@@ -39,8 +39,8 @@ class Navigator extends Component {
 					</Col>
 					<Col xs={0} sm={0} md={4} lg={4}></Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
-						<a href="#" className={styles.href}>登录</a>|
-						<a href="#" className={styles.href}>注册</a>
+						<Link to="/login" className={styles.href}>登录</Link>|
+						<Link to="/join" className={styles.href}>注册</Link>
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
 						<Button className={styles.btn}>免费试用</Button>
@@ -56,11 +56,5 @@ class Navigator extends Component {
 	}
 }
 
-
-Navigator.propTypes = {
-	catalog: PropTypes.array,
-	curCatalogID: PropTypes.number,
-	onSwitchCatalog: PropTypes.func.isRequired,
-}
 
 export default Navigator

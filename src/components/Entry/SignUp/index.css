@@ -1,0 +1,7 @@
+.wrap{margin:40px auto;max-width:1200px;}
+h1{margin-bottom: 30px;text-align: center;font-weight: 200;}
+.main{margin:10px 0 10px;}
+.main input{height:40px; font-size: 16px;}
+.main label{height:32px; font-size: 16px;}
+.regBtn{width:180px;height:40px;font-size: 16px;margin:20px auto;display: block;}
+.sms{width:100px;height:40px;font-size:16px;}
