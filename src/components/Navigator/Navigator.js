@@ -24,14 +24,14 @@ class Navigator extends Component {
 				<Row type="flex" className={styles.row}>
 					<Col xs={11} sm={11} md={5} lg={5}>
 						<Icon type="cloud-o" className={styles.cloud}/>
-						<Link to="/application">SAAS服务</Link>
+						<Link to="/" className={styles.href}>SAAS服务</Link>
 					</Col>
 					<Col xs={9} sm={9} md={0} lg={0}></Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
 						服务预算
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
-						<Link to="/documents">文档中心</Link>
+						<Link to="/documents" className={styles.href}>文档中心</Link>
 						<Icon type="down" className={styles.down} />
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
@@ -43,7 +43,11 @@ class Navigator extends Component {
 						<Link to="/join" className={styles.href}>注册</Link>
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
-						<Button className={styles.btn}>免费试用</Button>
+						<Button className={styles.btn}>
+							<Link to="/application" className={styles.href}>
+								免费试用
+							</Link>
+						</Button>
 					</Col>
 					<Col xs={4} sm={4} md={0} lg={0}>
 						<Dropdown overlay={menu} trigger={['click']}>

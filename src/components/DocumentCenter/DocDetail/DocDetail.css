@@ -1,6 +1,6 @@
 .breadcrumb{margin-bottom:50px;}
 .breadcrumb span{font-size:16px;}
-.article h1,h2,h3,h4{font-size:30px;color:#999;font-weight:500;}
+.article h1,.article h2,.article h3,.article h4{font-size:30px;color:#999;font-weight:500;}
 .article h2{font-size:26px;margin-top:70px;}
 .article h3{font-size:22px;margin-top:60px;}
 .article h4{font-size:18px;}

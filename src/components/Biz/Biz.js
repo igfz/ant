@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col,Button } from 'antd'
 import styles from './Biz.css'
+import {Link } from 'react-router'
 
 export default class Biz extends Component {
 
@@ -27,7 +28,9 @@ export default class Biz extends Component {
 
         <Row type="flex" justify="space-between" className={styles.buttonBoxO}>
         	<Col span={11}>
-          	<Button size="large" type="ghost">产品详情</Button>
+          	<Button size="large" type="ghost">
+          		<Link to="/product">产品详情</Link>
+          	</Button>
           </Col>
           <Col span={2}>
           </Col>
@@ -42,7 +45,9 @@ export default class Biz extends Component {
           <p>采用技术：{items.tech}</p>
           <Row type="flex" justify="center" gutter={16} className={styles.buttonBoxI}>
           	<Col span={12}>
-            	<Button type="primary">产品详情</Button>
+            	<Button type="primary">
+            		<Link to="/product">产品详情</Link>
+            	</Button>
             </Col>
             <Col span={12}>
             	<Button type="primary">Demo</Button>

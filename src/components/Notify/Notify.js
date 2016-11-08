@@ -10,7 +10,7 @@ export default class Notify extends Component {
 			<div className={styles.notify}>
 				<Row className={styles.inf}>
 					<Col span={1} offset={1}><Icon type="notification" /></Col>
-					<Col><Link to="/product">通知1111111</Link></Col>
+					<Col>通知1111111</Col>
 				</Row>
 			</div>
     )
