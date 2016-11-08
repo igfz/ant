@@ -9,9 +9,9 @@
 .tabBd{max-width:1200px;margin:0 auto;}
 .feature{margin-bottom:7%;}
 .featureIteam{height:360px;position:relative;padding:5% 2%;overflow:hidden;}
-.featureIteam .icon{width:130px;height:130px;margin:0 auto;border-radius:50%;border:solid 1px #E6E6E6;background:url('http://p.3761.com/pic/7181428713942.jpg');background-size:cover;}
+.featureIteam .icon{width:130px;height:130px;padding:30px;margin:0 auto;border-radius:50%;border:solid 1px #E6E6E6;background-size:cover;background-clip:content-box;background-origin:content-box;}
 .featureIteam h2{color:#333;font-size:22px;text-align:center;margin:8% 0 6%;}
-.featureIteam p{text-align:center;color:#999;font-size:16px;line-height:28px;}
+.featureIteam p{text-align:center;color:#999;font-size:16px;line-height:28px;} 
 .detail{height:100%;width:100%;padding:14% 12%;border-radius:3px;position:absolute;color:#fff;top:0;left:0;display:block;-webkit-transform:translateY(100%);opacity:0;transition:.4s;}
 .detail h3{font-size:18px;font-weight:500;line-height:32px;}
 .detail p{font-size:14px;text-align:left;}
@@ -35,3 +35,25 @@
 	.buttonBoxI,.buttonBoxO{padding:0 2%;display:block;}
 	.buttonBoxI button,.buttonBoxO button{font-size:14px;}
 }
+
+.jczlq,.ctzc,.bjdc,.dlt{background-image:url('./lot.png');}
+.jczlq{background-position:0 0%;}
+.ctzc{background-position:0 13%;}
+.bjdc{background-position:0 28%;}
+.dlt{background-position:0 42%;}
+
+.zlqjc,.djjc,.sjjc,.xdgn{background-image:url('./game.png');}
+.zlqjc{background-position:0 0%;}
+.djjc{background-position:0 13%;}
+.sjjc{background-position:0 28%;}
+.xdgn{background-position:0 42%;}
+
+.plpk,.zjjf,.ssph,.cczr,.bfzb,.zybl,.fxstj,.qtgn{background-image:url('./news.png');}
+.plpk{background-position:0 0%;}
+.zjjf{background-position:0 13%;}
+.ssph{background-position:0 28%;}
+.cczr{background-position:0 42%;}
+.bfzb{background-position:0 57%;}
+.zybl{background-position:0 71%;}
+.fxstj{background-position:0 86%;}
+.qtgn{background-position:0 100%;}

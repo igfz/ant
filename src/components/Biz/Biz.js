@@ -21,7 +21,7 @@ export default class Biz extends Component {
 	renderItems(items,index){
 		return(
       <Col xs={24} sm={24} md={6} lg={6}  className={styles.featureIteam} key = {index}>
-	      <div className = {styles.icon}>
+	      <div className = {styles.icon+' '+styles[items.icon]}>
       	</div>
         <h2>{items.title}</h2>
         <p>{items.desc}</p>
@@ -63,7 +63,7 @@ export default class Biz extends Component {
   	let data = {
 		  "0": [
 		    {
-		      "icon": "",
+		      "icon": "jczlq",
 		      "title": "竞彩足篮球",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -73,7 +73,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "ctzc",
 		      "title": "传统足彩",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -83,7 +83,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "bjdc",
 		      "title": "北京单场",
 		      "desc": "提供北京单场的所有期次赛程、浮动SP值和开奖SP值服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -93,7 +93,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "dlt",
 		      "title": "大乐透",
 		      "desc": "即将上线",
 		      "subtitle": "竞彩",
@@ -105,7 +105,7 @@ export default class Biz extends Component {
 		  ],
 		  "1": [
 		    {
-		      "icon": "",
+		      "icon": "zlqjc",
 		      "title": "足篮球竞猜",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -115,7 +115,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "djjc",
 		      "title": "电竞竞猜",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -125,7 +125,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "sjjc",
 		      "title": "事件竞猜",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -135,7 +135,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "xdgn",
 		      "title": "下单功能",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -147,7 +147,7 @@ export default class Biz extends Component {
 		  ],
 		  "2": [
 		    {
-		      "icon": "",
+		      "icon": "plpk",
 		      "title": "赔率盘口",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -157,7 +157,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "zjjf",
 		      "title": "战绩交锋",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -167,7 +167,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "ssph",
 		      "title": "赛事排行",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -177,7 +177,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "cczr",
 		      "title": "出场阵容",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -187,7 +187,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "bfzb",
 		      "title": "比分直播",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -197,7 +197,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "zybl",
 		      "title": "章鱼爆料",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -207,7 +207,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "fxstj",
 		      "title": "分析师推荐",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
@@ -217,7 +217,7 @@ export default class Biz extends Component {
 		      "demo": ""
 		    },
 		    {
-		      "icon": "",
+		      "icon": "qtgn",
 		      "title": "其他功能",
 		      "desc": "提供传统足彩的所有期次赛程和开奖 信息服务，玩法全面",
 		      "subtitle": "竞彩",
