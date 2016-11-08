@@ -4,14 +4,14 @@ import ReactDOM from 'react-dom' //14版本以后，reactDom已从React中分离
 import { Provider } from 'react-redux' //Provider将redux数据结构与react绑定
 import App from 'App'
 import Index from 'Index'
-import ProductDesc from 'ProductDesc'
-import ApplicationCenter from 'ApplicationCenter'
 
+import ProductDesc from 'ProductDesc'
 import Demo from 'ProductDesc/Main/Demo'
 import Detail from 'ProductDesc/Main/Detail'
 import Doc from 'ProductDesc/Main/Doc'
 import Sdk from 'ProductDesc/Main/Sdk'
 
+import ApplicationCenter from 'ApplicationCenter'
 import Myapp from 'ApplicationCenter/Myapp'
 import AppSet from 'applicationCenter/AppSet'
 import BaseInfo from 'applicationCenter/AppSet/BaseInfo'
@@ -21,6 +21,11 @@ import AppService from 'applicationCenter/AppSet/AppService'
 import SignIn from 'Entry/SignIn'
 import SignUp from 'Entry/SignUp'
 import SignUpSuccess from 'Entry/SignUp/Success'
+
+import DocumentCenter from 'DocumentCenter'
+import Center from 'DocumentCenter/Center'
+import DocDetail from 'DocumentCenter/DocDetail'
+import DocSearch from 'DocumentCenter/DocSearch'
 
 import configureStore from './store/configureStore'
 
@@ -62,8 +67,14 @@ ReactDOM.render(
 				<Route path="/login" component={SignIn}/>
 				<Route path="/join" component={SignUp}/>
 				<Route path="/joinSuccess" component={SignUpSuccess}/>
+				<Route path="/documents" component={DocumentCenter}>
+					<IndexRoute component={Center}/>
+					<Route path="/documents/detail" component={DocDetail}/>
+					<Route path="/documents/search" component={DocSearch}/>
+				</Route>
 			</Route>
 		</Router>
 	</Provider>,
 	rootEl
 )
+ 

@@ -1,0 +1,12 @@
+
+.tit{text-align:center;font-size:26px;color:#999;font-weight:500}
+.row{margin:60px 0 100px;}
+.col{border-right:solid 1px #e5e5e5;}
+.row .col:last-child{border:none;}
+.col h3{font-weight:500;font-size:16px;color:#333;}
+.col ul{margin-top:50px;list-style-type:disc;font-size:16px;line-height:28px;list-style:inside;}
+.btn{width:260px;height:70px;font-size:30px;margin:130px calc(50% - 130px);background-color:##2E8BFF;}
+
+@media screen and (max-width: 768px) {
+	.btn{width:120px;height:34px;font-size:15px;margin:50px calc(50% - 60px)}
+}

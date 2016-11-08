@@ -1,0 +1,11 @@
+.breadcrumb{margin-bottom:50px;}
+.breadcrumb span{font-size:16px;}
+.article h1,h2,h3,h4{font-size:30px;color:#999;font-weight:500;}
+.article h2{font-size:26px;margin-top:70px;}
+.article h3{font-size:22px;margin-top:60px;}
+.article h4{font-size:18px;}
+.article p{font-size:16px;color:#333;margin:30px 0 40px;}
+
+@media screen and (max-width: 768px) {
+	.btn{width:120px;height:34px;font-size:15px;margin:50px calc(50% - 60px)}
+}

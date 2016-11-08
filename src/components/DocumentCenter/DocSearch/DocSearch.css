@@ -1,0 +1,14 @@
+
+.searchBox{font-size:16px;margin-top:30px;border-bottom:solid 1px #E5E5E5;}
+.subBox{width:600px;margin:0 auto;}
+.searchBox p{font-size:16px;color:#333;margin:20px 0 50px;}
+.searchBox p span{padding-right:15px;}
+.list{min-height:1000px;padding-left:10px;}
+.list h3{font-size:16px;color:#333;margin-top:40px;font-weight:500;}
+.list h3:before{content:'•';position:absolute;margin-left:-10px;color:#E5E5E5;}
+.list p{font-size:14px;color:#333;margin-top:15px;}
+.page{margin:100px 0 200px; }
+
+@media screen and (max-width: 768px) {
+	.btn{width:120px;height:34px;font-size:15px;margin:50px calc(50% - 60px)}
+}

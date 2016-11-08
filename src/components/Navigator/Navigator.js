@@ -31,7 +31,7 @@ class Navigator extends Component {
 						服务预算
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
-						文档中心
+						<Link to="/documents">文档中心</Link>
 						<Icon type="down" className={styles.down} />
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>

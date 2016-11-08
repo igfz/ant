@@ -1,0 +1,7 @@
+
+.top{height:350px;background:#282e39;font-size:20px;color:#fff;}
+
+
+@media screen and (max-width: 768px) {
+	.top{height:215px;}
+}
