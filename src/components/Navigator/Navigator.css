@@ -3,8 +3,11 @@ header>.row{max-width:1200px;margin:auto}
 header>.row>div{line-height:80px;text-align:center}
 header>.row>div:first-child{font-size:22px;font-weight:bold;font-family:initial;}
 header .hover:hover{background:#2D3441;}
-header .hover:hover .down{background:#2D3441;-webkit-transform:rotate(180deg)}
-header .down{margin-left:5px;font-size:12px;font-weight:bold;transition:-webkit-transform .3s ease;}
+header .hover:hover .down,.outMeu:hover .caret_down{background:#2D3441;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.outMeu:hover .caret_down{
+	background:transparent;
+}
+header .down,.caret_down{margin-left:5px;font-size:12px;font-weight:bold;transition:-webkit-transform .3s ease;}
 header .cloud{margin-right:10px;vertical-align:-6px;font-size:42px}
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
 header .href{padding:10%;color:currentColor}

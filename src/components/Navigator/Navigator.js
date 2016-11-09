@@ -28,6 +28,7 @@ class Navigator extends Component {
 		      	title={
 		      		<span><Icon type="user"/>
 		      			章鱼1997
+		      			<Icon type="caret-down" className={styles['caret_down']} />
 		      		</span>}
 		      		className={styles['centerMeu']+' '
 		      		+styles['meu_t']+' '+styles.href}
