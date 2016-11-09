@@ -26,6 +26,7 @@ import DocumentCenter from 'DocumentCenter'
 import Center from 'DocumentCenter/Center'
 import DocDetail from 'DocumentCenter/DocDetail'
 import DocSearch from 'DocumentCenter/DocSearch'
+import UserCenter from 'components/UserCenter'
 
 import configureStore from './store/configureStore'
 
@@ -71,6 +72,12 @@ ReactDOM.render(
 					<IndexRoute component={Center}/>
 					<Route path="/documents/detail" component={DocDetail}/>
 					<Route path="/documents/search" component={DocSearch}/>
+				</Route>
+				<Route path="/UserCenter" component={UserCenter}>
+					<IndexRoute component={UserCenter}/>
+					{/*<Route path="/documents/detail" component={DocDetail}/>
+					<Route path="/documents/search" component={DocSearch}/>*/}
+					
 				</Route>
 			</Route>
 		</Router>

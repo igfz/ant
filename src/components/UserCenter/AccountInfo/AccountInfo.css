@@ -1,1 +1,20 @@
-AccountInfo
+.r_wrap{
+	height: 300px;
+	background: gay;
+
+}
+.money>div{
+margin: 10px 0;
+}
+.money_num{
+	font-size: 30px;
+}
+.money_info{
+	text-align:buttom;
+	padding-top: 20px;
+	height: 100px;
+	color: black;
+}
+ i:before{
+	font-size: 18px
+}
