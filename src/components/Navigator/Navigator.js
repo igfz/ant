@@ -64,13 +64,29 @@ class Navigator extends Component {
 					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
 						服务预算
 					</Col>
-					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
-						<Link to="/documents" className={styles.href}>文档中心</Link>
-						<Icon type="down" className={styles.down} />
+					<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
+
+						<Menu mode="horizontal">
+								<SubMenu title={<span><Link to="/documents" className={styles.href}>文档中心</Link><Icon type="down" className={styles.down} /></span>}>
+				            <Menu.Item key="setting:1">彩票服务文档</Menu.Item>
+				            <Menu.Item key="setting:2">竞猜游戏文档</Menu.Item>
+				             <Menu.Item key="setting:3">数据资讯文档</Menu.Item>
+				            <Menu.Item key="setting:4">其他文档</Menu.Item>
+				        </SubMenu>
+			        </Menu>
+						
 					</Col>
-					<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
-						技术支持
+					<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
+
+						<Menu mode="horizontal">
+							<SubMenu title={<span>技术支持</span>}>
+			            <Menu.Item key="setting:1">购买技术支持</Menu.Item>
+			            <Menu.Item key="setting:2">工单系统</Menu.Item>
+			             <Menu.Item key="setting:3">Bug汇报</Menu.Item>
+			        </SubMenu>
+		        </Menu>
 					</Col>
+
 					<Col xs={0} sm={0} md={4} lg={4}></Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
 						{this.loginFlag(true)}		

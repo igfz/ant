@@ -28,7 +28,9 @@ import DocDetail from 'DocumentCenter/DocDetail'
 import DocSearch from 'DocumentCenter/DocSearch'
 import UserCenter from 'components/UserCenter'
 
-import configureStore from './store/configureStore'
+import configureStore from './store/configureStore' 
+
+import ResetClass from 'Reset'
 
 import {
 	Router,
@@ -79,6 +81,9 @@ ReactDOM.render(
 					<Route path="/documents/search" component={DocSearch}/>*/}
 					
 				</Route>
+
+				<Route path="/reset" component={ResetClass}/>
+
 			</Route>
 		</Router>
 	</Provider>,
