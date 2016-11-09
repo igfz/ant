@@ -9,3 +9,27 @@ header .cloud{margin-right:10px;vertical-align:-6px;font-size:42px}
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
 header .href{padding:10%;color:currentColor}
 header .bars{vertical-align:-8px;font-size:42px;}
+.centerMeu,.centerMeu li,.outMeu{background-color: black;color: white;height: 100%;width: 140px;	border-bottom: 0px!important;}
+.ml10{
+	margin-left: 10px
+}
+.centerMeu div{
+	height: 100%;
+	color: white;
+	padding: 13px 0px;
+	border-bottom: 0px!important;
+}
+.centerMeu li:hover{
+	background-color: black;
+	color: #2588FF;
+	border-bottom: 0px!important;
+}
+.centerMeu:hover{
+	border-bottom: none;
+}
+.centerMeu div+ul{
+	top:90%!important;
+}
+.centerMeu div+ul>li{
+	border-right: 0px!important;
+}

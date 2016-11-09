@@ -2,6 +2,8 @@ import React, { PropTypes, Component } from 'react'
 import styles from './Navigator.css'
 import { Row, Col, Icon, Button,Menu, Dropdown } from 'antd'
 import {Link } from 'react-router'
+const SubMenu = Menu.SubMenu;
+const MenuItemGroup = Menu.ItemGroup;
 
 const menu = (
 		<Menu>
@@ -13,9 +15,37 @@ const menu = (
 		</Menu>
 	);
 
+			
 
 class Navigator extends Component {
-
+	loginFlag(flag){
+		if(flag){
+			return(
+				<Menu 
+					className={styles['outMeu']+' '+styles['ml10']}
+					mode="horizontal">
+		      <SubMenu 
+		      	title={
+		      		<span><Icon type="user"/>
+		      			章鱼1997
+		      		</span>}
+		      		className={styles['centerMeu']+' '
+		      		+styles['meu_t']+' '+styles.href}
+		      		>
+			          <Menu.Item key="setting:1"> 账户信息</Menu.Item>
+			          <Menu.Item key="setting:2"> 实名认证</Menu.Item>
+			          <Menu.Item key="setting:3"> 费用信息</Menu.Item>
+			          <Menu.Item key="setting:4"> 交易纪录</Menu.Item>
+			          <Menu.Item key="setting:5"> 退出</Menu.Item>
+		      </SubMenu>
+		    </Menu>
+				)
+		}
+		return(
+			<Link to="/login" className={styles.href}>登录</Link>|
+			<Link to="/join" className={styles.href}>注册</Link>
+			)
+	}
 
 	render() {
 
@@ -39,8 +69,7 @@ class Navigator extends Component {
 					</Col>
 					<Col xs={0} sm={0} md={4} lg={4}></Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
-						<Link to="/login" className={styles.href}>登录</Link>|
-						<Link to="/join" className={styles.href}>注册</Link>
+						{this.loginFlag(true)}		
 					</Col>
 					<Col xs={0} sm={0} md={3} lg={3}>
 						<Button className={styles.btn}>
