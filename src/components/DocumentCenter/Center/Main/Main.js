@@ -11,60 +11,28 @@ export default class Main extends Component {
 			<div>
 				<h2 className={styles.tit}>彩票服务</h2>
 				<Row type="flex" justify="space-between" className={styles.row}>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={6} className={styles.col}>
-						<h3>SDK文档</h3>
-						<ul>
-							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
-							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
-						</ul>
-					</Col>
-				</Row>
-
-				<h2 className={styles.tit}>彩票服务</h2>
-				<Row type="flex" justify="space-between" className={styles.row}>
-					<Col span={5} className={styles.col}>
-						<h3>SDK文档</h3>
-						<ul>
-							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
-							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
-						</ul>
-					</Col>
-					<Col span={5} className={styles.col}>
-						<h3>SDK文档</h3>
-						<ul>
-							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
-							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
-						</ul>
-					</Col>
-					<Col span={5} className={styles.col}>
-						<h3>SDK文档</h3>
-						<ul>
-							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
-							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
-						</ul>
-					</Col>
-					<Col span={6} className={styles.col}>
+					<Col xs={24} sm={6} md={6} lg={6} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
@@ -75,28 +43,60 @@ export default class Main extends Component {
 
 				<h2 className={styles.tit}>彩票服务</h2>
 				<Row type="flex" justify="space-between" className={styles.row}>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={5} className={styles.col}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
 							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
 						</ul>
 					</Col>
-					<Col span={6} className={styles.col}>
+					<Col xs={24} sm={6} md={6} lg={6} className={styles.col}>
+						<h3>SDK文档</h3>
+						<ul>
+							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
+							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
+						</ul>
+					</Col>
+				</Row>
+
+				<h2 className={styles.tit}>彩票服务</h2>
+				<Row type="flex" justify="space-between" className={styles.row}>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
+						<h3>SDK文档</h3>
+						<ul>
+							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
+							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
+						</ul>
+					</Col>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
+						<h3>SDK文档</h3>
+						<ul>
+							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
+							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
+						</ul>
+					</Col>
+					<Col xs={24} sm={5} md={5} lg={5} className={styles.col}>
+						<h3>SDK文档</h3>
+						<ul>
+							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>
+							<li><Link to="/documents/detail">传统足彩SDK</Link></li>
+						</ul>
+					</Col>
+					<Col xs={24} sm={6} md={6} lg={6} className={styles.col}>
 						<h3>SDK文档</h3>
 						<ul>
 							<li><Link to="/documents/detail">竞彩软件SDK</Link></li>

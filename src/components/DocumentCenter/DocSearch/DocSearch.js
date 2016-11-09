@@ -15,7 +15,7 @@ export default class DocSearch extends Component {
 						<SearchInput 
 							placeholder="输入文档/代码、快速关键字检索..."
 					    onSearch={value => console.log(value)}
-					    style={{ width: 600 }}
+					    style={{ 'width': '100%' }}
 					    size="large"
 					    className={styles.search}/>
 						<p>
@@ -83,7 +83,9 @@ export default class DocSearch extends Component {
 					</li>
 				</ul>
 
-				<Pagination className={styles.page} showQuickJumper defaultCurrent={1} total={500} />
+				<div className={styles.page}>
+					<Pagination defaultCurrent={1} total={100} />
+				</div>
 
 			</div>
 		)

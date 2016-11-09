@@ -18,7 +18,7 @@ export default class ProductDesc extends Component {
 								<Link to="/documents/search"><SearchInput 
 									placeholder="输入文档/代码、快速关键字检索..."
 							    onSearch={value => {console.log(value);browserHistory.push('/documents/search');}} 
-							    style={{ width: 600 }}
+							    style={{ 'width': '100%' }}
 							    size="large"/></Link>
 								<p>
 									<span>云服务器</span><span>云数据库</span>

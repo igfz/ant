@@ -20,12 +20,12 @@ export default class DocDetail extends Component {
 				</div>
 				
 				<Row type="flex" justify="space-between">
-					<Col xs={21} sm={21} md={4} lg={4}>
+					<Col xs={23} sm={23} md={4} lg={4}>
 
 					<Sider />
 
 					</Col>
-					<Col xs={22} sm={22} md={19} lg={19}>
+					<Col xs={23} sm={23} md={19} lg={19}>
 						<div className={styles.article}>
 							<h1>竞猜软件SDK文档</h1>
 							<p>

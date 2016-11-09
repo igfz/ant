@@ -7,5 +7,12 @@
 .article p{font-size:16px;color:#333;margin:30px 0 40px;}
 
 @media screen and (max-width: 768px) {
-	.btn{width:120px;height:34px;font-size:15px;margin:50px calc(50% - 60px)}
+	.breadcrumb{padding-left:5%;}
+	.breadcrumb span{font-size:14px;}
+	.article{padding-left:5%;}
+	.article h1{font-size:22px;margin-top:50px;}
+	.article h2{font-size:20px;margin-top:50px;}
+	.article h3{font-size:18px;margin-top:50px;}
+	.article h4{font-size:16px;}
+	.article p{font-size:14px;margin:30px 0 50px;}
 }
