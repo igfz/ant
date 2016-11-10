@@ -27,10 +27,10 @@ import Center from 'DocumentCenter/Center'
 import DocDetail from 'DocumentCenter/DocDetail'
 import DocSearch from 'DocumentCenter/DocSearch'
 import UserCenter from 'components/UserCenter'
-
-import configureStore from './store/configureStore' 
-
 import ResetClass from 'Reset'
+import AccountInfo from 'components/UserCenter/AccountInfo'
+import Certification from 'components/UserCenter/Certification'
+import configureStore from './store/configureStore'
 
 import {
 	Router,
@@ -75,9 +75,17 @@ ReactDOM.render(
 					<Route path="/documents/detail" component={DocDetail}/>
 					<Route path="/documents/search" component={DocSearch}/>
 				</Route>
-				<Route path="/UserCenter" component={UserCenter}>
-					<IndexRoute component={UserCenter}/>
-					{/*<Route path="/documents/detail" component={DocDetail}/>
+				<Route path="/usercenter" component={UserCenter}>
+					<Route path="/usercenter/accountinfo" 
+						component={Certification} />
+					<Route path="/usercenter/certification" 
+						component={Certification}/>
+					{/*	
+						 />
+					<Route path="/usercenter/certification" 
+						component={Certification}/>
+					<IndexRoute component={usercenter}/>
+					<Route path="/documents/detail" component={DocDetail}/>
 					<Route path="/documents/search" component={DocSearch}/>*/}
 					
 				</Route>

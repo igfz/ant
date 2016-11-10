@@ -34,10 +34,16 @@ class Navigator extends Component {
 		      		+styles['meu_t']+' '+styles.href}
 		      		>
 			          <Menu.Item key="setting:1">	
-			          	<Link className={styles.href} to="/UserCenter"> 账户信息
-			          	</Link>|
+			          	<Link className={styles.href} 
+			          		to="/usercenter/accountinfo">
+			          		 账户信息
+			          	</Link>
 			          </Menu.Item>
-			          <Menu.Item key="setting:2"> 实名认证</Menu.Item>
+			          <Menu.Item key="setting:2">
+			           <Link to="usercenter/certification"> 
+			           	实名认证
+			           </Link>
+			          </Menu.Item>
 			          <Menu.Item key="setting:3"> 费用信息</Menu.Item>
 			          <Menu.Item key="setting:4"> 交易纪录</Menu.Item>
 			          <Menu.Item key="setting:5"> 退出</Menu.Item>
