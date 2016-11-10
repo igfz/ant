@@ -1,14 +1,17 @@
 .r_wrap{
 	height: 500px;
 }
-.money>div{
-margin: 10px 0;
+.selector_col{
+	height: 100px;
 }
-.money_num{
-	font-size: 40px;
+.table{
+	margin-top: 25px;
 }
+.selector{
+	border-radius: 2px; 
+}
+
 .money_info{
-	text-align:buttom;
 	padding-top: 20px;
 	height: 30px;
 	color: black;
@@ -16,6 +19,11 @@ margin: 10px 0;
  i:before{
 	font-size: 18px
 }
-.ant-table-selection-column{
-	display: none!important;
+.btn{
+	width: 141px;
+	height: 41px;
+	background-color: #2E8BFF;
+	font-size: 16px;
+	color: #FFFFFF;
+
 }

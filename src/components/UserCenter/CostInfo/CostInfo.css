@@ -1,21 +1,29 @@
 .r_wrap{
 	height: 500px;
+	font-family: 'FZLTHK--GBK1-0';
 }
 .money>div{
 margin: 10px 0;
 }
-.money_num{
-	font-size: 40px;
+.data_picker{
+	height: 32px;
+	width: 150px;
+	border-radius: 2px;
 }
 .money_info{
 	text-align:buttom;
 	padding-top: 20px;
 	height: 30px;
-	color: black;
+	font-size: 20px;
+	color: #333333;
 }
- i:before{
-	font-size: 18px
+.btn{
+	width: 141px;
+	height: 41px;
+	background-color: #2E8BFF;
+	font-size: 16px;
+	color: #FFFFFF;
+
 }
-.ant-table-selection-column{
-	display: none!important;
-}
+
+

@@ -16,7 +16,7 @@ export default class AccounTinfo extends Component{
 				<Col className={styles['money']}>
 					<Row type='flex' align='bottom' className={styles['money_info']}>
 						<Row type='flex' align='bottom' >
-							<Col lg={24}>
+							<Col lg={24} md={24} sm={24} xs={24}>
 								账户余额 
 								<span className={styles['money_num']}>
 								 	2,000.00元
@@ -28,7 +28,7 @@ export default class AccounTinfo extends Component{
 							</Row>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={24}>
+						<Col lg={24} md={24} sm={24} xs={24} >
 							<Icon type='user'  />
 							用户名：1234abc的账号
 							<span className={styles['blue_text']}>实名认证</span>
@@ -37,26 +37,20 @@ export default class AccounTinfo extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={1}>
+						<Col lg={24} md={24} sm={24} xs={24}>
 							<Icon type='ID' />
-						</Col>
-						<Col lg={20}>
 							账户ID：7894  123
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={1}>
+						<Col lg={24} md={24} sm={24} xs={24}>
 							<Icon type='tablet' />
-						</Col>
-						<Col lg={20}>
 								手机号码：1234564981321
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={1}>
+						<Col lg={24} md={24} sm={24} xs={24}>
 							<Icon type='user' />
-						</Col>
-						<Col lg={20}>
 								技术服务：您尚未购买我们的技术服务，
 								<span  className={styles['blue_text']}>点此购买</span>
 						</Col>

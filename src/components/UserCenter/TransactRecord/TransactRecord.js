@@ -62,11 +62,13 @@ export default class TransactRecord extends Component{
 	render(){
 		return(
 			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']} lg={24}>
-					<Row className={styles['money_info']}
-						Row type='flex' align='bottom'>
-							<Col Col lg={16}>
-								 <Select size="large" defaultValue="lucy" style={{ width: 200 }} onChange={this.handleChange}>
+				<Col  lg={24} md={24} sm={24} xs={24}
+					className={styles['money_info']}>
+					<Row 
+						 type='flex' align='bottom'>
+							<Col lg={16} md={16} sm={16} xs={16} 
+								 >
+								 <Select className={styles['selector']} size="large" defaultValue="lucy" style={{ width: 200 }} onChange={this.handleChange}>
 						      <Option value="jack">Jack</Option>
 						      <Option value="lucy">Lucy</Option>
 						      <Option value="disabled" disabled>Disabled</Option>
@@ -74,19 +76,19 @@ export default class TransactRecord extends Component{
 						    </Select>
 							</Col>					
 					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={20} style={{'textAlign':'center'}}>
+					<Row type='flex' align='bottom' className={styles['table']}>
+						<Col lg={20} md={20} sm={20} xs={20} style={{'textAlign':'center'}}>
 							<Table  columns={columns} dataSource={data}   
 									pagination={false}/>
 						</Col>
-						<Col lg={20}>
+						<Col lg={20} md={20} sm={20} xs={20}>
 							<Row>
 								<Col lg={21}>
 									<Pagination showQuickJumper 
 										defaultCurrent={2} total={3}/>
 								</Col>
-								<Col lg={3}>
-									<Button>继续顶服务</Button>
+								<Col lg={3} md={3} sm={3} xs={3}>
+									<Button className={styles['btn']}>继续服务</Button>
 								</Col>
 							</Row>
 						</Col>
