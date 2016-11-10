@@ -4,9 +4,7 @@ header>.row>div{line-height:80px;text-align:center}
 header>.row>div:first-child{font-size:22px;font-weight:bold;font-family:initial;}
 header .hover:hover{background:#2D3441;}
 header .hover:hover .down,.outMeu:hover .caret_down{background:#2D3441;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
-.outMeu:hover .caret_down{
-	background:transparent;
-}
+.outMeu:hover .caret_down{background:transparent;}
 header .down,.caret_down{margin-left:5px;font-size:12px;font-weight:bold;transition:-webkit-transform .3s ease;}
 header .cloud{margin-right:10px;vertical-align:-6px;font-size:42px}
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
@@ -36,11 +34,15 @@ header .bars{vertical-align:-8px;font-size:42px;}
 	border-right: 0px!important;
 }
 
-.menugroup>ul{background: #282e39;border: none;color:#fff;height: 100%;padding: 0}
+.menugroup>ul{background: #282e39;border: none;color:#fff;height: 100%;padding: 0;}
 .menugroup>ul>li{background: #282e39;border: 0;color:#fff;height: 100%;margin-top: 0;width: 100%;}
-.menugroup>ul>li>div{margin-top: 17px}
+.menugroup>ul>li>div{margin-top: 17px;}
 .menugroup div+ul{margin-top: 0px!important;}
 .menugroup div+ul>li{border-right: 0px!important;}
 .menugroup>ul>li:hover{color:#fff!important;}
 .menugroup li{background: #282e39;height: 100%;color: white;border-bottom: 0px!important;}
 .menugroup>ul div+ul>li:hover{background-color: #282e39;color: #2588FF!important;border-bottom: 0px!important;}
+
+.actbar{width: 100%;height:600px;background: red;display: block;}
+.unanimate{width: 100%;background: #fff;height:0;-webkit-transition: all 0.3s;overflow:hidden;}
+.animate{width: 100%;display: block;background: #fff;height:-webkit-calc(24px * 3);;-webkit-transition: all 0.3s;overflow:hidden;}
