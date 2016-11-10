@@ -1,0 +1,21 @@
+.r_wrap{
+	height: 500px;
+}
+.money>div{
+margin: 10px 0;
+}
+.money_num{
+	font-size: 40px;
+}
+.money_info{
+	text-align:buttom;
+	padding-top: 20px;
+	height: 30px;
+	color: black;
+}
+ i:before{
+	font-size: 18px
+}
+.ant-table-selection-column{
+	display: none!important;
+}

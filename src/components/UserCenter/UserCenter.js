@@ -2,12 +2,15 @@
 import React, { Component, PropTypes } from 'react'
 import {  Icon, Switch, Row, Col } from 'antd'
 import *as styles from './UserCenter.css'
-import CenterTitle from './CenterTitle/index.js'
-import AccounTinfo from './AccountInfo/AccountInfo.js'
-import Banner from './Banner/Banner.js'
-import MenuLeft from './Menu/index.js'
+import CenterTitle from './CenterTitle'
+import AccounTinfo from './AccountInfo'
+import Banner from './Banner'
+import MenuLeft from './Menu'
 import Certification from './Certification/Certification.js'
-import CertifiCompany from './Certification/CertifiCompany.js'
+import CertifiCompany from './Certification'
+import CostInfo from './CostInfo'
+import TransactRecord from './TransactRecord'
+
 import {
 	Link,
 	Router,
@@ -32,7 +35,7 @@ export default class UserCenter extends Component{
 			       </Col>
 			      <Col lg={16}>	
 			      	<CenterTitle titleStr={'用户信息'} />
-			      	<CertifiCompany />
+			      	<TransactRecord />
 			      </Col>
 		       </Row>
       	</div>
