@@ -32,6 +32,7 @@ import AccountInfo from 'components/UserCenter/AccountInfo'
 import Certification from 'components/UserCenter/Certification'
 import CostInfo from  'components/UserCenter/CostInfo'
 import TransactRecord from 'components/UserCenter/TransactRecord'
+import {PaySuccess,Recharge} from 'components/UserCenter/AccountInfo/Recharge'
 import configureStore from './store/configureStore'
 
 import {
@@ -87,16 +88,11 @@ ReactDOM.render(
 						component={CostInfo}/>
 					<Route path="/usercenter/transactrecord" 
 						component={TransactRecord}/>
-					{/*	CostInfo
-						 />
-					<Route path="/usercenter/certification" 
-						component={Certification}/>
-					<IndexRoute component={usercenter}/>
-					<Route path="/documents/detail" component={DocDetail}/>
-					<Route path="/documents/search" component={DocSearch}/>*/}
-					
 				</Route>
-
+				<Route path="/usercenter/paysuccess" component={PaySuccess}>
+				</Route>
+				<Route path="/usercenter/recharge" component={Recharge}>
+				</Route>
 				<Route path="/reset" component={ResetClass}/>
 
 			</Route>

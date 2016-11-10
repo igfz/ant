@@ -23,8 +23,13 @@ class Navigator extends Component {
 			return(
 				<Menu mode="horizontal">
 					<SubMenu 
-						className={styles.href}
-							title={<span>章鱼1997</span>}>
+						className={styles.href+' '+styles['center_meu']}
+							title={
+								<span>
+									<Icon type='user'/>
+									章鱼1997
+									<Icon type='caret-up'/>
+								</span>}>
 	            <Menu.Item key="setting:1">
 	            	<Link className={styles.href} 
 			          		to="/usercenter/accountinfo">
@@ -46,7 +51,11 @@ class Navigator extends Component {
 			           		交易纪录
 			          </Link>
 	            </Menu.Item>
-	            <Menu.Item key="setting:5"> 退出</Menu.Item>
+	            <Menu.Item key="setting:5"> 
+	            	<Link to="/">
+				          退出
+				        </Link>
+	            </Menu.Item>
 	        </SubMenu>
        </Menu>
 			)

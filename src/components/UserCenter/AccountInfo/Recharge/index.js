@@ -1,7 +1,7 @@
 import PaySuccess from './PaySuccess.js'
-import Reccharge  from './Recharge.js'
+import Recharge  from './Recharge.js'
 
 export {
 	PaySuccess,
-	Reccharge
+	Recharge
 }

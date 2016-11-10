@@ -21,7 +21,7 @@ console.log( this.props.idx)
         <Link to="/usercenter/transactrecord">
           <li>交易纪录</li>
         </Link>
-        <Link to="/usercenter/transactrecord">
+        <Link to="/">
           <li>退出</li>
         </Link>
       </ul>

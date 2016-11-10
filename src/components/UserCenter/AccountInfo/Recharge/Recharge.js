@@ -5,6 +5,7 @@ zfl 2016 11 10
 import React, { Component, PropTypes } from 'react'
 import { Row, Col, Button, Input } from 'antd'
 import *as styles from './Recharge.css'
+import {Link} from 'react-router'
 
 class Recharge extends Component{
 	constructor(props){
@@ -35,7 +36,9 @@ class Recharge extends Component{
 				</Row>
 				<Row className={styles['btn_col']}>
 					<Col lg={24} >
-						<Button className={styles['btn_re']}> 确定充值 </Button>
+						<Button className={styles['btn_re']}>
+						 <Link to='/usercenter/paysuccess'>确定充值 </Link>
+						</Button>
 					</Col>
 				</Row>
 				<Row  className={styles['bank_info']}>

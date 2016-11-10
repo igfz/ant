@@ -5,6 +5,7 @@ zfl 2016 11 10
 import React, { Component, PropTypes } from 'react'
 import { Row, Col, Button } from 'antd'
 import *as styles from './PaySuccess.css'
+import { 	Link } from 'react-router'
 
 class PaySuccess extends Component{
 	constructor(props){
@@ -30,7 +31,9 @@ class PaySuccess extends Component{
 				</Row>
 				<Row className={styles['btn_col']}>
 					<Col lg={24} >
-						<Button className={styles['btn_re']}> 返回账号信息 </Button>
+						<Button className={styles['btn_re']}>
+						 <Link to="/usercenter/accountinfo">返回账号信息</Link>
+						</Button>
 					</Col>
 				</Row>
 			</Row>

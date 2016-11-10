@@ -5,12 +5,11 @@
 import React,{ Component, PropTypes } from 'react'
 import { Col, Row, Button, Icon } from 'antd'
 import *as styles from './AccountInfo.css'
-
+import {Link } from 'react-router'
 export default class AccounTinfo extends Component{
 	constructor(props){
 		super(props);
 	}
-
 	render(){
 		return(
 			<Row className={styles['r_wrap']}>
@@ -24,7 +23,7 @@ export default class AccounTinfo extends Component{
 							</Col>
 							<Col lg={5}>
 								<Button>
-									立即充值
+									<Link to='/usercenter/recharge'>立即充值</Link>
 								</Button>
 							</Col>
 							</Row>
