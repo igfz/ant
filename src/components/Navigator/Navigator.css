@@ -6,10 +6,12 @@ header .hover:hover{background:#2D3441;}
 header .hover:hover .down,.outMeu:hover .caret_down{background:#2D3441;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
 .outMeu:hover .caret_down{background:transparent;}
 header .down,.caret_down{margin-left:5px;font-size:12px;font-weight:bold;transition:-webkit-transform .3s ease;}
-header .cloud{margin-right:10px;vertical-align:-6px;font-size:42px}
+header .cloud{vertical-align:-6px;font-size:42px;font-size: 46px!important;}
+header .cloud:before{font-size: 32px!important;}
+
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
 header .href{padding:10%;color:currentColor}
-header .bars{vertical-align:-8px;font-size:42px;}
+header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .centerMeu,.centerMeu li,.outMeu{background-color: black;color: white;height: 100%;width: 140px;	border-bottom: 0px!important;}
 .ml10{
 	margin-left: 10px
@@ -37,12 +39,25 @@ header .bars{vertical-align:-8px;font-size:42px;}
 .menugroup>ul{background: #282e39;border: none;color:#fff;height: 100%;padding: 0;}
 .menugroup>ul>li{background: #282e39;border: 0;color:#fff;height: 100%;margin-top: 0;width: 100%;}
 .menugroup>ul>li>div{margin-top: 17px;}
-.menugroup div+ul{margin-top: 0px!important;}
-.menugroup div+ul>li{border-right: 0px!important;}
-.menugroup>ul>li:hover{color:#fff!important;}
+.menugroup div+ul{margin-top: 0px!important;box-shadow:0 0 0 0!important;}
+.menugroup div+ul>li{border-right: 0px!important;background: #282c38;}
+.menugroup>ul>li:hover{background-color: #25282f;color:#fff!important;}
 .menugroup li{background: #282e39;height: 100%;color: white;border-bottom: 0px!important;}
 .menugroup>ul div+ul>li:hover{background-color: #282e39;color: #2588FF!important;border-bottom: 0px!important;}
 
 .actbar{width: 100%;height:600px;background: red;display: block;}
-.unanimate{width: 100%;background: #fff;height:0;-webkit-transition: all 0.3s;overflow:hidden;}
+.unanimate{width: 100%;background: #fff;height:0;-webkit-transition: all 0.2s;overflow:hidden;}
 .animate{width: 100%;display: block;background: #fff;height:-webkit-calc(24px * 3);;-webkit-transition: all 0.3s;overflow:hidden;}
+.mlogin{padding-right: 10px;font-size: 14px;}
+
+@media screen and (max-width: 990px) {
+	header i:before{font-size: 32px!important;}
+	.cloud+a{padding:0;}
+}
+
+@media screen and (max-width: 768px) {
+	header>.row>.servertitle{text-align: left;padding-left: 10px;}
+	header i:before{font-size: 32px!important;}
+	.cloud+a{padding:0;}
+	header>.row>.mbars{text-align: right;padding-right: 10px;}
+}

@@ -6,8 +6,12 @@ import { domUtils } from '../../utils/utils'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-	let idx=0;
-			
+let idx=0;
+		
+function handleClick(e) {
+  console.log('click', e);
+}
+
 class Navigator extends Component {
 	showNavbar(){
 		let navbar = this.refs.navbar;
@@ -59,12 +63,12 @@ class Navigator extends Component {
 			<div>
 				<header>
 					<Row type="flex" className={styles.row}>
-						<Col xs={11} sm={11} md={5} lg={5}>
+						<Col xs={11} sm={5} md={5} lg={5} className={ styles.servertitle }>
 							<Icon type="cloud-o" className={styles.cloud}/>
 							<Link to="/" className={styles.href}>SAAS服务</Link>
 						</Col>
-						<Col xs={9} sm={9} md={0} lg={0}></Col>
-						<Col xs={0} sm={0} md={3} lg={3} className={styles.hover}>
+						<Col xs={5} sm={15} md={0} lg={0}></Col>
+						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
 							服务预算
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
@@ -101,7 +105,8 @@ class Navigator extends Component {
 								</Link>
 							</Button>
 						</Col>
-						<Col xs={4} sm={4} md={0} lg={0}>
+						<Col xs={8} sm={4} md={0} lg={0} className={ styles.mbars }>
+								<span className={ styles.mlogin }>登录</span>|
 								<Icon type="bars" className={styles.bars} 
 									onClick={()=>this.showNavbar()}/>
 						</Col>
