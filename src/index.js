@@ -30,6 +30,8 @@ import UserCenter from 'components/UserCenter'
 import ResetClass from 'Reset'
 import AccountInfo from 'components/UserCenter/AccountInfo'
 import Certification from 'components/UserCenter/Certification'
+import CostInfo from  'components/UserCenter/CostInfo'
+import TransactRecord from 'components/UserCenter/TransactRecord'
 import configureStore from './store/configureStore'
 
 import {
@@ -76,11 +78,16 @@ ReactDOM.render(
 					<Route path="/documents/search" component={DocSearch}/>
 				</Route>
 				<Route path="/usercenter" component={UserCenter}>
+					<IndexRoute component={AccountInfo}/>
 					<Route path="/usercenter/accountinfo" 
-						component={Certification} />
+						component={AccountInfo} />
 					<Route path="/usercenter/certification" 
 						component={Certification}/>
-					{/*	
+					<Route path="/usercenter/costinfo" 
+						component={CostInfo}/>
+					<Route path="/usercenter/transactrecord" 
+						component={TransactRecord}/>
+					{/*	CostInfo
 						 />
 					<Route path="/usercenter/certification" 
 						component={Certification}/>

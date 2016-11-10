@@ -20,15 +20,21 @@ import {
 	browserHistory,
 	hashHistory
 } from 'react-router'
-export default class UserCenter extends Component{
-	constructor(props){
-		super(props);
-	}
-	render(){
-		var _that=this
+export default function UserCenter({ children }){
 		return(
-			<Reccharge />
+			<div>
+				<Banner/>
+					<div className={styles['out_wrap']}>
+					<Row className={styles['left_wrap']}>
+						<Col lg={4} md={4} sm={4} xs={4}>
+			       	<MenuLeft />
+			       </Col>
+			      <Col lg={16} md={16} sm={16} xs={16}>	
+			      	<CenterTitle titleStr={'用户信息'} />
+			      	{children}
+			      </Col>
+		       </Row>
+      	</div>
+      </div>
     )
-	}
-
 }

@@ -21,35 +21,35 @@ class Navigator extends Component {
 	loginFlag(flag){
 		if(flag){
 			return(
-				<Menu 
-					className={styles['outMeu']+' '+styles['ml10']}
-					mode="horizontal">
-		      <SubMenu 
-		      	title={
-		      		<span><Icon type="user"/>
-		      			章鱼1997
-		      			<Icon type="caret-down" className={styles['caret_down']} />
-		      		</span>}
-		      		className={styles['centerMeu']+' '
-		      		+styles['meu_t']+' '+styles.href}
-		      		>
-			          <Menu.Item key="setting:1">	
-			          	<Link className={styles.href} 
+				<Menu mode="horizontal">
+					<SubMenu 
+						className={styles.href}
+							title={<span>章鱼1997</span>}>
+	            <Menu.Item key="setting:1">
+	            	<Link className={styles.href} 
 			          		to="/usercenter/accountinfo">
 			          		 账户信息
-			          	</Link>
-			          </Menu.Item>
-			          <Menu.Item key="setting:2">
-			           <Link to="usercenter/certification"> 
-			           	实名认证
-			           </Link>
-			          </Menu.Item>
-			          <Menu.Item key="setting:3"> 费用信息</Menu.Item>
-			          <Menu.Item key="setting:4"> 交易纪录</Menu.Item>
-			          <Menu.Item key="setting:5"> 退出</Menu.Item>
-		      </SubMenu>
-		    </Menu>
-				)
+			          </Link>
+	            </Menu.Item>
+	            <Menu.Item key="setting:2">
+	            	<Link to="usercenter/certification"> 
+			           		实名认证
+			          </Link>
+	            </Menu.Item>
+	            <Menu.Item key="setting:3">
+	            	<Link to="/usercenter/costinfo"> 
+			           		费用信息
+			          </Link>
+	            </Menu.Item>
+	            <Menu.Item key="setting:4">
+	            	<Link to="/usercenter/transactrecord"> 
+			           		交易纪录
+			          </Link>
+	            </Menu.Item>
+	            <Menu.Item key="setting:5"> 退出</Menu.Item>
+	        </SubMenu>
+       </Menu>
+			)
 		}
 		return(
 			<Link to="/login" className={styles.href}>登录</Link>|
@@ -83,7 +83,7 @@ class Navigator extends Component {
 				        </Menu>
 							
 						</Col>
-						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
+						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup} >
 
 							<Menu mode="horizontal">
 								<SubMenu title={<span>技术支持</span>}>
@@ -95,7 +95,7 @@ class Navigator extends Component {
 						</Col>
 
 						<Col xs={0} sm={0} md={4} lg={4}></Col>
-						<Col xs={0} sm={0} md={3} lg={3}>
+						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
 							{this.loginFlag(true)}		
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3}>
