@@ -7,6 +7,7 @@ import AccounTinfo from './AccountInfo/AccountInfo.js'
 import Banner from './Banner/Banner.js'
 import MenuLeft from './Menu/index.js'
 import Certification from './Certification/Certification.js'
+import CertifiCompany from './Certification/CertifiCompany.js'
 import {
 	Link,
 	Router,
@@ -31,7 +32,7 @@ export default class UserCenter extends Component{
 			       </Col>
 			      <Col lg={16}>	
 			      	<CenterTitle titleStr={'用户信息'} />
-			      	<Certification />
+			      	<CertifiCompany />
 			      </Col>
 		       </Row>
       	</div>

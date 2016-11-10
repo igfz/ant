@@ -1,18 +1,16 @@
 .r_wrap{
-	height: 300px;
-	background: gay;
-
+	height: 500px;
 }
 .money>div{
 margin: 10px 0;
 }
 .money_num{
-	font-size: 30px;
+	font-size: 40px;
 }
 .money_info{
 	text-align:buttom;
 	padding-top: 20px;
-	height: 100px;
+	height: 30px;
 	color: black;
 }
  i:before{

@@ -6,7 +6,7 @@ import React,{ Component, PropTypes } from 'react'
 import { Col, Row, Button, Icon, Checkbox, Input   } from 'antd'
 import *as styles from './Certification.css'
 
-export default class Certification extends Component{
+export default class CertifiCompany extends Component{
 	constructor(props){
 		super(props);
 	}
@@ -30,7 +30,7 @@ export default class Certification extends Component{
 					<Row type='flex' align='bottom'>
 						<Col lg={16}>
 							<Row>
-								姓名
+								公司名称
 							</Row>
 							<Row>
 								<Input placeholder="Basic usage" />
@@ -40,7 +40,28 @@ export default class Certification extends Component{
 					<Row type='flex' align='bottom'>
 						<Col lg={16}>
 							<Row>
-								身份证
+								营业执照注册号
+							</Row>
+							<Row>
+								<Input placeholder="Basic usage" />
+							</Row>
+						</Col>
+					</Row>
+				
+					<Row type='flex' align='bottom'>
+						<Col lg={16}>
+							<Row>
+								营业执照扫描件
+							</Row>
+							<Row>
+								<Input placeholder="Basic usage" />
+							</Row>
+						</Col>
+					</Row>
+					<Row type='flex' align='bottom'>
+						<Col lg={16}>
+							<Row>
+								法人姓名
 							</Row>
 							<Row>
 								<Input placeholder="Basic usage" />
@@ -50,7 +71,7 @@ export default class Certification extends Component{
 					<Row type='flex' align='bottom'>
 							<Col lg={24}>
 								<Row>
-									手持身份证
+									法人身份证扫描（正面）
 								</Row>
 								<Row>
 									<Col lg={16}>
@@ -65,11 +86,11 @@ export default class Certification extends Component{
 								</Row>
 							</Col>
 						</Row>
-					
+						
 						<Row type='flex' align='bottom'>
 							<Col lg={24}>
 								<Row>
-									身份证反面
+									法人身份证扫描（反面）
 								</Row>
 								<Row>
 									<Col lg={16}>
