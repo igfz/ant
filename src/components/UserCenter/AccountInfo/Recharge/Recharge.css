@@ -1,0 +1,58 @@
+.r_wrap{
+	height: 760px;
+	text-align: center;
+}
+.center_wrap{
+	height: 760px;
+	width: 410px;
+	margin:auto;
+	color: black;
+	font-size: 14px;
+}
+.pay_suc{
+	font-size: 30px;
+	line-height: 90px;
+	height: 90px;
+}
+.pay_input{
+	height: 32px;
+	margin-top: 36px;
+}
+.pay_input input,.pay_input div{
+	height: 41px;
+}
+.pay_input div{
+	line-height: 44px;
+}
+.btn_re{
+	height: 41px;
+	width: 200px;
+	background-color: #2E8BFF;
+	border-radius: 2px;
+	color: white;
+	margin-top: 60px;
+}
+
+.btn_col{
+	height: 100px;
+}
+.pay_mode{
+	height: 61px;
+	
+}
+.pay_mode button{
+	height: 61px;
+	width: 191px;
+
+}
+.wechat{
+	margin-left: 20PX;
+}
+.bank_info{
+	text-align: left;
+	margin-top: 100px;
+	padding: 21px;
+	color: #999999;
+	font-size: 12px;
+	background: #F8F8F8;
+}

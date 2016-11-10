@@ -10,7 +10,8 @@ import Certification from './Certification/Certification.js'
 import CertifiCompany from './Certification'
 import CostInfo from './CostInfo'
 import TransactRecord from './TransactRecord'
-
+import { PaySuccess, Reccharge} from './AccountInfo/Recharge'
+  
 import {
 	Link,
 	Router,
@@ -26,21 +27,8 @@ export default class UserCenter extends Component{
 	render(){
 		var _that=this
 		return(
-			<div>
-				<Banner/>
-					<div className={styles['out_wrap']}>
-					<Row className={styles['left_wrap']}>
-						<Col lg={4}>
-			       	<MenuLeft />
-			       </Col>
-			      <Col lg={16}>	
-			      	<CenterTitle titleStr={'用户信息'} />
-			      	<TransactRecord />
-			      </Col>
-		       </Row>
-      	</div>
-      </div>
-    );
+			<Reccharge />
+    )
 	}
 
 }
