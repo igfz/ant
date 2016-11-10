@@ -22,10 +22,10 @@ import {
 } from 'react-router'
 export default function UserCenter({ children }){
 		return(
-			<div>
+			<div className={styles['font_fam']}>
 				<Banner/>
-					<div className={styles['out_wrap']}>
-					<Row className={styles['left_wrap']}>
+					<div>
+					<Row>
 						<Col lg={4} md={4} sm={4} xs={4}>
 			       	<MenuLeft />
 			       </Col>

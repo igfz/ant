@@ -14,34 +14,31 @@ export default class AccounTinfo extends Component{
 		return(
 			<Row className={styles['r_wrap']}>
 				<Col className={styles['money']}>
-					<Row className={styles['money_info']}>
+					<Row type='flex' align='bottom' className={styles['money_info']}>
 						<Row type='flex' align='bottom' >
-							<Col lg={2}>账户余额</Col>
-							<Col lg={5}
-								className={styles['money_num']}>
-								  2,000.00元
-							</Col>
-							<Col lg={5}>
-								<Button>
+							<Col lg={24}>
+								账户余额 
+								<span className={styles['money_num']}>
+								 	2,000.00元
+								</span>					
+								<Button className={styles['pay_now']}>
 									<Link to='/usercenter/recharge'>立即充值</Link>
 								</Button>
 							</Col>
 							</Row>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={1}>
+						<Col lg={24}>
 							<Icon type='user'  />
-						</Col>
-						<Col lg={20}>
 							用户名：1234abc的账号
-							<Button>实名认证</Button>
-							<Icon type='minus' />
-							<Button>修改密码</Button>
+							<span className={styles['blue_text']}>实名认证</span>
+							|
+							<span  className={styles['blue_text']} >修改密码</span>
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
 						<Col lg={1}>
-							<Icon type='id' />
+							<Icon type='ID' />
 						</Col>
 						<Col lg={20}>
 							账户ID：7894  123
@@ -49,7 +46,7 @@ export default class AccounTinfo extends Component{
 					</Row>
 					<Row type='flex' align='bottom'>
 						<Col lg={1}>
-							<Icon type='ohone' />
+							<Icon type='tablet' />
 						</Col>
 						<Col lg={20}>
 								手机号码：1234564981321
@@ -61,7 +58,7 @@ export default class AccounTinfo extends Component{
 						</Col>
 						<Col lg={20}>
 								技术服务：您尚未购买我们的技术服务，
-								<Button>点此购买</Button>
+								<span  className={styles['blue_text']}>点此购买</span>
 						</Col>
 					</Row>
 				</Col>
