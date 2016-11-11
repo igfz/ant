@@ -1,3 +1,3 @@
-import Certification from './CertifiCompany.js'
+import Certification from './Certification.js'
 
 export default Certification

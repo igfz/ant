@@ -1,18 +1,49 @@
 .r_wrap{
-	height: 500px;
+	height: 1000px;
+	color: black;
+	font-size: 14px;
+	font-family: 'FZLTHK--GBK1-0'
 }
 .money>div{
-margin: 10px 0;
+margin: 25px 0;
 }
 .money_num{
 	font-size: 40px;
+}
+.r_wrap input{
+	height: 41px;
+	margin-top: 10px;
+}
+.checked{
+		margin: 0!important;
 }
 .money_info{
 	text-align:buttom;
 	padding-top: 20px;
 	height: 30px;
-	color: black;
+	margin: 0!important;
+
 }
  i:before{
 	font-size: 18px
 }
+.choose_btn,.sub_btn{
+	height: 40px;
+	width: 101px;
+	color: white;
+	background-color: #2E8BFF;
+	border-radius: 2px;
+	margin: 10px 20px 0 0;
+}
+.blue_text{
+	color: #2E8BFF;
+}
+.sub_btn{
+	margin-top: 20px;
+	width: 141px;
+}
+.explain_pc{
+	color: #A9A9A9;
+	margin-top: 20px;
+}
+

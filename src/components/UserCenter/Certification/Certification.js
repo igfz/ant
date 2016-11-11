@@ -19,18 +19,19 @@ export default class Certification extends Component{
 				<Col className={styles['money']} lg={24}>
 					<Row className={styles['money_info']}
 						Row type='flex' align='bottom'>
-							<Col>实名认证方式</Col>						
+							<Col><span>实名认证方式</span></Col>						
 					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={20}>
+					<Row type='flex' align='bottom'  
+						className={styles['checked']}>
+						<Col lg={20} md={20} sm={20} xs={20} className={styles['checked']}>
 							<Checkbox onChange={this.onChange}>个人</Checkbox>
 							<Checkbox onChange={this.onChange}>公司</Checkbox>
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={16}>
+						<Col lg={16} md={16} sm={16} xs={16}>
 							<Row>
-								姓名
+								<span>姓名</span>
 							</Row>
 							<Row>
 								<Input placeholder="Basic usage" />
@@ -38,9 +39,9 @@ export default class Certification extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={16}>
+						<Col lg={16} md={16} sm={16} xs={16}>
 							<Row>
-								身份证
+								<span>身份证</span>
 							</Row>
 							<Row>
 								<Input placeholder="Basic usage" />
@@ -48,38 +49,42 @@ export default class Certification extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-							<Col lg={24}>
+							<Col lg={16} md={16} sm={16} xs={16}>
 								<Row>
-									手持身份证
+									<span>手持身份证</span>
 								</Row>
 								<Row>
-									<Col lg={16}>
+									<Col lg={16} md={16} sm={16} xs={16}>
 										<Input placeholder="Basic usage" />
 									</Col>
-									<Col  lg={8}>
-										<Button >
+									<Col  lg={8} md={8} sm={8} xs={8}>
+										<Button className={styles['choose_btn']}>
 									    选择文件
 									  </Button>
-								     查看实例
+								    <span className={styles['blue_text']}>
+								     	查看实例
+								    </span>
 							    </Col>
 								</Row>
 							</Col>
 						</Row>
 					
 						<Row type='flex' align='bottom'>
-							<Col lg={24}>
+							<Col lg={16} md={16} sm={16} xs={16}>
 								<Row>
 									身份证反面
 								</Row>
 								<Row>
-									<Col lg={16}>
+									<Col lg={16} md={16} sm={16} xs={16}>
 										<Input placeholder="Basic usage" />
 									 </Col>
-									 <Col  lg={8}>
-										<Button > 
+									 <Col  lg={8} md={8} sm={8} xs={8}>
+										<Button className={styles['choose_btn']} > 
 											选择文件							    
 										</Button>
-								    查看实例
+								    <span className={styles['blue_text']}>
+								    	查看实例
+								    </span>
 							    </Col>
 								</Row>
 							</Col>
@@ -87,12 +92,16 @@ export default class Certification extends Component{
 						<Row type='flex' align='bottom'>
 							<Col lg={24}>
 								<Row>
-									<Button > 
+									<Button className={styles['choose_btn']} > 
 											提交							    
 									</Button>
 								</Row>
 								<Row>
-									照片大小要求：基本都jfk怪不得jfk国内的接口功能手机打开
+									<Col className={styles['explain_pc']}>
+										<span>
+										照片大小要求：基本都jfk怪不得jfk国内的接口功能手机打开
+										</span>
+									</Col>
 								</Row>
 							</Col>
 						</Row>
