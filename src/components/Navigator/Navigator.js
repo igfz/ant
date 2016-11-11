@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import styles from './Navigator.css'
 import { Row, Col, Icon, Button,Menu, Dropdown } from 'antd'
 import {Link } from 'react-router'
-import { domUtils } from '../../utils'
+import utils from '../../utils'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -16,7 +16,7 @@ class Navigator extends Component {
 	showNavbar(){
 		let navbar = this.refs.navbar;
 		idx++;
-		(idx%2)!=0?domUtils.addClassName(navbar,styles.animate):domUtils.removeClassName(navbar,styles.animate)
+		(idx%2)!=0?utils.addClassName(navbar,styles.animate):utils.removeClassName(navbar,styles.animate)
 	}
 	loginFlag(flag){
 		if(flag){
