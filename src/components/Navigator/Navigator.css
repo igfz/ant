@@ -37,6 +37,12 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .animate{width: 100%;display: block;background: #fff;height:-webkit-calc(24px * 3);;-webkit-transition: all 0.3s;overflow:hidden;}
 .mlogin{padding-right: 10px;font-size: 14px;}
 
+.defaulthref{color: white;}
+/* .defaulthref:active{color: white;}   
+.defaulthref:visited{color: white;}   */ 
+.defaulthref:hover{color: white;}
+
+
 @media screen and (max-width: 990px) {
 	header i:before{font-size: 32px!important;}
 	.cloud+a{padding:0;}
@@ -46,5 +52,5 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 	header>.row>.servertitle{text-align: left;padding-left: 10px;}
 	header i:before{font-size: 32px!important;}
 	.cloud+a{padding:0;}
-	header>.row>.mbars{text-align: right;padding-right: 10px;}
+	header>.row>.mbars{text-align: right;}
 }

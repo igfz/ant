@@ -5,6 +5,8 @@ import { Provider } from 'react-redux' //Provider将redux数据结构与react绑
 import App from 'App'
 import Index from 'Index'
 
+import Advantage from 'Advantage'
+
 import ProductDesc from 'ProductDesc'
 import Demo from 'ProductDesc/Main/Demo'
 import Detail from 'ProductDesc/Main/Detail'
@@ -56,6 +58,7 @@ ReactDOM.render(
 		<Router history={history}>
 			<Route path="/" component={App}>
 				<IndexRoute component={Index}/>
+				<Route path="/advantage" component={Advantage}/>
 				<Route path="/product" component={ProductDesc}>
 					<IndexRoute component={Detail}/>
 					<Route path="/product/demo" component={Demo}/>
@@ -66,7 +69,7 @@ ReactDOM.render(
 					<IndexRoute component={Myapp}/>
 					<Route path="/application/seting" component={AppSet}>
 						<IndexRoute component={BaseInfo}/>
-						<Route path="/application/seting/key" component={AppKey }/>
+						<Route path="//seting/key" component={AppKey }/>
 						<Route path="/application/seting/service" component={AppService}/>
 					</Route>
 				</Route>

@@ -78,12 +78,15 @@ class Navigator extends Component {
 						</Col>
 						<Col xs={5} sm={15} md={0} lg={0}></Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
-							服务预算
+							<Link to="/product" className={styles.href}>产品与服务</Link>
+						</Col>
+						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
+							预算
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
 
 							<Menu mode="horizontal">
-									<SubMenu title={<span><Link to="/documents" className={styles.href}>文档中心</Link><Icon type="down" className={styles.down} /></span>}>
+									<SubMenu title={<span><Link to="/documents" className={styles.defaulthref}>文档中心</Link><Icon type="down" className={styles.down} /></span>}>
 					            <Menu.Item key="setting:1">彩票服务文档</Menu.Item>
 					            <Menu.Item key="setting:2">竞猜游戏文档</Menu.Item>
 					             <Menu.Item key="setting:3">数据资讯文档</Menu.Item>
@@ -103,7 +106,7 @@ class Navigator extends Component {
 			        </Menu>
 						</Col>
 
-						<Col xs={0} sm={0} md={4} lg={4}></Col>
+						<Col xs={0} sm={0} md={1} lg={1}></Col>
 						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
 							{this.loginFlag(true)}		
 						</Col>
@@ -115,7 +118,9 @@ class Navigator extends Component {
 							</Button>
 						</Col>
 						<Col xs={8} sm={4} md={0} lg={0} className={ styles.mbars }>
-								<span className={ styles.mlogin }>登录</span>|
+								<span className={ styles.mlogin }>
+									<Link to="/login" className={styles.defaulthref}>登录</Link>
+								</span>|
 								<Icon type="bars" className={styles.bars} 
 									onClick={()=>this.showNavbar()}/>
 						</Col>
