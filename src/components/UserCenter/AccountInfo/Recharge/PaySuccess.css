@@ -1,16 +1,17 @@
 .r_wrap{
-	height: 500px;
+	height: 760px;
 	text-align: center;
+	color: black;
 }
-.pay_s{
+.pay_suc{
 	font-size: 30px;
-	line-height: 90px;
-	height: 90px;
+	line-height: 120px;
+	height: 120px;
 	color: black;
 
 }
 .r_wrap>div>div{
-	height: 25px;
+	height: 28px;
 	color: #636363;
 }
 .btn_re{
@@ -19,7 +20,7 @@
 	background-color: #2E8BFF;
 	border-radius: 2px;
 	color: white;
-	margin-top: 60px;
+	margin-top: 100px;
 }
 
 .btn_col{

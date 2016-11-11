@@ -9,14 +9,14 @@
 	color: black;
 	font-size: 14px;
 }
-.pay_suc{
+.pay{
 	font-size: 30px;
-	line-height: 90px;
-	height: 90px;
+	line-height: 120px;
+	height: 120px;
 }
 .pay_input{
 	height: 32px;
-	margin-top: 36px;
+	margin-top: 18px;
 }
 .pay_input input,.pay_input div{
 	height: 41px;
@@ -30,7 +30,7 @@
 	background-color: #2E8BFF;
 	border-radius: 2px;
 	color: white;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 .btn_col{
@@ -50,7 +50,7 @@
 }
 .bank_info{
 	text-align: left;
-	margin-top: 100px;
+	margin: 100px 0 20px 0;
 	padding: 21px;
 	color: #999999;
 	font-size: 12px;

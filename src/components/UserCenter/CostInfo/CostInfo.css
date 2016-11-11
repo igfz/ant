@@ -9,6 +9,7 @@ margin: 10px 0;
 	height: 32px;
 	width: 150px;
 	border-radius: 2px;
+
 }
 .money_info{
 	text-align:buttom;
@@ -16,6 +17,7 @@ margin: 10px 0;
 	height: 30px;
 	font-size: 20px;
 	color: #333333;
+	margin-bottom: 28px;
 }
 .btn{
 	width: 141px;

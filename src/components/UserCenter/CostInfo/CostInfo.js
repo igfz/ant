@@ -58,7 +58,7 @@ export default class CostInfo extends Component{
 					<Row type='flex' align='bottom'>
 							<Col lg={16} md={16} sm={16} xs={16}
 								className={styles['money_info']}>
-									<span className={styles['font_t']}>账户余额：12,888.00</span>
+									<span >账户余额：12,888.00</span>
 							</Col>	
 							<Col lg={4} md={4} sm={4} xs={4}>
 								<DatePicker 
