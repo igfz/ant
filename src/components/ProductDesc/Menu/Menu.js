@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import styles from './Menu.css'
 import { Icon,Row,Col,Button } from 'antd'
 import {browserHistory} from 'react-router'
-import { domUtils } from '../../../Utils/utils'
+import { domUtils } from '../../../utils'
 import {Link } from 'react-router'
 
 let data=[
@@ -17,12 +17,10 @@ export default class Menu extends Component {
 		data.map(
 			(items,index) => {
 				if(window.location.hash.indexOf(items.route)!=-1){
-					this.actRoute(this.refs["rt"+index],index,"render")
+					this.actRoute(this.refs["rt"+index],index,"flush")
 				}
 			}
 	  )
-
-	 
 	}
 
 	constructor(props) {
@@ -39,7 +37,7 @@ export default class Menu extends Component {
 	}
 
 	actRoute(e,i,r){
-		if(r=="render"){
+		if(r=="flush"){
 			let eSib=domUtils.siblings(e.parentNode)
 			for(let x in eSib){
 				domUtils.removeClassName(eSib[x].childNodes[0],styles.active)

@@ -2,9 +2,12 @@ import React, { Component, PropTypes } from 'react'
 import styles from './AppKey.css'
 import { Icon,Row,Col,Button,Input } from 'antd'
 import {Link } from 'react-router'
+import CopyToClipboard from 'react-copy-to-clipboard';
 
 export default class AppKey extends Component {
-
+	getInitialState() {
+    return {value: '', copied: false};
+  }
 	render() {
 		return (
 			<div>
@@ -13,6 +16,18 @@ export default class AppKey extends Component {
 					<p>APP ID</p>
 					<Row type="flex" justify="space-between">
 						<Col xs={24} sm={24} md={17} lg={17}>
+							<input value={this.state.value}
+          onChange={({target: {value}}) => this.setState({value, copied: false})} />
+
+          <CopyToClipboard text={this.state.value}
+          onCopy={() => this.setState({copied: true})}>
+          <span>Copy to clipboard with span</span>
+        </CopyToClipboard>
+
+
+        {this.state.copied ? <span style={{color: 'red'}}>Copied.</span> : null}
+
+        
 							<Input defaultValue="48HGHKDBE28HJ28HH2FFB-GT33" readOnly/>
 						</Col>
 						<Col xs={24} sm={24} md={3} lg={3}><Button type="ghost">复制</Button></Col>

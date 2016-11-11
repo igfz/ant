@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react'
 import styles from './Navigator.css'
 import { Row, Col, Icon, Button,Menu, Dropdown } from 'antd'
 import {Link } from 'react-router'
-import { domUtils } from '../../utils/utils'
+import { domUtils } from '../../utils'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
