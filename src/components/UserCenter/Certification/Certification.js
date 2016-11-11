@@ -13,23 +13,14 @@ export default class Certification extends Component{
 	onChange(e){
 		console.log(`checked = ${e.target.checked}`);
 	}
+
 	render(){
 		return(
 			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']} lg={24}>
-					<Row className={styles['money_info']}
-						Row type='flex' align='bottom'>
-							<Col><span>实名认证方式</span></Col>						
-					</Row>
-					<Row type='flex' align='bottom'  
-						className={styles['checked']}>
-						<Col lg={20} md={20} sm={20} xs={20} className={styles['checked']}>
-							<Checkbox onChange={this.onChange}>个人</Checkbox>
-							<Checkbox onChange={this.onChange}>公司</Checkbox>
-						</Col>
-					</Row>
+				<Col className={styles['money']} 
+					lg={20} md={20} sm={20} xs={20}>
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>姓名</span>
 							</Row>
@@ -39,7 +30,7 @@ export default class Certification extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>身份证</span>
 							</Row>
@@ -54,10 +45,10 @@ export default class Certification extends Component{
 									<span>手持身份证</span>
 								</Row>
 								<Row>
-									<Col lg={16} md={16} sm={16} xs={16}>
+									<Col lg={13} md={13} sm={13} xs={13}>
 										<Input placeholder="Basic usage" />
 									</Col>
-									<Col  lg={8} md={8} sm={8} xs={8}>
+									<Col  lg={11} md={11} sm={11} xs={11}>
 										<Button className={styles['choose_btn']}>
 									    选择文件
 									  </Button>
@@ -75,10 +66,10 @@ export default class Certification extends Component{
 									身份证反面
 								</Row>
 								<Row>
-									<Col lg={16} md={16} sm={16} xs={16}>
+									<Col lg={13} md={13} sm={13} xs={13}>
 										<Input placeholder="Basic usage" />
 									 </Col>
-									 <Col  lg={8} md={8} sm={8} xs={8}>
+									 <Col  lg={11} md={11} sm={11} xs={11}>
 										<Button className={styles['choose_btn']} > 
 											选择文件							    
 										</Button>
@@ -90,7 +81,7 @@ export default class Certification extends Component{
 							</Col>
 						</Row>
 						<Row type='flex' align='bottom'>
-							<Col lg={24}>
+							<Col lg={24} md={24} sm={24} xs={24}>
 								<Row>
 									<Button className={styles['choose_btn']} > 
 											提交							    

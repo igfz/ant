@@ -17,19 +17,10 @@ export default class CertifiCompany extends Component{
 		return(
 			<Row className={styles['r_wrap']}>
 				<Col className={styles['money']} 
-				lg={24} md={24} sm={24} xs={24}>
-					<Row className={styles['money_info']}
-						Row type='flex' align='bottom'>
-							<Col>实名认证方式</Col>						
-					</Row>
+				lg={20} md={20} sm={20} xs={20}>
+
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
-							<Checkbox onChange={this.onChange}>个人</Checkbox>
-							<Checkbox onChange={this.onChange}>公司</Checkbox>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>公司名称</span>
 							</Row>
@@ -39,7 +30,7 @@ export default class CertifiCompany extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>营业执照注册号</span>
 							</Row>
@@ -50,7 +41,7 @@ export default class CertifiCompany extends Component{
 					</Row>
 				
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>营业执照扫描件</span>
 							</Row>
@@ -60,7 +51,7 @@ export default class CertifiCompany extends Component{
 						</Col>
 					</Row>
 					<Row type='flex' align='bottom'>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={12} md={12} sm={12} xs={12}>
 							<Row>
 								<span>法人姓名</span>
 							</Row>
@@ -75,10 +66,10 @@ export default class CertifiCompany extends Component{
 									<span>法人身份证扫描（正面</span>
 								</Row>
 								<Row>
-									<Col lg={16} md={16} sm={16} xs={16}>
+									<Col lg={13} md={13} sm={13} xs={13}>
 										<Input placeholder="Basic usage" />
 									</Col>
-									<Col  lg={8} md={8} sm={8} xs={8}>
+									<Col  lg={10} md={10} sm={10} xs={10}>
 										<Button className={styles['choose_btn']}>
 									    选择文件
 									  </Button>
@@ -96,10 +87,10 @@ export default class CertifiCompany extends Component{
 									<span>法人身份证扫描（反面）</span>
 								</Row>
 								<Row>
-									<Col lg={16} md={16} sm={16} xs={16}>
+									<Col lg={13} md={13} sm={13} xs={13}>
 										<Input placeholder="Basic usage" />
 									 </Col>
-									 <Col  lg={8} md={8} sm={8} xs={8}>
+									 <Col  lg={11} md={11} sm={11} xs={11}>
 										<Button className={styles['choose_btn']} > 
 											选择文件							    
 										</Button>

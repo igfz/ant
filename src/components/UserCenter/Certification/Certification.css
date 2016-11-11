@@ -15,7 +15,7 @@ margin: 25px 0;
 	margin-top: 10px;
 }
 .checked{
-		margin: 0!important;
+		margin: 20px 0 5px 0!important;
 }
 .money_info{
 	text-align:buttom;
@@ -46,4 +46,9 @@ margin: 25px 0;
 	color: #A9A9A9;
 	margin-top: 20px;
 }
-
+.show_flag{
+	display: block;
+}
+.hidden_flag{
+	display: none;
+}
