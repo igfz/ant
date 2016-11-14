@@ -111,9 +111,9 @@ export default class ResetForm extends Component {
   render() {
     return (
       <Row className={styles.wrap}>
-				<Col span={8}></Col>
-        <Col span={8} className={styles.main}><ResetFormClass /></Col>
-        <Col span={8}></Col>
+				<Col className={styles.surplus} xs={{ span: 6 }} sm={{ span: 8 }} md={{ span: 9 }} lg={{ span: 9 }}></Col>
+        <Col xs={{ span: 10 }} sm={{ span: 8 }} md={{ span: 6 }} lg={{ span: 6 }} className={styles.main} ><ResetFormClass /></Col>
+        <Col  className={styles.surplus} xs={{ span: 6 }} sm={{ span: 8 }} md={{ span: 9 }} lg={{ span: 9 }}></Col>
       </Row>
 		)
 	}

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
-import styles from './Doc.css'
 import { Icon,Row,Col,Button } from 'antd'
 import {Link } from 'react-router'
+import styles from './Doc.css'
 
 export default class Doc extends Component {
 
@@ -14,9 +14,12 @@ export default class Doc extends Component {
 				router can use to match routes and render the correct set of components
 				</dd>
 				<dt>简介</dt>
-				<dd>fdsafdsafasd</dd>
-				<dt>231312</dt>
-				<dd>fdsafdsafasd</dd>
+				<dd>
+					fdsafdsafasd
+					<p className={styles.href}>竞彩软件接口文档<Icon type="right" /> </p>
+				</dd>
+				<dt>安装</dt>
+				<dd>运行环境</dd>
 				<dt>231312</dt>
 				<dd>fdsafdsafasd</dd>
 				<dt>231312</dt>

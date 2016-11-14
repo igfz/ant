@@ -6,17 +6,86 @@ import utils from '../../utils'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-let idx=0;
-		
 function handleClick(e) {
   console.log('click', e);
 }
 
+const Sider = React.createClass({
+  getInitialState() {
+    return {
+      current: '1',
+      openKeys: [],
+    };
+  },
+  handleClick(e) {
+    console.log('Clicked: ', e);
+    this.setState({ current: e.key });
+  },
+  onOpenChange(openKeys) {
+    const state = this.state;
+    const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));
+    const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));
+
+    let nextOpenKeys = [];
+    if (latestOpenKey) {
+      nextOpenKeys = this.getAncestorKeys(latestOpenKey).concat(latestOpenKey);
+    }
+    if (latestCloseKey) {
+      nextOpenKeys = this.getAncestorKeys(latestCloseKey);
+    }
+    this.setState({ openKeys: nextOpenKeys });
+  },
+  getAncestorKeys(key) {
+    const map = {
+      sub2: ['sub1'],
+    };
+    return map[key] || [];
+  },
+  render() {
+    return (
+      <Menu
+        mode="inline"
+        openKeys={this.state.openKeys}
+        selectedKeys={[this.state.current]}
+        style={{ width: 240 }}
+        onOpenChange={this.onOpenChange}
+        onClick={this.handleClick}
+      >
+        <SubMenu key="sub1" title={<span><Icon type="mail" /><span>产品与服务</span></span>}>
+          <Menu.Item key="1">彩票服务</Menu.Item>
+          <Menu.Item key="2">竞猜游戏</Menu.Item>
+          <SubMenu key="sub2" title="数据资讯">
+          	<Menu.Item key="3">盘口赔率</Menu.Item>
+            <Menu.Item key="4">战绩交锋</Menu.Item>
+            <Menu.Item key="5">赛事排行</Menu.Item>
+          </SubMenu>
+        </SubMenu>
+        <SubMenu key="sub3" title={<span><Icon type="appstore" /><span>预算</span></span>}>
+          <Menu.Item key="6">Option 5</Menu.Item>
+          <Menu.Item key="7">Option 6</Menu.Item>
+          <Menu.Item key="8">Option 6</Menu.Item>
+        </SubMenu>
+        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>文档中心</span></span>}>
+          <Menu.Item key="9">Option 9</Menu.Item>
+          <Menu.Item key="10">Option 10</Menu.Item>
+          <Menu.Item key="11">Option 11</Menu.Item>
+          <Menu.Item key="12">Option 12</Menu.Item>
+        </SubMenu>
+        <SubMenu key="sub5" title={<span><Icon type="setting" /><span>技术支持</span></span>}>
+          <Menu.Item key="13">Option 9</Menu.Item>
+          <Menu.Item key="14">Option 10</Menu.Item>
+          <Menu.Item key="15">Option 11</Menu.Item>
+          <Menu.Item key="16">Option 12</Menu.Item>
+        </SubMenu>
+      </Menu>
+    );
+  },
+});
+
 class Navigator extends Component {
 	showNavbar(){
 		let navbar = this.refs.navbar;
-		idx++;
-		(idx%2)!=0?utils.addClassName(navbar,styles.animate):utils.removeClassName(navbar,styles.animate)
+		utils.myToggleClass(navbar,styles.dn)
 	}
 	loginFlag(flag){
 		if(flag){
@@ -69,7 +138,7 @@ class Navigator extends Component {
 	render() {
 
 		return (
-			<div>
+			<div style={{ width:"100%",height:"100%" }}>
 				<header>
 					<Row type="flex" className={styles.row}>
 						<Col xs={11} sm={5} md={5} lg={5} className={ styles.servertitle }>
@@ -125,16 +194,13 @@ class Navigator extends Component {
 									onClick={()=>this.showNavbar()}/>
 						</Col>
 					</Row>
-					<Row>
-						<Col xs={24} sm={24} md={24} lg={24}>
-							<div ref='navbar' className={styles.unanimate}>
-								<p key="0"><a href="#">服务预算</a></p>
-								<p key="1"><a href="#">文档中心</a></p>
-								<p key="2"><a href="#">技术支持</a></p>
-							</div>
-						</Col>
-					</Row>
 				</header>
+				
+				<div ref="navbar" className={styles.mnavbar+' '+styles.dn}>
+					<Sider/>
+					<Button type="ghost" className={styles.regBtn}>免费试用</Button>
+				</div>
+
 			</div>
 		)
 	}
