@@ -28,14 +28,14 @@ const ResetFormClass =Form.create()(React.createClass({
     return (
       <div>
         <h1>重置密码</h1>
-        <div>
+        <div className={styles.stepswp}>
           <Steps current={current} className={styles.steps}>
             {steps.map((s, i) => (
                 <Step key={i} title={s.title} description={s.description} />
             ))}
           </Steps>
         </div>
-        <Form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit} className={styles.form} style={{ marginTop:"30px" }}>
           <div className={(current==0?"":styles.dn)}>
             <FormItem label="手机">
               {getFieldDecorator('userName', {
@@ -48,8 +48,8 @@ const ResetFormClass =Form.create()(React.createClass({
               <span>
                 验证码&nbsp;
                 <i className={styles.iscode}>000</i>
-                <Tooltip title="What do you want other to call you?">
-                  <Icon type="reload" spin="true"/>
+                <Tooltip title="看不清楚，换一张?">
+                  <Icon style={{ width:"18px"}} type="reload" spin="true"/>
                 </Tooltip>
               </span>
             )}>

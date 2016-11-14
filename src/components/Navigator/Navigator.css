@@ -35,10 +35,11 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .dn{display: none}
 .actbar{width: 100%;height:600px;background: red;display: block;}
 .mlogin{padding-right: 10px;font-size: 14px;}
-.mnavbar{position: absolute;left: 0;top: 80px;width: 100%;height: calc(100% - 80px);z-index: 2;background: #282E39;overflow: auto;}
+.mnavbar{left: 0;top: 80px;width: 100%;height: calc(100% - 80px);z-index: 2;background: #282E39;}
 .mnavbar li[class*="ant-menu-item"],.mnavbar li>div[class*="ant-menu-submenu-title"]{height: 60px!important;line-height: 60px!important;font-size: 16px!important;}
 .mnavbar div::after{font-size: 16px!important;}
-.mnavbar>ul{background: #282E39;color:#fff;width: 100%!important;;border: none; }
+
+.mnavbar>ul{background: #282E39;color:#fff;width: 100%!important;border: none;margin:0 auto; }
 .mnavbar>ul>li>div{background: #282E39}
 .mnavbar>ul>li>div:hover{background: #282E39}
 .mnavbar>ul div+ul>li{background-color: #393e49;color: #fff;}
@@ -47,13 +48,16 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .mnavbar li>div+ul div:hover{background: #393e49}
 .mnavbar li>div+ul div+ul li{background: #4b5059}
 .mnavbar li>div+ul div+ul li:hover{background: #4b5059}
-.regBtn{width:90%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;}
+.regBtn{width: 40%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;}
 
 .defaulthref{color: white;}
 /* .defaulthref:active{color: white;}   
 .defaulthref:visited{color: white;}   */ 
 .defaulthref:hover{color: white;}
 
+@media screen and (min-width: 990px) {
+	.mnavbar{display: none}
+}
 
 @media screen and (max-width: 990px) {
 	header i:before{font-size: 32px!important;}
@@ -66,3 +70,10 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 	.cloud+a{padding:0;}
 	header>.row>.mbars{text-align: right;}
 }
+
+@media screen and (max-width: 414px) {
+	.mnavbar>ul{width: 100%!important;}
+	.regBtn{width:90%;}
+	.mnavbar{position: absolute;overflow: auto;}
+}
+
