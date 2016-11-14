@@ -8,9 +8,7 @@ export default class Success extends Component {
 
 	render() {
 		return (
-			<Row className={styles.wrap}>
-				<Col span={8}></Col>
-				<Col span={8} className={styles.main}>
+				<div className={styles.wrap}>
           <h1>注册成功</h1>
           <ul className={styles.info}>
             <li>用户名：发的萨芬撒</li>
@@ -22,9 +20,7 @@ export default class Success extends Component {
             <Col span={8} className={styles.tc}><Button type="ghost">发送短信</Button></Col>
             <Col span={8} className={styles.tc}><Button type="ghost">发送短信</Button></Col>
           </Row>
-        </Col>
-				<Col span={8}></Col>
-			</Row>
+        </div>
 		)
 	}
 }

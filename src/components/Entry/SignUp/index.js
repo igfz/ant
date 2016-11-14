@@ -72,7 +72,8 @@ const NormalLoginForm = Form.create()(React.createClass({
         <FormItem>
         	<p>
             {getFieldDecorator('agreement', {
-              valuePropName: 'checked',
+              initialValue: true,
+              valuePropName: 'checked'
             })(
               <Checkbox>我同意并遵守网站<a>使用条款</a>及<a>隐私政策</a></Checkbox>
             )}
@@ -90,11 +91,9 @@ export default class SignUp extends Component {
 
 	render() {
 		return (
-			<Row className={styles.wrap}>
-				<Col span={8}></Col>
-				<Col span={8} className={styles.main}><NormalLoginForm /></Col>
-				<Col span={8}></Col>
-			</Row>
+			<div className={styles.wrap}>
+        <NormalLoginForm />
+			</div>
 		)
 	}
 }

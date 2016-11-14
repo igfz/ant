@@ -1,7 +1,10 @@
-.wrap{margin:40px auto;max-width:1200px;min-height:500px;}
+.wrap{margin:40px auto;width:400px;min-height:500px;}
 h1{margin-bottom: 30px;text-align: center;font-weight: 200;}
-.main{margin:10px 0 10px;}
 .info{border:1px solid #333;border-left:none;border-right:none;padding:20px 0;margin:30px 0;}
 .info li{line-height:30px;font-size:14px;}
 .bottom button{width:110px;height:40px;border-color:currentColor;color:blue;}
 .tc{text-align:center;}
+
+@media screen and (max-width: 768px) {
+  .wrap{padding:20px 25px;min-height:400px;}
+}

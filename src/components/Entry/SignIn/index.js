@@ -49,13 +49,16 @@ export default class SignIn extends Component {
 	render() {
 		return (
 			<Row className={styles.wrap}>
-				<Col span={2}></Col>
-				<Col span={9} className={styles.left}></Col>
-				<Col span={5}></Col>
-				<Col span={6} className={styles.main}>
+				<Col span={2} className={styles.dn}></Col>
+				<Col span={9} className={styles.left+' '+styles.dn}></Col>
+				<Col span={5} className={styles.dn}></Col>
+				<Col span={6} className={styles.main+' '+styles.dn}>
 					<NormalLoginForm />
 				</Col>
-				<Col span={2}></Col>
+				<Col span={2} className={styles.dn}></Col>
+        <Col span={24} className={styles.main+' '+styles.h5}>
+          <NormalLoginForm/>
+        </Col>
 			</Row>
 		)
 	}
