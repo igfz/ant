@@ -6,7 +6,6 @@ import {Link } from 'react-router'
 export default class MenuLeft extends Component {
   render() {
     let id = this.props.idx
-console.log( this.props.idx)
     return (
       <ul className={styles.menu}>
         <Link to="/usercenter/accountinfo">

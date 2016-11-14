@@ -26,10 +26,11 @@ export default function UserCenter({ children }){
 				<Banner/>
 					<div>
 					<Row>
-						<Col lg={4} md={4} sm={4} xs={4}>
+					<Col lg={4} md={4} sm={4} xs={4}></Col>
+						<Col lg={3} md={3} sm={3} xs={3}>
 			       	<MenuLeft />
 			       </Col>
-			      <Col lg={16} md={16} sm={16} xs={16}>	
+			      <Col className={styles['center-height']} lg={16} md={16} sm={16} xs={16}>	
 			      	<CenterTitle titleStr={'用户信息'} />
 			      	{children}
 			      </Col>
