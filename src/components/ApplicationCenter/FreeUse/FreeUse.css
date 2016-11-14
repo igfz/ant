@@ -51,7 +51,7 @@
     color: #CCCCCC;
     font-size: 16px;
   }
-  input::-webkit-input-placeholder {
+ .wrap_content input::-webkit-input-placeholder {
  	 color: black !important;  
 	}
 }
@@ -100,7 +100,7 @@
     color: #CCCCCC;
     font-size: 16px;
   }
-  input::-webkit-input-placeholder {
+ .wrap_content input::-webkit-input-placeholder {
  	 color: black !important;  
 	}
 }

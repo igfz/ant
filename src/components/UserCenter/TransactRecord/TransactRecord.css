@@ -16,14 +16,18 @@
 	height: 30px;
 	color: black;
 }
- i:before{
+ .money_info i:before{
 	font-size: 18px
 }
 .btn{
-	width: 141px;
+	width: 124px;
 	height: 41px;
 	background-color: #2E8BFF;
 	font-size: 16px;
 	color: #FFFFFF;
 
 }
+.footer{
+	margin-top: 60px;
+}
+

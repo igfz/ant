@@ -15,11 +15,11 @@
 
 }
 .money_info{
-	padding-top: 20px!important;
-	margin-bottom: 63px;
+	padding-top: 63px!important;
+	margin-bottom: 63px!important;
 	height: 100px!important;
 }
- i:before{
+.money i:before{
 	font-size: 18px;
 	padding-right: 14px;
 }
@@ -29,8 +29,16 @@
 	color: #2E8BFF;
 	font-size: 16px;
 	border-color: #57c5f7;
+
 }
 .blue_text{
 	color:#2E8BFF;
 	padding: 0 9px 0 9px;
+}
+.accunt span{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.accunt-money{
+	line-height: 17px;
 }

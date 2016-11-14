@@ -81,13 +81,13 @@ export default class TransactRecord extends Component{
 							<Table  columns={columns} dataSource={data}   
 									pagination={false}/>
 						</Col>
-						<Col lg={20} md={20} sm={20} xs={20}>
-							<Row>
-								<Col lg={21}>
+						<Col lg={20} md={20} sm={20} xs={20} className={styles['footer']}>
+							<Row >
+								<Col lg={20} md={20} sm={20} xs={20}>
 									<Pagination showQuickJumper 
 										defaultCurrent={2} total={3}/>
 								</Col>
-								<Col lg={3} md={3} sm={3} xs={3}>
+								<Col lg={4} md={4} sm={4} xs={4}>
 									<Button className={styles['btn']}>继续服务</Button>
 								</Col>
 							</Row>

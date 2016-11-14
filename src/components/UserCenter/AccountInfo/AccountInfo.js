@@ -16,8 +16,9 @@ export default class AccounTinfo extends Component{
 				<Col className={styles['money']}>
 					<Row type='flex' align='bottom' className={styles['money_info']}>
 						<Row type='flex' align='bottom' >
-							<Col lg={24} md={24} sm={24} xs={24}>
-								账户余额 
+							<Col lg={24} md={24} sm={24} xs={24} 
+								className={styles['accunt']}>
+								<span className={styles['accunt-money']}>账户余额 </span>
 								<span className={styles['money_num']}>
 								 	2,000.00元
 								</span>					
