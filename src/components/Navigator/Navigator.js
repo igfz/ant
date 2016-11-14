@@ -92,9 +92,7 @@ class Navigator extends Component {
 		for(let i=0;i<Oas.length;i++){
 			 Oas[i].addEventListener("click", function(){
 			 	utils.addClassName(navbar,styles.dn)
-			 	if(navbar.className.indexOf("dn")==-1){
-					utils.removeClassName(body,styles.pf)
-				}
+				utils.removeClassName(body,styles.pf)
 			 });
 		}
 	}
