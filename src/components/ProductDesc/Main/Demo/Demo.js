@@ -15,7 +15,7 @@ export default class Demo extends Component {
 						</iframe>
 					</div>
 					<Row type="flex" justify="space-between">
-						<Col span={23} className={styles.item}>
+						<Col xs={23} sm={23} md={11} lg={11} className={styles.item}>
 							<Row>
 								<Col span={8} className={styles.iconI}>
 									<Icon type="apple-o" />
@@ -33,7 +33,7 @@ export default class Demo extends Component {
 								</Col>
 							</Row>
 						</Col>
-						<Col span={23} className={styles.item}>
+						<Col xs={23} sm={23} md={11} lg={11} className={styles.item}>
 							<Row>
 								<Col span={8} className={styles.iconA}>
 									<Icon type="android" />
