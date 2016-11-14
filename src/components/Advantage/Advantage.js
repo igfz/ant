@@ -18,7 +18,7 @@ export default class Advantage extends Component {
 		obj[1] = document.getElementById('anim2');
 		obj[2] = document.getElementById('anim3');
 		for (var i in obj){
-			if (document.body.scrollTop > (obj[i].offsetTop - innerHeight+240)) {
+			if (obj[i] && document.body.scrollTop > (obj[i].offsetTop - innerHeight+240)) {
 				obj[i].className = styles.cont+"  "+styles.animFadeIn;
 			}
     }
