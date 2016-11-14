@@ -35,7 +35,9 @@ export default class Biz extends Component {
           <Col span={2}>
           </Col>
           <Col span={11}>
-          	<Button size="large" type="ghost">Demo</Button>
+          	<Button size="large" type="ghost">
+          		<Link to="/product/demo">Demo</Link>
+          	</Button>
           </Col>
         </Row>
 
@@ -50,7 +52,9 @@ export default class Biz extends Component {
             	</Button>
             </Col>
             <Col span={12}>
-            	<Button type="primary">Demo</Button>
+            	<Button type="primary">
+            		<Link to="/product/demo">Demo</Link>
+            	</Button>
             </Col>
           </Row>
         </div>
