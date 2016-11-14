@@ -11,6 +11,7 @@ function handleClick(e) {
 }
 
 const Sider = React.createClass({
+
   getInitialState() {
     return {
       current: '1',
@@ -83,10 +84,32 @@ const Sider = React.createClass({
 });
 
 class Navigator extends Component {
+	componentDidMount(){
+		//移动端路由关闭导航
+		let navbar = this.refs.navbar;
+		let body=document.getElementsByTagName("body")[0]
+		let Oas=document.getElementsByTagName("a")
+		for(let i=0;i<Oas.length;i++){
+			 Oas[i].addEventListener("click", function(){
+			 	utils.addClassName(navbar,styles.dn)
+			 	if(navbar.className.indexOf("dn")==-1){
+					utils.removeClassName(body,styles.pf)
+				}
+			 });
+		}
+	}
+
 	showNavbar(){
 		let navbar = this.refs.navbar;
 		utils.myToggleClass(navbar,styles.dn)
+		let body=document.getElementsByTagName("body")[0]
+		if(navbar.className.indexOf("dn")!=-1){
+			utils.removeClassName(body,styles.pf)
+		}else{
+			utils.addClassName(body,styles.pf)
+		}
 	}
+
 	loginFlag(flag){
 		if(flag){
 			return(
