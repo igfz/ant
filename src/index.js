@@ -35,6 +35,7 @@ import Certification from 'components/UserCenter/Certification'
 import CostInfo from  'components/UserCenter/CostInfo'
 import TransactRecord from 'components/UserCenter/TransactRecord'
 import {PaySuccess,Recharge} from 'components/UserCenter/AccountInfo/Recharge'
+import FreeUse from 'components/ApplicationCenter/FreeUse'
 import configureStore from './store/configureStore'
 
 import {
@@ -71,6 +72,8 @@ ReactDOM.render(
 						<IndexRoute component={BaseInfo}/>
 						<Route path="//seting/key" component={AppKey }/>
 						<Route path="/application/seting/service" component={AppService}/>
+					</Route>
+					<Route path="/application/freeuse" component={FreeUse }>
 					</Route>
 				</Route>
 				<Route path="/login" component={SignIn}/>

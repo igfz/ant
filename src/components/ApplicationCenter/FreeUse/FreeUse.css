@@ -1,0 +1,46 @@
+.wrap_content{
+	height: 1330px;
+	font-family: 'FZLTHK--GBK1-0';
+	line-height: 28px;
+	font-size: 16px;
+	color: #333333;
+}
+
+.th{
+	font-size: 26px;
+	margin-bottom: 50px;
+	color: #999999;
+}
+.mb50>div{
+	margin-bottom:50px;
+}
+.mb50>div input{
+	height: 52px;
+}
+.btn{
+	width: 150px;
+	height: 50px;
+	color: #FFFFFF;
+	font-size: 20px;
+	background-color: #2E8BFF;
+	border-radius: 4px;
+}
+.app_name{
+	position: relative;
+}
+.create_time{
+		z-index: 99;
+    position: absolute;
+    width: 177px;
+    top: 0px;
+    line-height: 52px;
+    height: 52px;
+    right: 0px;
+    color: #CCCCCC;
+    font-size: 16px;
+  }
+  input::-webkit-input-placeholder {
+ 	 color: black !important;  
+	 font-size: .2rem; 
+	 text-align: .7rem!important ;
+}
