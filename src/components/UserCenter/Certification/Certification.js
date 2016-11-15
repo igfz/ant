@@ -6,14 +6,13 @@ import React,{ Component, PropTypes } from 'react'
 import { Col, Row, Button, Icon, Checkbox, Input   } from 'antd'
 import *as styles from './Certification.css'
 
-export default class Certification extends Component{
+export default class CertifiCompany extends Component{
 	constructor(props){
 		super(props);
 	}
 	onChange(e){
 		console.log(`checked = ${e.target.checked}`);
 	}
-
 	render(){
 		return(
 			<div className={styles['wrap_input']}>

@@ -6,119 +6,105 @@ import React,{ Component, PropTypes } from 'react'
 import { Col, Row, Button, Icon, Checkbox, Input   } from 'antd'
 import *as styles from './Certification.css'
 
-export default class CertifiCompany extends Component{
+export default class Certification extends Component{
 	constructor(props){
 		super(props);
 	}
 	onChange(e){
 		console.log(`checked = ${e.target.checked}`);
 	}
+
 	render(){
 		return(
-			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']} 
-				lg={20} md={20} sm={20} xs={20}>
-
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>公司名称</span>
-							</Row>
-							<Row>
+			<div className={styles['wrap_input']}>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						公司名称
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						营业执照注册号
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						营业执照扫描
+						<span className={styles['link_mob']}>查看示例</span>
+						<Row>
+							<Col lg={18} md={18} sm={18} xs={18}>
 								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>营业执照注册号</span>
-							</Row>
-							<Row>
-								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-				
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>营业执照扫描件</span>
-							</Row>
-							<Row>
-								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>法人姓名</span>
-							</Row>
-							<Row>
-								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}>
-								<Row>
-									<span>法人身份证扫描（正面</span>
-								</Row>
-								<Row>
-									<Col lg={13} md={13} sm={13} xs={13}>
-										<Input placeholder="Basic usage" />
-									</Col>
-									<Col  lg={10} md={10} sm={10} xs={10}>
-										<Button className={styles['choose_btn']}>
-									    选择文件
-									  </Button>
-								     <span className={styles['blue_text']}>
-								    	 查看实例
-								     </span>
-							    </Col>
-								</Row>
+							</Col>
+							<Col lg={6} md={6} sm={6} xs={6}>
+								<Button className={styles['choose_btn']}>选择文件</Button>
 							</Col>
 						</Row>
-						
-						<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}>
-								<Row>
-									<span>法人身份证扫描（反面）</span>
-								</Row>
-								<Row>
-									<Col lg={13} md={13} sm={13} xs={13}>
-										<Input placeholder="Basic usage" />
-									 </Col>
-									 <Col  lg={11} md={11} sm={11} xs={11}>
-										<Button className={styles['choose_btn']} > 
-											选择文件							    
-										</Button>
-								    <span className={styles['blue_text']}>
-								    	查看实例
-								    </span>
-							    </Col>
-								</Row>
+					</Col>
+					<Col lg={10} md={10} sm={0} xs={0}>
+						<span className={styles['link_sp']}>查看示例</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						法人姓名
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						法人身份证号
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+					<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						法人身份证照片扫描(正面)
+						<span className={styles['link_mob']}>查看示例</span>
+						<Row>
+							<Col lg={18} md={18} sm={18} xs={18}>
+								<Input placeholder="Basic usage" />
+							</Col>
+							<Col lg={6} md={6} sm={6} xs={6}>
+								<Button className={styles['choose_btn']}>选择文件</Button>
 							</Col>
 						</Row>
-						<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}>
-								<Row>
-									<Button className={styles['sub_btn']} > 
-											提交							    
-									</Button>
-								</Row>
-								<Row className={styles['explain_pc']}>
-									<Col>
-										<span >
-											照片大小要求：基本都jfk怪不得jfk国内的接口功能手机打开
-										</span>
-									</Col>
-								</Row>
+					</Col>
+					<Col lg={10} md={10} sm={0} xs={0}>
+						<span className={styles['link_sp']}>查看示例</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						法人身份证照片扫描（反面）
+						<span className={styles['link_mob']}>查看示例</span>
+						<Row>
+							<Col lg={18} md={18} sm={18} xs={18}>
+								<Input placeholder="Basic usage" />
+							</Col>
+							<Col lg={6} md={6} sm={6} xs={6}>
+								<Button className={styles['choose_btn']}>选择文件</Button>
 							</Col>
 						</Row>
-				</Col>
-			</Row>
+					</Col>
+					<Col lg={10} md={10} sm={0} xs={0}>
+						<span className={styles['link_sp']}>查看示例</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={3} md={3} sm={24} xs={24}>
+						<Button className={styles['btn_sub']}>提交</Button>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={24} md={24} sm={24} xs={24}>
+						<span className={styles['pic']}>
+							照片要求：文件大小不错过300k，支持格式JPEG/JPG/PNG,身份证清晰可见
+						</span>
+					</Col>
+				</Row>
+			</div>
 			)
 	}
 }
