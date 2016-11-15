@@ -3,6 +3,7 @@ import { Col, Row, Button, Icon, Checkbox, Input   } from 'antd'
 import *as styles from './Certification.css'
 import CertificationPerson from './Certification.js'
 import CertifiCompany from './CertifiCompany.js'
+import CenterTitle from '../CenterTitle'
 class Certification extends Component{
 	constructor(props){
 		super(props);
@@ -43,12 +44,11 @@ class Certification extends Component{
 			<Row className={styles['r_wrap']}>
 				<Col className={styles['money']} 
 				lg={24} md={24} sm={24} xs={24}>
-					<Row className={styles['money_info']}
-						Row type='flex' align='bottom'>
-							<Col>实名认证方式</Col>						
-					</Row>
+					<CenterTitle titleStr={'实名认证'}/>
 					<Row type='flex' align='bottom'className={styles['checked']}>
-						<Col lg={16} md={16} sm={16} xs={16}>
+						<Col lg={24} md={24} sm={24} xs={24}
+							className={styles['choose_pre']}>
+							<div>请选择实名验证方式</div>
 							<Checkbox
 								onChange={this.onChange}
 								checked={this.state.person}

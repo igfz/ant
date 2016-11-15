@@ -2,7 +2,6 @@
 import React, { Component, PropTypes } from 'react'
 import {  Icon, Switch, Row, Col } from 'antd'
 import *as styles from './UserCenter.css'
-import CenterTitle from './CenterTitle'
 import AccounTinfo from './AccountInfo'
 import Banner from './Banner'
 import MenuLeft from './Menu'
@@ -33,7 +32,8 @@ export default function UserCenter({ children }){
 					<MenuLeft />
 
 					</Col>
-					<Col xs={22} sm={22} md={19} lg={19}>
+					<Col xs={22} sm={22} md={19} lg={19} 
+					 className={styles['wrap_out']}>
 
 					{children}
 

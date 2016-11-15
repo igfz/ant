@@ -1,6 +1,6 @@
-.font_fam {
-	font-family: 'FZLTHK--GBK1-0'
+.wrap_out{
+	font-family: 'FZLTHK--GBK1-0';
+	color: #333333;
+	font-size: 16px;
 }
-.center-height{
-	height: 2129px;
-}
+

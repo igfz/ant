@@ -16,88 +16,66 @@ export default class Certification extends Component{
 
 	render(){
 		return(
-			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']} 
-					lg={20} md={20} sm={20} xs={20}>
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>姓名</span>
-							</Row>
-							<Row>
+			<div className={styles['wrap_input']}>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						姓名
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						身份证号码
+						<Input placeholder="Basic usage" />
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						手持身份证照片
+						<span className={styles['link_mob']}>查看示例</span>
+						<Row>
+							<Col lg={18} md={18} sm={18} xs={18}>
 								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={12} md={12} sm={12} xs={12}>
-							<Row>
-								<span>身份证</span>
-							</Row>
-							<Row>
+							</Col>
+							<Col lg={6} md={6} sm={6} xs={6}>
+								<Button className={styles['choose_btn']}>选择文件</Button>
+							</Col>
+						</Row>
+					</Col>
+					<Col lg={10} md={10} sm={0} xs={0}>
+						<span className={styles['link_sp']}>查看示例</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={10} md={10} sm={24} xs={24}>
+						身份证照片（反面）
+						<span className={styles['link_mob']}>查看示例</span>
+						<Row>
+							<Col lg={18} md={18} sm={18} xs={18}>
 								<Input placeholder="Basic usage" />
-							</Row>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}>
-								<Row>
-									<span>手持身份证</span>
-								</Row>
-								<Row>
-									<Col lg={13} md={13} sm={13} xs={13}>
-										<Input placeholder="Basic usage" />
-									</Col>
-									<Col  lg={11} md={11} sm={11} xs={11}>
-										<Button className={styles['choose_btn']}>
-									    选择文件
-									  </Button>
-								    <span className={styles['blue_text']}>
-								     	查看实例
-								    </span>
-							    </Col>
-								</Row>
+							</Col>
+							<Col lg={6} md={6} sm={6} xs={6}>
+								<Button className={styles['choose_btn']}>选择文件</Button>
 							</Col>
 						</Row>
-					
-						<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}>
-								<Row>
-									身份证反面
-								</Row>
-								<Row>
-									<Col lg={13} md={13} sm={13} xs={13}>
-										<Input placeholder="Basic usage" />
-									 </Col>
-									 <Col  lg={11} md={11} sm={11} xs={11}>
-										<Button className={styles['choose_btn']} > 
-											选择文件							    
-										</Button>
-								    <span className={styles['blue_text']}>
-								    	查看实例
-								    </span>
-							    </Col>
-								</Row>
-							</Col>
-						</Row>
-						<Row type='flex' align='bottom'>
-							<Col lg={24} md={24} sm={24} xs={24}>
-								<Row>
-									<Button className={styles['choose_btn']} > 
-											提交							    
-									</Button>
-								</Row>
-								<Row>
-									<Col className={styles['explain_pc']}>
-										<span>
-										照片大小要求：基本都jfk怪不得jfk国内的接口功能手机打开
-										</span>
-									</Col>
-								</Row>
-							</Col>
-						</Row>
-				</Col>
-			</Row>
+					</Col>
+					<Col lg={10} md={10} sm={0} xs={0}>
+						<span className={styles['link_sp']}>查看示例</span>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={3} md={3} sm={24} xs={24}>
+						<Button className={styles['btn_sub']}>提交</Button>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={24} md={24} sm={24} xs={24}>
+						<span className={styles['pic']}>
+							照片要求：文件大小不错过300k，支持格式JPEG/JPG/PNG,身份证清晰可见
+						</span>
+					</Col>
+				</Row>
+			</div>
 			)
 	}
 }

@@ -6,18 +6,15 @@ import React,{ Component, PropTypes } from 'react'
 import { Col, Row, Button, Icon } from 'antd'
 import *as styles from './AccountInfo.css'
 import {Link } from 'react-router'
+import CenterTitle from '../CenterTitle'
 export default class AccounTinfo extends Component{
 	constructor(props){
 		super(props);
 	}
 	render(){
 		return(
-			<div className={styles['wrap_out']}>
-				<Row className={styles['centerTh']}>
-					<Col lg={24} md={24} sm={24} xm={24}>
-						<h2>用户信息</h2>
-					</Col>
-				</Row>
+			<div>
+				<CenterTitle titleStr={'用户信息'}/>
 				<Row className={styles['mt30']+' '+styles['mb30']}>
 					<Col lg={24} md={24} sm={24} xm={24}
 						className={styles['account_money']}>
