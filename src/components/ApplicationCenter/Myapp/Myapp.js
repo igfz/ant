@@ -11,7 +11,10 @@ export default class Myapp extends Component {
 			<div>
 				<Row type="flex" justify="space-between" className={styles.top}>
 					<Col xs={0} sm={0} md={3} lg={3}><h2>我的应用</h2></Col>
-					<Col xs={24} sm={24} md={3} lg={3}><Button type="primary">创建应用</Button></Col>
+					<Col xs={24} sm={24} md={3} lg={3}>
+					<Button type="primary">
+						<Link to='/application/freeuse'>创建应用</Link>
+					</Button></Col>
 				</Row>
 				<Row type="flex" justify="center" className={styles.warp}>
 					<Col xs={24} sm={24} md={4} lg={4} className={styles.name}>

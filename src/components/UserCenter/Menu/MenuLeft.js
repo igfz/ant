@@ -10,7 +10,7 @@ let data=[
       {title:"实名认证",route:"/usercenter/certification"},
       {title:"费用信息",route:"/usercenter/costinfo"},
       {title:"交易纪录",route:"/usercenter/transactrecord"},
-       {title:"退出",route:""}
+       {title:"退出",route:"/login"}
     ]
 
 export default class Menu extends Component {

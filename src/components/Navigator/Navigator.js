@@ -142,7 +142,7 @@ class Navigator extends Component {
 			          </Link>
 	            </Menu.Item>
 	            <Menu.Item key="setting:5"> 
-	            	<Link to="/">
+	            	<Link to="/login">
 				          退出
 				        </Link>
 	            </Menu.Item>
