@@ -20,27 +20,40 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .center_meu a{
 	color: white!important;
 }
-.center_meu a:hover{
+.center_meu a:hover,.menugroup a:hover{
   color: #2588FF!important;
 }
 
-.menugroup>ul,.menuserver ul{background: rgba(40,46,57,.9);border: none;color:#fff;height: 100%;padding: 0;}
-.menugroup>ul>li,.menuserver>ul>li{background: rgba(40,46,57,.9);border: 0;color:#fff;height: 100%;margin-top: 0;width: 100%;}
+.menugroup>ul>li>ul[class*="ant-menu"]>li:last-child,.menuserver>ul>li:last-child,.menuserver>ul>li>ul>li:last-child{padding-bottom: 20px;background: #242c38;}
+.menugroup>ul>li>ul[class*="ant-menu"]>li:first-child,.menuserver>ul>li:first-child{padding-top: 20px;height: 62px;box-sizing:border-box;background: #242c38;}
+.menuserver>ul>li>ul>li:first-child{margin-top: 20px}
+.menugroup>ul>li:hover{background-color: #25282f;color:#fff!important;}
+.menugroup li{background: #282e39;height: 100%;color: white;border-bottom: 0px!important;}
+
+.menugroup a{padding: 0;}
+.menugroup>ul,.menuserver ul{background: #242c38;border: none;color:#fff;height: 100%;padding: 0;}
+.menugroup>ul>li,.menuserver>ul>li{background: #282e39;border: 0;color:#fff;height: 100%;margin-top: 0;width: 100%;}
 .menugroup div[class*="ant-menu-submenu-title"]+ul>li{font-size: 16px;padding: 0;}
 .menugroup>ul>li>div{margin: 17px 0;}
 .menugroup div+ul{margin-top: 0px!important;box-shadow:0 0 0 0!important;}
-.menugroup div+ul>li,.menugroup ul[class*="ant-menu"]{border-right: 0px!important;background: rgba(40,46,57,.9);}
+.menupub div+ul[class*="ant-menu"]{border-right: 1px solid #242c38!important;background: #242c38}
+.menugroup div+ul[class*="ant-menu"]>li:last-child{margin-bottom: 20px;}
+.menugroup div+ul>li,.menugroup ul,.menugroup .menuserver div+ul[class*="ant-menu"]{border-right: 0px!important;background: #242c38;}
 .menugroup>ul>li:hover,,.menuserver>ul>li:hover{background-color: #25282f;color:#fff!important;}
-.menugroup li{background: rgba(40,46,57,.9);height: 100%;color: white;border-bottom: 0px!important;}
-.menugroup>ul div+ul>li:hover{background-color: rgba(40,46,57,.9);color: #2588FF!important;border-bottom: 0px!important;}
-.menuserver>ul>li[class*="ant-menu-submenu-vertical"]>div[class*="ant-menu-submenu-title"]{background: rgba(40,46,57,.9);height: 45px;line-height: 45px;font-size: 16px;}
-.menuserver{border-right: 1px solid #414958;}
+.menugroup li{background: #242c38;height: 100%;color: white;border-bottom: 0px!important;}
+.menugroup>ul div+ul>li:hover,.menuserver>ul>li:hover[class*="ant-menu-submenu-vertical"]>div[class*="ant-menu-submenu-title"]{background-color: #242c38;color: #2588FF!important;border-bottom: 0px!important;}
+.menuserver>ul>li[class*="ant-menu-submenu-vertical"]>div[class*="ant-menu-submenu-title"]{background: #242c38;height: 45px;line-height: 45px;font-size: 16px;}
+.menuserver{border-right: 1px solid #414958;background: #242c38;}
 .menuserver>ul>li{text-align: left;}
-.menuserver>ul>li:nth-child(2)>ul{top:-42px!important;}
-.menuserver>ul>li:nth-child(3)>ul{top:calc(-42px * 2);}
-.menuserver>ul>li:nth-child(4)>ul{top:calc(-42px * 3);}
-.menuserver>ul>li>ul{width: 600px;height: 480px;}
-.menuserver>ul>li>ul>li{height: 60px!important;line-height: 30px!important;padding-left:30px!important;box-sizing:border-box;}
+.menuserver>ul>li:nth-child(2)>ul{top:-62px!important;}
+.menuserver>ul>li:nth-child(3)>ul{top:calc(-42px * 2 - 22px);}
+.menuserver>ul>li:nth-child(4)>ul{top:calc(-42px * 3 - 24px);}
+.menuserver>ul>li:nth-child(5)>ul{top:calc(-42px * 4 - 26px);}
+.menuserver>ul>li:nth-child(6)>ul{top:calc(-42px * 5 - 28px);}
+.menuserver>ul>li:nth-child(7)>ul{top:calc(-42px * 6 - 30px);}
+.menuserver>ul>li>ul{width: 600px;height: 480px;margin-left: 1px!important;border-radius: 0!important;}
+.menuserver>ul>li>ul>li{height: 60px!important;line-height: 30px!important;padding-left:30px!important;box-sizing:border-box;max-width: 600px;overflow: hidden;}
+.menuserver>ul>li>ul>li>span{display: inline-block;max-width: 540px;overflow: hidden;}
 .navitems{font-size: 16px;}
 .navitems+span{font-size: 14px;color: #9a9a9a;}
 
