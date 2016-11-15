@@ -47,6 +47,9 @@
 .pic{
 	color: #999999;
 }
+.hidden_flag{
+	display: none;
+}
 
 @media screen and (max-width: 768px) {
 .choose_pre>div{
@@ -61,7 +64,7 @@
 	line-height: 28px;
 }
 .wrap_input input{
-	margin: 5px 0 30px 0;
+	margin: 5px 0 15px 0;
 	height: 41px;
 	border-radius: 2px;
 }
@@ -77,10 +80,13 @@
     border-radius: 2px;
     background-color: #2E8BFF;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 14px;
     margin: 0;
     width: 100%;
     margin: 5px 0 0 0;
+}
+.btn_sub{
+	font-size: 16px;
 }
 .choose_btn:hover,.btn_sub:hover{
 	background-color: #2E8BFF;
@@ -100,5 +106,7 @@
 .pic{
 	color: #999999;
 }
-
+.hidden_flag{
+	display: none;
+}
 }

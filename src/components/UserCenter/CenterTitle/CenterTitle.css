@@ -3,3 +3,11 @@
 	color: #999999;
 	height: auto;
 }
+@media screen and  ( max-width: 768px){
+.centerTh{
+	margin-top: 50px;
+	font-size: 18px;
+	color: #999999;
+	height: auto;
+}
+}

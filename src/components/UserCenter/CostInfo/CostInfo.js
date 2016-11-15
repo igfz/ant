@@ -3,43 +3,94 @@
  zfl 2016 11 08
 */
 import React,{ Component, PropTypes } from 'react'
-import { Col, Row, Button, Icon, Input, DatePicker, Checkbox, Table, Pagination, } from 'antd'
+import { Col, Row, Button, Icon, Input, DatePicker, Checkbox, Table, Pagination } from 'antd'
 import *as styles from './CostInfo.css'
+import CenterTitle from '../CenterTitle'
 import moment from 'moment';
-const format = 'YYYY/MM/DD';
-
+const dateFormat = 'YYYY/MM/DD';
 const columns = [{
-  title: 'Name',
-  dataIndex: 'name',
-  //render: text => <a href="#">{text}</a>,
-	}, {
-	  title: 'Age',
-	  dataIndex: 'age',
-	}, {
-	  title: 'Address',
-	  dataIndex: 'address',
+  title: '时间',
+  dataIndex: 'time',
+  width:'25%',
+}, {
+  title: '使用请求（万次）',
+  dataIndex: 'request',
+}, {
+  title: '单价（元/万次）',
+  dataIndex: 'price',
+}, {
+  title: '当日费用（元）',
+  dataIndex: 'cost',
 }];
+
 const data = [{
   key: '1',
-  name: 'John Brown',
-  age: 32,
-  //address: 'New York No. 1 Lake Park',
-	}, {
-	  key: '2',
-	  name: 'Jim Green',
-	  age: 42,
-	  //address: 'London No. 1 Lake Park',
-	}, {
-	  key: '3',
-	  name: 'Joe Black',
-	  age: 32,
-	//  address: 'Sidney No. 1 Lake Park',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5200',
+}, {
+  key: '2',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5200',
+}, {
+  key: '3',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '4',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '5',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '6',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '7',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '8',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '9',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '10',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
+}, {
+  key: '11',
+  time: '2016-02-06',
+  request: 32,
+  price: '52',
+  cost:'5201',
 }];
-const rowSelection = {
-  getCheckboxProps: record => ({
-    disabled: record.name === 'Jim Green',    // Column configuration not to be checked
-  }),
-};
+
 export default class CostInfo extends Component{
 	constructor(props){
 		super(props);
@@ -52,41 +103,44 @@ export default class CostInfo extends Component{
 	}
 	render(){
 		return(
-			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']} 
-					lg={24} md={24} sm={24} xs={24}>
-					<Row type='flex' align='bottom'>
-							<Col lg={16} md={16} sm={16} xs={16}
-								className={styles['money_info']}>
-									<span >账户余额：12,888.00</span>
-							</Col>	
-							<Col lg={4} md={4} sm={4} xs={4}>
+			<div >
+				<CenterTitle titleStr={'实名认证'}/>
+				<Row>
+					<Col lg={20} md={20} sm={20} xs={20}>
+						<Row className={styles['balance']} >
+							<Col lg={20} md={20} sm={24} xs={24}>
+								<span >账户余额：12,888元</span>
+							</Col>
+							<Col lg={4} md={4} sm={18} xs={18} 
+							className={styles['datapic']}>
 								<DatePicker 
-									defaultValue={moment('2015/01/01', format)} 
-									format={format} 
-									className={styles['data_picker']}/>
-								</Col>					
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={20} md={20} sm={20} xs={20}>
-							<Table  columns={columns} dataSource={data}   
-									pagination={false}/>
+									defaultValue={moment('2015/01/01', dateFormat)}
+									 format={dateFormat} />
+							</Col>
+						</Row>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={20} md={20} sm={23} xs={23} 
+					className={styles['table_list']}>
+					<Table columns={columns} dataSource={data} 
+					pagination={false} />
+					</Col>
+				</Row>
+				<Row className={styles['paging']}>
+					<Col lg={20} md={20} sm={24} xs={24} >
+						<Row>
+						<Col lg={21} md={21} sm={24} xs={24} >
+							<Pagination showQuickJumper defaultCurrent={2} total={50} />
 						</Col>
-						<Col className={styles['footer']} 
-							lg={20} md={20} sm={20} xs={20}>
-							<Row >
-								<Col lg={20} md={20} sm={20} xs={20}>
-									<Pagination showQuickJumper 
-										defaultCurrent={2} total={3}/>
-								</Col>
-								<Col lg={4} md={4} sm={4} xs={4}>
-									<Button className={styles['btn']}>继续顶服务</Button>
-								</Col>
-							</Row>
+						<Col lg={3} md={3} sm={0} xs={0} >
+							<Button>续订服务</Button>
 						</Col>
-					</Row>
-				</Col>
-			</Row>
+						</Row>
+					</Col>
+				</Row>
+
+			</div>
 			)
 	}
 }
