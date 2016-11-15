@@ -61,7 +61,7 @@ const Sider = React.createClass({
             <Menu.Item key="5">赛事排行</Menu.Item>
           </SubMenu>
         </SubMenu>
-        <SubMenu key="sub3" title={<span><Icon type="appstore" /><span>预算</span></span>}>
+        <SubMenu key="sub3" title={<span><Icon type="appstore" /><span >预算</span></span>}>
           <Menu.Item key="6">Option 5</Menu.Item>
           <Menu.Item key="7">Option 6</Menu.Item>
           <Menu.Item key="8">Option 6</Menu.Item>
@@ -168,15 +168,49 @@ class Navigator extends Component {
 						</Col>
 						<Col xs={5} sm={15} md={0} lg={0}></Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
-							<Link to="/product" className={styles.href}>产品与服务</Link>
+							<Menu mode="horizontal">
+								<SubMenu title={<span>产品与服务</span>}>
+			            <div className={styles.menuserver} >
+			            	<Menu onClick={handleClick} style={{ width: 200 }} mode="vertical">
+								    <SubMenu key="sub1" title={<span>彩票服务</span>}>
+								        <Menu.Item key="1">
+								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
+								        </Menu.Item>
+								        <Menu.Item key="2">
+								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
+								        </Menu.Item>
+								        <Menu.Item key="3">
+								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
+								        </Menu.Item>
+								        <Menu.Item key="4">
+								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
+							        	</Menu.Item>
+								    </SubMenu>
+								    <SubMenu key="sub2" title={<span>竞猜游戏</span>}>
+								      <Menu.Item key="5">Option 5</Menu.Item>
+								      <Menu.Item key="6">Option 6</Menu.Item>
+								    </SubMenu>
+								    <SubMenu key="sub4" title={<span>数据资讯</span>}>
+								      <Menu.Item key="9">Option 9</Menu.Item>
+								      <Menu.Item key="10">Option 10</Menu.Item>
+								      <Menu.Item key="11">Option 11</Menu.Item>
+								      <Menu.Item key="12">Option 12</Menu.Item>
+								    </SubMenu>
+								  </Menu>
+			            </div>
+				        </SubMenu>
+			        </Menu>
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup}>
-							预算
+							<Menu mode="horizontal">
+								<SubMenu key="sub3" title={<span>预算</span>}>
+								</SubMenu>
+							</Menu>
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup}>
 
 							<Menu mode="horizontal">
-									<SubMenu title={<span><Link to="/documents" className={styles.defaulthref}>文档中心</Link><Icon type="down" className={styles.down} /></span>}>
+									<SubMenu title={<span><Link to="/documents" className={styles.href}>文档中心</Link></span>}>
 					            <Menu.Item key="setting:1">彩票服务文档</Menu.Item>
 					            <Menu.Item key="setting:2">竞猜游戏文档</Menu.Item>
 					             <Menu.Item key="setting:3">数据资讯文档</Menu.Item>
