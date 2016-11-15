@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col,Button } from 'antd';
 import styles from './Advantage.css'
-
+import { Link } from 'react-router'
 export default class Advantage extends Component {
 
 	componentDidMount() {
@@ -74,7 +74,7 @@ export default class Advantage extends Component {
 							type="primary" 
 							size="large" 
 							className={styles.btn+' '+((id==0)?styles.blue:((id==1)?styles.red:styles.purple))}>
-								免费试用
+								<Link to='/application/freeuse'>免费试用</Link>
 						</Button>
 					</li>
 				</ul>
