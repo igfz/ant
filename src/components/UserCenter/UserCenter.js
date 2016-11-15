@@ -22,20 +22,25 @@ import {
 } from 'react-router'
 export default function UserCenter({ children }){
 		return(
-			<div className={styles['font_fam']}>
-				<Banner/>
-					<div>
-					<Row>
-					<Col lg={4} md={4} sm={4} xs={4}></Col>
-						<Col lg={3} md={3} sm={3} xs={3}>
-			       	<MenuLeft />
-			       </Col>
-			      <Col className={styles['center-height']} lg={16} md={16} sm={16} xs={16}>	
-			      	<CenterTitle titleStr={'用户信息'} />
-			      	{children}
-			      </Col>
-		       </Row>
-      	</div>
-      </div>
+			<div>
+
+			<Banner />
+
+			<div style={{'maxWidth':'1200px','minHeight':'1200px','margin':'3% auto'}}>
+				<Row type="flex" justify="center">
+					<Col xs={22} sm={22} md={5} lg={5}>
+
+					<MenuLeft />
+
+					</Col>
+					<Col xs={22} sm={22} md={19} lg={19}>
+
+					{children}
+
+					</Col>
+				</Row>
+			</div>
+		</div>
+			
     )
 }

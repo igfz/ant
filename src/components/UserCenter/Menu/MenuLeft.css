@@ -1,5 +1,5 @@
 
-.menu{border-left:3px solid #eee;position:relative;font-size:16px;margin-top: 50px;}
+.menu{border-left:3px solid #eee;position:relative;font-size:16px;}
 .menu a{color:#333;}
 .menu .active{color:#2e8bff}
 .menu li{max-width:60%;line-height:60px;margin-left:20px;border-bottom:1px solid #eee;}

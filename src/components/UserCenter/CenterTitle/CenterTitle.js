@@ -9,7 +9,7 @@ export default class CenterTitle extends Component{
 	render(){
 		const { titleStr }=this.props
 		return(
-			<Row className={styles['mg40']}>
+			<Row className={styles['centerTh']}>
 				<Col><h2>{titleStr}</h2></Col>
 			</Row>
 			)

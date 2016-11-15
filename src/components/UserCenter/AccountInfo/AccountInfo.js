@@ -12,52 +12,52 @@ export default class AccounTinfo extends Component{
 	}
 	render(){
 		return(
-			<Row className={styles['r_wrap']}>
-				<Col className={styles['money']}>
-					<Row type='flex' align='bottom' className={styles['money_info']}>
-						<Row type='flex' align='bottom' >
-							<Col lg={24} md={24} sm={24} xs={24} 
-								className={styles['accunt']}>
-								<span className={styles['accunt-money']}>账户余额 </span>
-								<span className={styles['money_num']}>
-								 	2,000.00元
-								</span>					
-								<Button className={styles['pay_now']}>
-									<Link to='/usercenter/recharge'>立即充值</Link>
-								</Button>
-							</Col>
-							</Row>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={24} md={24} sm={24} xs={24} >
-							<Icon type='user'  />
-							用户名：1234abc的账号
-							<span className={styles['blue_text']}>实名认证</span>
-							|
-							<span  className={styles['blue_text']} >修改密码</span>
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={24} md={24} sm={24} xs={24}>
-							<Icon type='ID' />
-							账户ID：7894  123
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={24} md={24} sm={24} xs={24}>
-							<Icon type='tablet' />
-								手机号码：1234564981321
-						</Col>
-					</Row>
-					<Row type='flex' align='bottom'>
-						<Col lg={24} md={24} sm={24} xs={24}>
-							<Icon type='user' />
-								技术服务：您尚未购买我们的技术服务，
-								<span  className={styles['blue_text']}>点此购买</span>
-						</Col>
-					</Row>
-				</Col>
-			</Row>
+			<div className={styles['wrap_out']}>
+				<Row className={styles['centerTh']}>
+					<Col lg={24} md={24} sm={24} xm={24}>
+						<h2>用户信息</h2>
+					</Col>
+				</Row>
+				<Row className={styles['mt30']+' '+styles['mb30']}>
+					<Col lg={24} md={24} sm={24} xm={24}
+						className={styles['account_money']}>
+						<span>账户余额</span>
+						<span className={styles['in_monery']}>2,000.00元</span>
+						<Button className={styles['in_btn']}>
+							立即充值
+						</Button>
+					</Col>
+				</Row>
+				<Row className={styles['mt30']} >
+					<Col lg={24} md={24} sm={24} xm={24}>
+						<Icon type='user'/>
+						<span>用户名：456465</span>
+						<span className={styles['link_sp']}>实名认证</span>|
+						<span className={styles['link_sp']}>修改密码</span>
+					</Col>
+				</Row>
+				<Row className={styles['mt30']+ ' ' +styles['wrap_inner']} >
+					<Col lg={24} md={24} sm={24} xm={24}>
+						<Icon type='user'/>
+						<span>账号ID：456465</span>
+					</Col>
+				</Row>
+				<Row className={styles['mt30']} >
+					<Col lg={24} md={24} sm={24} xm={24}>
+						<Icon type='mobile'/>
+						<span>手机号码：456465</span>
+					</Col>
+				</Row>
+				<Row className={styles['mt30']} >
+					<Col lg={24} md={24} sm={24} xm={24}>
+						<Icon type='user'/>
+						<span>技术支持：您尚未购买请点击</span>
+						<span className={styles['link_sp']+' '+ styles['br_sp']} >点此购买</span>
+					</Col>
+				</Row>
+				
+			</div>
+		
 			)
 	}
 }

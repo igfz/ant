@@ -1,28 +1,68 @@
 import React, { Component, PropTypes } from 'react'
 import styles from './MenuLeft.css'
 import { Icon,Row,Col,Button } from 'antd'
+import {browserHistory} from 'react-router'
+import utils from '../../../utils'
 import {Link } from 'react-router'
 
-export default class MenuLeft extends Component {
+let data=[
+      {title:"账户信息",route:"/usercenter/accountinfo"},
+      {title:"实名认证",route:"/usercenter/certification"},
+      {title:"费用信息",route:"/usercenter/costinfo"},
+      {title:"交易纪录",route:"/usercenter/transactrecord"},
+       {title:"退出",route:""}
+    ]
+
+export default class Menu extends Component {
+  componentDidMount(){
+    data.map(
+      (items,index) => {
+        if(window.location.hash.indexOf(items.route)!=-1){
+          this.actRoute(this.refs["rt"+index],index,"flush")
+        }
+      }
+    )
+  }
+
+  constructor(props) {
+    super(props)
+    this.productRoute = this.productRoute.bind(this)
+  }
+
+  productRoute(items,index){
+    return (
+      <Link key={index} to={items.route}>
+        <li ref={"rt"+index} onClick={(e,index)=>this.actRoute(e,index)} >{items.title}</li>
+      </Link>
+    )
+  }
+
+  actRoute(e,i,r){
+    if(r=="flush"){
+      let eSib=utils.siblings(e.parentNode)
+      for(let x in eSib){
+        utils.removeClassName(eSib[x].childNodes[0],styles.active)
+      }
+      utils.addClassName(e,styles.active)
+    }else{
+      let eSib=utils.siblings(e.target.parentNode)
+      for(let x in eSib){
+        utils.removeClassName(eSib[x].childNodes[0],styles.active)
+      }
+      utils.addClassName(e.target,styles.active)
+    }
+  }
+
   render() {
-    let id = this.props.idx
+    
+    const nodes = data.map(
+      (items,index) => (
+        this.productRoute(items,index)
+      )
+    )
     return (
       <ul className={styles.menu}>
-        <Link to="/usercenter/accountinfo">
-          <li className={styles.active}>账户信息</li>
-        </Link>
-        <Link to="/usercenter/certification">
-          <li>实名认证</li>
-        </Link>
-        <Link to="/usercenter/costinfo">
-         <li>费用信息</li>
-        </Link>
-        <Link to="/usercenter/transactrecord">
-          <li>交易纪录</li>
-        </Link>
-        <Link to="/">
-          <li>退出</li>
-        </Link>
+        {nodes}
       </ul>
     )
   }
