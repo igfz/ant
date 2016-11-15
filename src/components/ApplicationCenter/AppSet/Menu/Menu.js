@@ -9,9 +9,9 @@ export default class Menu extends Component {
 
 		return (
 			<ul className={styles.menu}>
-				<Link to="/application/seting"><li className={styles.active}>基本信息</li></Link>
-				<Link to="/application/seting/key"><li>应用key</li></Link>
-				<Link to="/application/seting/service"><li>服务开关</li></Link>
+				<Link to="/application/setting"><li className={styles.active}>基本信息</li></Link>
+				<Link to="/application/setting/key"><li>应用key</li></Link>
+				<Link to="/application/setting/service"><li>服务开关</li></Link>
 			</ul>
 		)
 	}

@@ -31,7 +31,7 @@ export default class Myapp extends Component {
 						<h3>23,086</h3>
 					</Col>
 					<Col xs={24} sm={24} md={5} lg={5} className={styles.set}>
-						<Link to="/application/seting"><Button type="ghost">设置</Button></Link>
+						<Link to="/application/setting"><Button type="ghost">设置</Button></Link>
 					</Col>
 				</Row>
 				<Row type="flex" justify="center" className={styles.warp}>
@@ -52,7 +52,7 @@ export default class Myapp extends Component {
 						<h3>23,086</h3>
 					</Col>
 					<Col xs={24} sm={24} md={5} lg={5} className={styles.set}>
-						<Link to="/application/seting"><Button type="ghost">设置</Button></Link>
+						<Link to="/application/setting"><Button type="ghost">设置</Button></Link>
 					</Col>
 				</Row>
 				<Row type="flex" justify="center" className={styles.warp}>
@@ -73,7 +73,7 @@ export default class Myapp extends Component {
 						<h3>23,086</h3>
 					</Col>
 					<Col xs={24} sm={24} md={5} lg={5} className={styles.set}>
-						<Link to="/application/seting"><Button type="ghost">设置</Button></Link>
+						<Link to="/application/setting"><Button type="ghost">设置</Button></Link>
 					</Col>
 				</Row>
 			</div>

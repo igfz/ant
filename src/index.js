@@ -68,10 +68,10 @@ ReactDOM.render(
 				</Route>
 				<Route path="/application" component={ApplicationCenter}>
 					<IndexRoute component={Myapp}/>
-					<Route path="/application/seting" component={AppSet}>
+					<Route path="/application/setting" component={AppSet}>
 						<IndexRoute component={BaseInfo}/>
-						<Route path="//seting/key" component={AppKey }/>
-						<Route path="/application/seting/service" component={AppService}/>
+						<Route path="/application/setting/key" component={AppKey }/>
+						<Route path="/application/setting/service" component={AppService}/>
 					</Route>
 					<Route path="/application/freeuse" component={FreeUse }>
 					</Route>
