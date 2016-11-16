@@ -76,7 +76,7 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 	background-color: #242c38!important;
 }
 
-.defaulthref{color: white;}
+.defaulthref:link{color: white;}
 /* .defaulthref:active{color: white;}   
 .defaulthref:visited{color: white;}   */ 
 .defaulthref:hover{color: white;}

@@ -200,10 +200,10 @@ class Navigator extends Component {
 
 							<Menu mode="horizontal">
 									<SubMenu title={<Link to="/documents" className={styles.navhref}><span>文档中心</span></Link>}>
-					            <Menu.Item key="setting:1"><Link to="/documents/detail" className={styles.href}><span>彩票服务文档</span></Link></Menu.Item>
-					            <Menu.Item key="setting:2"><Link to="/documents/detail" className={styles.href}>竞猜游戏文档</Link></Menu.Item>
-					             <Menu.Item key="setting:3"><Link to="/documents/detail" className={styles.href}>数据资讯文档</Link></Menu.Item>
-					            <Menu.Item key="setting:4"><Link to="/documents/detail" className={styles.href}>其他文档</Link></Menu.Item>
+					            <Menu.Item key="setting:1"><Link to="/documents/detail" className={styles.defaulthref}><span>彩票服务文档</span></Link></Menu.Item>
+					            <Menu.Item key="setting:2"><Link to="/documents/detail" className={styles.defaulthref}>竞猜游戏文档</Link></Menu.Item>
+					             <Menu.Item key="setting:3"><Link to="/documents/detail" className={styles.defaulthref}>数据资讯文档</Link></Menu.Item>
+					            <Menu.Item key="setting:4"><Link to="/documents/detail" className={styles.defaulthref}>其他文档</Link></Menu.Item>
 					        </SubMenu>
 				        </Menu>
 							
