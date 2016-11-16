@@ -1,58 +1,118 @@
-.r_wrap{
+.center_wrap{
+	width: 402px;
 	height: 860px;
+	margin:auto;
+	color: #333333;
+}
+.rechar_text{
+	font-size: 36px;
+	text-align: center;
+	margin: 50px 0;
+}
+.wrap_btn button{
+ height: 62px;
+ width: 191px;
+ border: 1px solid #2E8BFF;
+ border-radius: 2px;
+ margin-bottom: 12px;
+}
+.wrap_btn button:hover{
+	background-color: #fff;
+}
+.wechat_btn{
+	margin-left: 19px;
+}
+.recharge div{
+	text-align: center;
+	height: 41px;
+	line-height: 41px;
+}
+
+.recharge input{
+	height: 41px;
+	width:100%;
+}
+.wrap_sum{
+	margin-top:50px;
 	text-align: center;
 }
-.center_wrap{
-	height: 760px;
-	width: 410px;
-	margin:auto;
-	color: black;
-	font-size: 14px;
-}
-.pay{
-	font-size: 30px;
-	line-height: 120px;
-	height: 120px;
-}
-.pay_input{
-	height: 32px;
-	margin-top: 18px;
-}
-.pay_input input,.pay_input div{
-	height: 41px;
-}
-.pay_input div{
-	line-height: 44px;
-}
-.btn_re{
+.wrap_sum button{
+	background-color: #2E8BFF;
 	height: 41px;
 	width: 200px;
-	background-color: #2E8BFF;
+	color: #fff;
 	border-radius: 2px;
-	color: white;
-	margin-top: 50px;
 }
-
-.btn_col{
-	height: 100px;
+.wrap_sum button:hover{
+	background-color: #2E8BFF;
+	color: #fff;
 }
-.pay_mode{
-	height: 61px;
-	
-}
-.pay_mode button{
-	height: 61px;
-	width: 191px;
-
-}
-.wechat{
-	margin-left: 20PX;
-}
-.bank_info{
-	text-align: left;
-	margin: 100px 0 20px 0;
-	padding: 21px;
-	color: #999999;
-	font-size: 12px;
+.person_detail{
+	padding: 20px;
+	margin-top: 100px;
 	background: #F8F8F8;
+	color: #B0B0B0;
+}
+@media screen and (max-width: 768px) {
+.center_wrap{
+	padding: 0 17px;
+	width: 100%;
+	height: auto;
+}
+.rechar_text{
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 30px 0;
+}
+.wrap_btn button{
+ display: inline-block;
+ height: 50px;
+ width: 100%;
+ border: 1px solid #B0B0B0;
+ border-radius: 2px;
+ margin-bottom: 20px;
+ background-color: #fff;
+}
+.wrap_btn button:hover{
+	background-color: #fff;
+	border: 1px solid #2E8BFF;
+}
+.wechat_btn{
+	margin-left:0;
+}
+.recharge div{
+	text-align: center;
+	height: 41px;
+	line-height: 41px;
+	font-size: 14px;
+}
+
+.recharge input{
+	height: 41px;
+	width:100%;
+}
+.wrap_sum{
+	margin-top:30px;
+	text-align: center;
+}
+.wrap_sum button{
+	background-color: #2E8BFF;
+	height: 41px;
+	width: 200px;
+	color: #fff;
+	border-radius: 2px;
+}
+.wrap_sum button:hover{
+	background-color: #2E8BFF;
+	color: #fff;
+}
+.person_detail{
+	padding: 20px;
+	margin-top: 50px;
+	background: #F8F8F8;
+	color: #B0B0B0;
+}
+.explain{
+	color: #B0B0B0;
+}
 }
