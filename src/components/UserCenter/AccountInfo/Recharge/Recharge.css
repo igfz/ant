@@ -44,6 +44,7 @@
 	width: 200px;
 	color: #fff;
 	border-radius: 2px;
+	font-size: 16px!important;
 }
 .wrap_sum button:hover{
 	background-color: #2E8BFF;
