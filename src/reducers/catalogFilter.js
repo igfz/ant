@@ -1,6 +1,6 @@
 import {
 	SWITCH_CATALOG
-} from '../constants/ActionTypes'
+} from '../constants/actionTypes'
 
 const catalogFilter = (state = 0, action) => {
 

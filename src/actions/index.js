@@ -1,5 +1,5 @@
 //这里放置action创建函数
-import * as types from '../constants/ActionTypes'
+import * as types from '../constants/actionTypes'
 import  fetch  from 'isomorphic-fetch'
 function receiveGameList(gameList) {
   return {

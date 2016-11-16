@@ -1,6 +1,6 @@
 import {
 	INIT_CATALOG,
-} from '../constants/ActionTypes'
+} from '../constants/actionTypes'
 
 
 const catalog = (state = [], action) => {
