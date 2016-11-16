@@ -3,6 +3,7 @@
 	height: 860px;
 	margin:auto;
 	color: #333333;
+	font-size: 16px;
 }
 .rechar_text{
 	font-size: 36px;
@@ -15,6 +16,7 @@
  border: 1px solid #2E8BFF;
  border-radius: 2px;
  margin-bottom: 12px;
+ font-size: 16px!important;
 }
 .wrap_btn button:hover{
 	background-color: #fff;

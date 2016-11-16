@@ -21,7 +21,7 @@ export default class AccounTinfo extends Component{
 						<span>账户余额</span>
 						<span className={styles['in_monery']}>2,000.00元</span>
 						<Button className={styles['in_btn']}>
-							立即充值
+							 <Link to='/usercenter/recharge'>立即充值</Link>
 						</Button>
 					</Col>
 				</Row>
@@ -29,8 +29,12 @@ export default class AccounTinfo extends Component{
 					<Col lg={24} md={24} sm={24} xm={24}>
 						<Icon type='user'/>
 						<span>用户名：456465</span>
-						<span className={styles['link_sp']}>实名认证</span>|
-						<span className={styles['link_sp']}>修改密码</span>
+						<span className={styles['link_sp']}>
+							<Link to='/usercenter/certification'>实名认证</Link>
+						</span>|
+						<span className={styles['link_sp']}>
+							修改密码
+						</span>
 					</Col>
 				</Row>
 				<Row className={styles['mt30']+ ' ' +styles['wrap_inner']} >

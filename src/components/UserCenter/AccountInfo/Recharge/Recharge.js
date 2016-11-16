@@ -37,7 +37,9 @@ class Recharge extends Component{
 					</Row>
 					<Row className={styles['wrap_sum']} >
 						<Col lg={24} md={24} sm={24} xs={24}>
-							<Button>确定支付</Button>
+							<Button>
+								<Link to='/usercenter/paysuccess'>确定支付</Link>
+							</Button>
 						</Col>
 					</Row>
 					<Row className={styles['person_detail']} >
