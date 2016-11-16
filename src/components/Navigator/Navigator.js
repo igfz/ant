@@ -253,7 +253,7 @@ class Navigator extends Component {
 							{item["data"].map((items,idxs)=>
 					        <Menu.Item key={items.key}>
 					        	<h4 className={styles.navitems}>
-					        		<Link to={items.route} className={styles.href}>{items.title}</Link>
+					        		<Link className={styles.href}>{items.title}</Link>
 					        	</h4>
 					        	{items.describe}
 					        </Menu.Item>
