@@ -99,14 +99,14 @@ export default class CostInfo extends Component{
 	render(){
 		return(
 			<div >
-				<CenterTitle titleStr={'实名认证'}/>
+				<CenterTitle titleStr={'费用明细'}/>
 				<Row>
-					<Col lg={20} md={20} sm={20} xs={20}>
+					<Col lg={20} md={20} sm={24} xs={24}>
 						<Row className={styles['balance']} >
 							<Col lg={20} md={20} sm={24} xs={24}>
 								<span >账户余额：12,888元</span>
 							</Col>
-							<Col lg={4} md={4} sm={18} xs={18} 
+							<Col lg={4} md={4} sm={24} xs={24} 
 							className={styles['datapic']}>
 								<DatePicker 
 									defaultValue={moment('2015/01/01', dateFormat)}
@@ -118,8 +118,7 @@ export default class CostInfo extends Component{
 				<Row>
 					<Col lg={20} md={20} sm={23} xs={23} 
 					className={styles['table_list']}>
-					<Table columns={columns} dataSource={data} 
-					pagination={false} />
+          <Table columns={columns} dataSource={data} scroll={{ x: 510 }} pagination={false}/>
 					</Col>
 				</Row>
 				<Row className={styles['paging']}>

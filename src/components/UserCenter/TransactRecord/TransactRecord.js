@@ -130,7 +130,7 @@ export default class TransactRecord extends Component{
 					<Col lg={20} md={20} sm={24} xs={24} 
 					 className={styles['table_list']}>
 					<Table columns={columns} dataSource={data} 
-					pagination={false} />
+					scroll={{ x: 510 }} pagination={false} />
 					</Col>
 				</Row>
 				<Row className={styles['paging']}>
