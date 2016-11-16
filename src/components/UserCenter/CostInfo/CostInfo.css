@@ -10,8 +10,9 @@
 	width: 151px;
 	height:32px;
 }
-.table_list th,.table_list td{
+.table_list th,.table_list td,.table_list th span{
 	text-align: center!important;
+	color: #333333!important;
 }
 .table_list tr:nth-child(even){
 	background-color: #F7F7F7;
