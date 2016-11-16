@@ -1,28 +1,67 @@
-.r_wrap{
+.success{
 	height: 860px;
+	width: 200px;
+	margin: auto;
 	text-align: center;
-	color: black;
+	color: #505050;
+	font-size: 16px;
 }
 .pay_suc{
-	font-size: 30px;
-	line-height: 120px;
-	height: 120px;
+	font-size: 36px;
+	margin: 50px 0;
 	color: black;
-
 }
-.r_wrap>div>div{
-	height: 28px;
-	color: #636363;
+.order_price,.order_num{
+margin-bottom: 10px;
 }
-.btn_re{
-	height: 41px;
-	width: 200px;
-	background-color: #2E8BFF;
-	border-radius: 2px;
-	color: white;
-	margin-top: 100px;
-}
-
 .btn_col{
-	height: 100px;
+	margin-top: 90px;
+
+}
+.btn_col button{
+	background-color: #2E8BFF;
+	color: #fff;
+	border-radius: 2px;
+	height: 41px;
+	width: 100%;
+	display: inline-block;
+}
+.btn_col button:hover{
+	color: #fff;
+	background-color: #2E8BFF;
+}
+@media screen and (max-width: 768px) {
+	.success{
+	height: 500px;
+	width: 100%;
+	margin: auto;
+	padding: 0px 15px;
+	color: #333333;
+	font-size: 14px;
+}
+.pay_suc{
+	font-size: 18px;
+	margin: 20px 0 25px 0;
+	color: black;
+}
+.order_price,.order_num{
+margin-bottom: 14px;
+}
+.btn_col{
+	margin-top: 36px;
+
+}
+.btn_col button{
+	background-color: #2E8BFF;
+	color: #fff;
+	border-radius: 2px;
+	height: 41px;
+	width: 100%;
+	display: inline-block;
+	font-size: 16px;
+}
+.btn_col button:hover{
+	color: #fff;
+	background-color: #2E8BFF;
+}
 }
