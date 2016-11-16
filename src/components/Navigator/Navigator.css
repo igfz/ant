@@ -12,11 +12,6 @@ header .cloud:before{font-size: 32px!important;}
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
 header .href{padding:10%;color:currentColor}
 header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
-.center_meu,.center_meu ul li{
-	background-color: black!important;
-	margin-top: 0px!important;
-	padding: 0px!important;
-}
 .center_meu a{
 	color: white!important;
 }
@@ -75,7 +70,9 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .mnavbar li>div+ul div+ul li{background: #4b5059}
 .mnavbar li>div+ul div+ul li:hover{background: #4b5059}
 .regBtn{width: 40%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;}
-
+.center_meu,.center_meu ul {
+	background-color: #242c38!important;
+}
 
 .defaulthref{color: white;}
 /* .defaulthref:active{color: white;}   

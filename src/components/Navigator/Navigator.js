@@ -111,43 +111,20 @@ class Navigator extends Component {
 	loginFlag(flag){
 		if(flag){
 			return(
-				<Menu mode="horizontal">
-					<SubMenu 
-						className={styles.href+' '+styles['center_meu']}
-							title={
-								<span>
+					<Menu mode="horizontal" className={styles['center_meu']}>
+									<SubMenu 
+									title={<span>
 									<Icon type='user'/>
 									章鱼1997
 									<Icon type='caret-up'/>
 								</span>}>
-	            <Menu.Item key="setting:1">
-	            	<Link className={styles.href} 
-			          		to="/usercenter/accountinfo">
-			          		 账户信息
-			          </Link>
-	            </Menu.Item>
-	            <Menu.Item key="setting:2">
-	            	<Link to="usercenter/certification"> 
-			           		实名认证
-			          </Link>
-	            </Menu.Item>
-	            <Menu.Item key="setting:3">
-	            	<Link to="/usercenter/costinfo"> 
-			           		费用信息
-			          </Link>
-	            </Menu.Item>
-	            <Menu.Item key="setting:4">
-	            	<Link to="/usercenter/transactrecord"> 
-			           		交易纪录
-			          </Link>
-	            </Menu.Item>
-	            <Menu.Item key="setting:5"> 
-	            	<Link to="/login">
-				          退出
-				        </Link>
-	            </Menu.Item>
-	        </SubMenu>
-       </Menu>
+		            <Menu.Item key="setting:1"><Link to="/usercenter/accountinfo" className={styles.href}><span>账户信息</span></Link></Menu.Item>
+		            <Menu.Item key="setting:2"><Link to="/usercenter/certification" className={styles.href}>实名认证</Link></Menu.Item>
+		             <Menu.Item key="setting:3"><Link to="/usercenter/costinfo" className={styles.href}>费用信息</Link></Menu.Item>
+		            <Menu.Item key="setting:4"><Link to="/usercenter/transactrecord" className={styles.href}>交易纪录</Link></Menu.Item>
+		            <Menu.Item key="setting:5"><Link to="/login" className={styles.href}>退出</Link></Menu.Item>
+		        </SubMenu>
+	        </Menu>
 			)
 		}
 		return(
