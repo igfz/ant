@@ -146,8 +146,8 @@ class Navigator extends Component {
 						<Col xs={5} sm={15} md={0} lg={0}></Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.serverwp}>
 							<Menu mode="horizontal">
-								<SubMenu title={<span>
-									<Link to="/product" className={styles.href}>产品与服务</Link></span>}>
+								<SubMenu title={<Link to="/product" className={styles.navhref}><span>
+									产品与服务</span></Link>}>
 			            <div className={styles.menuserver} >
 			            	<Menu onClick={handleClick} style={{ width: 200 }} mode="vertical">
 								    <SubMenu key="sub1" title={<span>彩票服务</span>}>
@@ -192,14 +192,14 @@ class Navigator extends Component {
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.menupub}>
 							<Menu mode="horizontal">
-								<SubMenu key="sub3" title={<span>预算</span>}>
+								<SubMenu key="sub3" title={<span><Link className={styles.navhref}>预算</Link></span>}>
 								</SubMenu>
 							</Menu>
 						</Col>
 						<Col xs={0} sm={0} md={3} lg={3} className={styles.menugroup+' '+styles.menupub}>
 
 							<Menu mode="horizontal">
-									<SubMenu title={<span><Link to="/documents" className={styles.href}>文档中心</Link></span>}>
+									<SubMenu title={<Link to="/documents" className={styles.navhref}><span>文档中心</span></Link>}>
 					            <Menu.Item key="setting:1"><Link to="/documents/detail" className={styles.href}><span>彩票服务文档</span></Link></Menu.Item>
 					            <Menu.Item key="setting:2"><Link to="/documents/detail" className={styles.href}>竞猜游戏文档</Link></Menu.Item>
 					             <Menu.Item key="setting:3"><Link to="/documents/detail" className={styles.href}>数据资讯文档</Link></Menu.Item>
@@ -211,7 +211,7 @@ class Navigator extends Component {
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.menupub} >
 
 							<Menu mode="horizontal">
-								<SubMenu title={<span>技术支持</span>}>
+								<SubMenu title={<span><Link className={styles.navhref}>技术支持</Link></span>}>
 				            <Menu.Item key="setting:1">购买技术支持</Menu.Item>
 				            <Menu.Item key="setting:2">工单系统</Menu.Item>
 				             <Menu.Item key="setting:3">Bug汇报</Menu.Item>
