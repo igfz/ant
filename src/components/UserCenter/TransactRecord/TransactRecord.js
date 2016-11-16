@@ -102,6 +102,17 @@ const data = [{
   transac_mode:'支付宝',
   balance:'200'
 }];
+const pagination = {
+  total: data.length,
+  defaultPageSize:5,
+  showQuickJumper: true,
+  onShowSizeChange: (current, pageSize) => {
+    console.log('Current: ', current, '; PageSize: ', pageSize);
+  },
+  onChange: (current) => {
+    console.log('Current: ', current);
+  },
+}
 export default class TransactRecord extends Component{
 	constructor(props){
 		super(props);
@@ -129,22 +140,26 @@ export default class TransactRecord extends Component{
 				<Row>
 					<Col lg={20} md={20} sm={24} xs={24} 
 					 className={styles['table_list']}>
-					<Table columns={columns} dataSource={data} 
-					scroll={{ x: 510 }} pagination={false} />
+  					<Table columns={columns} dataSource={data} 
+  					scroll={{ x: 510 }} pagination={pagination} >
+               <Button>续订服务</Button>
+            </Table>
 					</Col>
+          <Col lg={3} md={3} sm={0} xs={0} >
+             
+          </Col>
 				</Row>
-				<Row className={styles['paging']}>
-					<Col lg={20} md={20} sm={24} xs={24} >
-						<Row>
-						<Col lg={21} md={21} sm={24} xs={24} >
-							<Pagination showQuickJumper defaultCurrent={2} total={50} />
-						</Col>
-						<Col lg={3} md={3} sm={0} xs={0} >
-							<Button>续订服务</Button>
-						</Col>
-						</Row>
-					</Col>
-				</Row>
+        <Row className={styles['paging']}>
+          <Col lg={20} md={20} sm={24} xs={24} >
+            <Row>
+            <Col lg={21} md={21} sm={24} xs={24} ></Col>
+            <Col lg={3} md={3} sm={0} xs={0} >
+              <Button>续订服务</Button>
+            </Col>
+            </Row>
+          </Col>
+        </Row>
+			
 			</div>
 			)
 	}

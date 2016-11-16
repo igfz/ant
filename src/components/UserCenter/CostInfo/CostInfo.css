@@ -14,6 +14,9 @@
 	text-align: center!important;
 	color: #333333!important;
 }
+.table_list ul{
+ 	float: left;
+}
 .table_list tr:nth-child(even){
 	background-color: #F7F7F7;
 }
@@ -22,22 +25,23 @@
 	
 }
 .paging{
-	margin-top: 50px;
+	position: relative;
 }
  .paging button{
-  display: inline-block;
-    height: 41px;
-    border: none;
+ 		width: 100%;
+ 	 	height: 41px;
+ 	  top:-42px;
+ 	  right: 0; 
+ 		position: absolute;
     border-radius: 2px;
     background-color: #2E8BFF;
-    color: #FFFFFF;
+    color: #FFF;
     font-size: 16px;
-    margin: 0;
-    width: 100%;
+
   }
-  .choose_btn:hover{
+  .choose_btn:hover,.paging button:hover{
 	background-color: #2E8BFF;
-	color: #FFFFFF;
+	color: #FFF;
 }
 @media screen and (max-width: 768px) {
 .balance{
