@@ -95,12 +95,7 @@ export default class CostInfo extends Component{
 	constructor(props){
 		super(props);
 	}
-	onChange(e){
-		console.log(`checked = ${e.target.checked}`);
-	}
-	onShowSizeChange(current, pageSize) {
-  console.log(current, pageSize);
-	}
+
 	render(){
 		return(
 			<div >

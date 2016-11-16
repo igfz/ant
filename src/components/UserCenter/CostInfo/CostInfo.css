@@ -3,6 +3,13 @@
 	line-height: 28px;
 	margin: 30px  0;
 }
+.select_type{
+	margin: 40px 0 20px 0;
+}
+.choose_type{
+	width: 151px;
+	height:32px;
+}
 .table_list th,.table_list td{
 	text-align: center!important;
 }
@@ -36,6 +43,13 @@
 	font-size: 16px;
 	line-height: 16px;
 	margin: 15px  0;
+}
+.select_type{
+	margin: 30px 0 20px 0;
+}
+.choose_type{
+	width:100%;
+	height:32px;
 }
 .table_list th,.table_list td,.table_list span{
 	font-size: 14px!important;

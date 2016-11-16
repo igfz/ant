@@ -1,33 +1,3 @@
-.r_wrap{
-	height: 500px;
+.select_type{
+	margin: 40px 0 20px 0;
 }
-.selector_col{
-	height: 100px;
-}
-.table{
-	margin-top: 25px;
-}
-.selector{
-	border-radius: 2px; 
-}
-
-.money_info{
-	padding-top: 20px;
-	height: 30px;
-	color: black;
-}
- .money_info i:before{
-	font-size: 18px
-}
-.btn{
-	width: 124px;
-	height: 41px;
-	background-color: #2E8BFF;
-	font-size: 16px;
-	color: #FFFFFF;
-
-}
-.footer{
-	margin-top: 60px;
-}
-
