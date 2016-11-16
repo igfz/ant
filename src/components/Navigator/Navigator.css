@@ -71,7 +71,7 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .mnavbar li>div+ul div:hover{background: #393e49}
 .mnavbar li>div+ul div+ul li{background: #4b5059}
 .mnavbar li>div+ul div+ul li:hover{background: #4b5059}
-.regBtn{width: 40%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;}
+.regBtn{width: 40%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;color:#fff;border-color: #fff;}
 .center_meu,.center_meu ul {
 	background-color: #242c38!important;
 }

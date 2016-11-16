@@ -169,7 +169,7 @@ class Navigator extends Component {
 						<Col xs={5} sm={15} md={0} lg={0}></Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.serverwp}>
 							<Menu mode="horizontal">
-								<SubMenu title={<Link to="/product" className={styles.navhref}><span>
+								<SubMenu title={<Link className={styles.navhref}><span>
 									产品与服务</span></Link>}>
 			            <div className={styles.menuserver} >
 			            	<Menu onClick={handleClick} style={{ width: 200 }} mode="vertical">
