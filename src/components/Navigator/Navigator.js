@@ -6,6 +6,89 @@ import utils from '../../utils'
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
+const data=[
+				{
+					"id":"1",
+					"title":"产品与服务",
+					"icon":"mail",
+					"special":"1",
+					"data":[
+						{
+							"id":"2",
+							"title":"彩票服务",
+							"data":[
+								{
+									"key":"1",
+									"title":"彩票服务",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿实时赔率盘口总汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"2",
+									"title":"赔率",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"3",
+									"title":"彩票服务3",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								}
+							]
+						},
+						{
+							"id":"3",
+							"title":"竞猜游戏",
+							"data":[
+								{
+									"key":"4",
+									"title":"彩票服务",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿实时赔率盘口总汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"5",
+									"title":"彩票服务1",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"6",
+									"title":"彩票服务3",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								}
+							]
+						},
+						{
+							"id":"4",
+							"title":"数据资讯",
+							"data":[
+								{
+									"key":"7",
+									"title":"彩票服务",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿实时赔率盘口总汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"8",
+									"title":"彩票服务1",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇",
+									"route":"/documents/detail"
+								},
+								{
+									"key":"9",
+									"title":"彩票服务2",
+									"describe":"多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国汇，先人一步拿到最新动态",
+									"route":"/documents/detail"
+								}
+							]
+						}
+					]
+				}
+			]
+
 function handleClick(e) {
   console.log('click', e);
 }
@@ -39,46 +122,52 @@ const Sider = React.createClass({
   getAncestorKeys(key) {
     const map = {
       sub2: ['sub1'],
+      sub3: ['sub1'],
+      sub4: ['sub1']
     };
     return map[key] || [];
   },
+  
   render() {
     return (
-      <Menu
-        mode="inline"
-        openKeys={this.state.openKeys}
-        selectedKeys={[this.state.current]}
-        style={{ width: 240 }}
-        onOpenChange={this.onOpenChange}
-        onClick={this.handleClick}
-      >
-        <SubMenu key="sub1" title={<span><Icon type="mail" /><span>产品与服务</span></span>}>
-          <Menu.Item key="1">彩票服务</Menu.Item>
-          <Menu.Item key="2">竞猜游戏</Menu.Item>
-          <SubMenu key="sub2" title="数据资讯">
-          	<Menu.Item key="3">盘口赔率</Menu.Item>
-            <Menu.Item key="4">战绩交锋</Menu.Item>
-            <Menu.Item key="5">赛事排行</Menu.Item>
-          </SubMenu>
-        </SubMenu>
-        <SubMenu key="sub3" title={<span><Icon type="appstore" /><span >预算</span></span>}>
-          <Menu.Item key="6">Option 5</Menu.Item>
-          <Menu.Item key="7">Option 6</Menu.Item>
-          <Menu.Item key="8">Option 6</Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub4" title={<span><Icon type="setting" /><span>文档中心</span></span>}>
-          <Menu.Item key="9">Option 9</Menu.Item>
-          <Menu.Item key="10">Option 10</Menu.Item>
-          <Menu.Item key="11">Option 11</Menu.Item>
-          <Menu.Item key="12">Option 12</Menu.Item>
-        </SubMenu>
-        <SubMenu key="sub5" title={<span><Icon type="setting" /><span>技术支持</span></span>}>
-          <Menu.Item key="13">Option 9</Menu.Item>
-          <Menu.Item key="14">Option 10</Menu.Item>
-          <Menu.Item key="15">Option 11</Menu.Item>
-          <Menu.Item key="16">Option 12</Menu.Item>
-        </SubMenu>
-      </Menu>
+    	<div className={styles.mnavbar}>
+	      <Menu
+	        mode="inline"
+	        openKeys={this.state.openKeys}
+	        selectedKeys={[this.state.current]}
+	        style={{ width: 240 }}
+	        onOpenChange={this.onOpenChange}
+	        onClick={this.handleClick}
+	      >
+	        <SubMenu key="sub1" title={<span><Icon type="mail" /><span>产品与服务</span></span>}>
+	        	{
+	        		data[0]["data"].map((list,i)=>
+	      				<SubMenu key={"sub"+list.id} title={list.title}>
+			          	{list["data"].map((item,idx)=>
+			      				<Menu.Item key={item.key}>{item.title}</Menu.Item>
+									)}
+			          </SubMenu>
+							)
+						}
+	        </SubMenu>
+	        <SubMenu key="sub5" title={<span><Icon type="appstore" /><span >预算</span></span>}>
+	        	<Menu.Item key="10">Option 10</Menu.Item>
+	          <Menu.Item key="11">Option 11</Menu.Item>
+	          <Menu.Item key="12">Option 12</Menu.Item>
+	        </SubMenu>
+	        <SubMenu key="sub6" title={<span><Icon type="setting" /><span>文档中心</span></span>}>
+           	<Menu.Item key="13">Option 9</Menu.Item>
+	          <Menu.Item key="14">Option 10</Menu.Item>
+	          <Menu.Item key="15">Option 11</Menu.Item>
+	          <Menu.Item key="16">Option 12</Menu.Item>
+	        </SubMenu>
+	        <SubMenu key="sub7" title={<span><Icon type="setting" /><span>技术支持</span></span>}>
+	          <Menu.Item key="17">Option 6</Menu.Item>
+	          <Menu.Item key="18">Option 6</Menu.Item>
+	        </SubMenu>
+	      </Menu>
+	      <Button type="ghost" className={styles.regBtn}>免费试用</Button>
+      </div>
     );
   },
 });
@@ -156,8 +245,27 @@ class Navigator extends Component {
 			)
 	}
 
-	render() {
+	renderNavServes(){
+		return (
+			<Menu onClick={handleClick} style={{ width: 200 }} mode="vertical">
+				{data[0]["data"].map((item,idx)=>
+						<SubMenu key={"sub"+idx} title={<span>{item.title}</span>}>
+							{item["data"].map((items,idxs)=>
+					        <Menu.Item key={items.key}>
+					        	<h4 className={styles.navitems}>
+					        		<Link to={items.route} className={styles.href}>{items.title}</Link>
+					        	</h4>
+					        	{items.describe}
+					        </Menu.Item>
+		        	)}
+				    </SubMenu>
+					)}
+				</Menu>
+			)
+	}
 
+	render() {
+		
 		return (
 			<div style={{ width:"100%",height:"100%" }}>
 				<header>
@@ -170,45 +278,9 @@ class Navigator extends Component {
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.serverwp}>
 							<Menu mode="horizontal">
 								<SubMenu title={<Link className={styles.navhref}><span>
-									产品与服务</span></Link>}>
+									{data[0].title}</span></Link>}>
 			            <div className={styles.menuserver} >
-			            	<Menu onClick={handleClick} style={{ width: 200 }} mode="vertical">
-								    <SubMenu key="sub1" title={<span>彩票服务</span>}>
-								        <Menu.Item key="1">
-								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="2">
-								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="3">
-								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="4">
-								        	<h4 className={styles.navitems}>赔率盘口</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-							        	</Menu.Item>
-								    </SubMenu>
-								    <SubMenu key="sub2" title={<span>竞猜游戏</span>}>
-								      <Menu.Item key="5">
-								        	<h4 className={styles.navitems}>竞猜游戏</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="6">
-								        	<h4 className={styles.navitems}>竞猜游戏</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="7">
-								        	<h4 className={styles.navitems}>竞猜游戏</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-								        </Menu.Item>
-								        <Menu.Item key="8">
-								        	<h4 className={styles.navitems}>竞猜游戏</h4>	多国家顶尖博彩公司实时赔率盘口总汇，先人一步拿到最新动态
-							        	</Menu.Item>
-								    </SubMenu>
-								    <SubMenu key="sub4" title={<span>数据资讯</span>}>
-								      <Menu.Item key="9">Option 9</Menu.Item>
-								      <Menu.Item key="10">Option 10</Menu.Item>
-								      <Menu.Item key="11">Option 11</Menu.Item>
-								      <Menu.Item key="12">Option 12</Menu.Item>
-								    </SubMenu>
-								   
-								  </Menu>
+			            	{this.renderNavServes()}
 			            </div>
 				        </SubMenu>
 			        </Menu>
@@ -263,9 +335,8 @@ class Navigator extends Component {
 					</Row>
 				</header>
 				
-				<div ref="navbar" className={styles.mnavbar+' '+styles.dn}>
+				<div ref="navbar" className={styles.dn}>
 					<Sider/>
-					<Button type="ghost" className={styles.regBtn}>免费试用</Button>
 				</div>
 
 			</div>
