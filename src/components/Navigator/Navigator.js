@@ -12,6 +12,7 @@ const data=[
 					"title":"产品与服务",
 					"icon":"mail",
 					"special":"1",
+					"route":"",
 					"data":[
 						{
 							"id":"2",
@@ -116,6 +117,7 @@ const data=[
 					"title":"预算",
 					"icon":"appstore",
 					"special":"0",
+					"route":"",
 					"data":[]
 				},
 				{
@@ -123,6 +125,7 @@ const data=[
 					"title":"文档中心",
 					"icon":"setting",
 					"special":"0",
+					"route":"/documents",
 					"data":[
 						{
 							"key":"14",
@@ -151,6 +154,7 @@ const data=[
 					"title":"技术支持",
 					"icon":"setting",
 					"special":"0",
+					"route":"",
 					"data":[
 						{
 							"key":"18",
@@ -380,10 +384,10 @@ class Navigator extends Component {
 				return (
 					<Menu mode="horizontal">
 							<SubMenu key={data[x].id} title={<span>
-								<Link className={styles.navhref}>{data[x].title}</Link></span>}>
+								{data[x].route!=""?(<Link to={data[x].route} className={styles.navhref}>{data[x].title}</Link>):(<Link className={styles.navhref}>{data[x].title}</Link>)}</span>}>
 								{data[x]["data"].map((item,idx)=>
 									<Menu.Item key={"setting:"+idx}>
-										<Link to={item.rout} className={styles.href}>
+										<Link to={item.route} className={styles.href}>
 											<span>{item.title}</span>
 										</Link>
 									</Menu.Item>
@@ -395,7 +399,7 @@ class Navigator extends Component {
 				return (
 					<Menu mode="horizontal">
 							<SubMenu key={data[x].id} title={<span>
-								<Link className={styles.navhref}>{data[x].title}</Link></span>}>
+								{data[x].route!=""?(<Link to={data[x].route} className={styles.navhref}>{data[x].title}</Link>):(<Link className={styles.navhref}>{data[x].title}</Link>)}</span>}>
 							</SubMenu>
 		      </Menu>
 				)
