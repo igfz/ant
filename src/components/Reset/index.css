@@ -1,11 +1,11 @@
 .wrap{margin:40px auto;max-width:1200px;}
 h1{margin-bottom: 30px;text-align: center;font-weight: 200;}
 .main{margin:10px 0 10px;}
-.main input{height:40px; font-size: 16px;}
+.main input{height:40px; font-size: 16px;border-radius: 0;}
 .main label{height:32px; font-size: 16px;}
 
-.regBtn{width:180px;height:40px;font-size: 16px;margin:20px auto;display: block;}
-.sms{width:100px;height:40px;font-size:16px;}
+.regBtn{width:180px;height:40px;font-size: 16px;margin:20px auto;display: block;border-radius: 4px;}
+.sms{width:100px;height:40px;font-size:16px;border-radius: 0;}
 
 .dn{display: none}
 .success{width:100%;text-align: center;margin-top: 50px;}
@@ -27,6 +27,10 @@ h1{margin-bottom: 30px;text-align: center;font-weight: 200;}
 }
 
 @media screen and (max-width: 414px) {
+	.required{width: 70%;}
+	.requiredbtn{width:30%}
+	.requiredbtn .sms{width: 100%;text-align: center;padding:0;}
+	.stepswp{width: 90%;margin:0 auto;}
 	.surplus{width:5%;}
 	.main{width: 90%;}
 }

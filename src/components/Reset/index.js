@@ -54,14 +54,14 @@ const ResetFormClass =Form.create()(React.createClass({
               </span>
             )}>
               <Row>
-                <Col span={18}>
+                <Col span={18} className={styles.required}>
                   {getFieldDecorator('captcha', {
                     rules: [{ required: true, message: '请输入验证码!' }],
                   })(
                     <Input size="large" />
                   )}
                 </Col>
-                <Col span={6}>
+                <Col span={6} className={styles.requiredbtn}>
                   <Button size="large" className={styles.sms} type='primary'>发送短信</Button>
                 </Col>
               </Row>

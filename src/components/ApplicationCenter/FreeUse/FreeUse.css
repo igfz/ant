@@ -1,3 +1,7 @@
+ .wrap_content input{
+ 	border-radius: 0;
+ }
+ 
 @media screen and (max-width: 768px) {
 .pc_flag{
  	display: none;
@@ -102,6 +106,9 @@
   }
  .wrap_content input::-webkit-input-placeholder {
  	 color: black !important;  
+	}
+	.wrap_content input{
+		font-size: 16px;
 	}
 }
 
