@@ -218,7 +218,7 @@ const Sider = React.createClass({
 			return (
 				<SubMenu key={"sub"+data[x].id} title={
 					<span>
-						<Icon type={data[x].icon} />
+						
 						<span>{data[x].title}</span>
 					</span>}>
         	{
@@ -238,7 +238,7 @@ const Sider = React.createClass({
 	  	if(data[x]["data"].length>0){
 				return (
 					<SubMenu key={"sub"+data[x].id} title={<span>
-						<Icon type={data[x].icon} />
+
 						<span>{data[x].title}</span>
 					</span>}>
 						{data[x]["data"].map((item,idx)=>
@@ -251,7 +251,7 @@ const Sider = React.createClass({
 			}else{
 				return (
 					<SubMenu className={styles.iconnone} key={"sub"+data[x].id} title={<span>
-						<Icon type={data[x].icon} />
+						
 						<span>{data[x].title}</span>
 					</span>}>
 					</SubMenu>
