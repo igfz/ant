@@ -21,10 +21,14 @@ class Recharge extends Component{
 					</Row>
 					<Row className={styles['wrap_btn']} >
 					 <Col lg={11} md={11} sm={24} xs={24}>
-					 		<Button className={styles['alipay_btn']}>支付宝</Button>
+					 		<Button className={styles['alipay_btn']}>
+					 			<i className={styles['anticon-alipay']+' anticon'} />
+					 		</Button>
 					 </Col>
 					 <Col lg={11} md={11} sm={24} xs={24}>
-					 		<Button className={styles['wechat_btn']}>微信</Button>
+					 		<Button className={styles['wechat_btn']}>
+					 			<i className={styles['anticon-wechart']+' anticon'}/>
+					 		</Button>
 					 </Col>
 					</Row>
 					<Row className={styles['recharge']} >

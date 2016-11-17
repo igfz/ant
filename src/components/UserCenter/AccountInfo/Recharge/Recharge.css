@@ -1,3 +1,18 @@
+
+@font-face{font-family:"anticon";src:url('../../../../img/saas.woff');}
+.anticon-wechart,.anticon-alipay{
+	color: #2E8BFF;
+	font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+.anticon-wechart:before 
+{ content: "\e631";
+	color: #1EC622;
+	font-size: 100px;
+	line-height: 60px;
+}
+.anticon-alipay:before { content: "\e613"; }
 .center_wrap{
 	width: 402px;
 	height: 860px;
@@ -22,7 +37,7 @@
 	background-color: #fff;
 }
 .wechat_btn{
-	margin-left: 19px;
+	margin-left: 15px;
 }
 .recharge div{
 	text-align: center;
@@ -56,7 +71,20 @@
 	background: #F8F8F8;
 	color: #B0B0B0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
+.anticon-wechart:before 
+{ content: "\e631";
+	color: #1EC622;
+	font-size: 100px;
+	line-height: 45px;
+}
+.anticon-alipay:before { 
+	content: "\e613"; 
+	color: #2E8BFF;
+	font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
 .center_wrap{
 	padding: 0 17px;
 	width: 100%;

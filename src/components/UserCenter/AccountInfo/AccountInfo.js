@@ -39,7 +39,7 @@ export default class AccounTinfo extends Component{
 				</Row>
 				<Row className={styles['mt30']+ ' ' +styles['wrap_inner']} >
 					<Col lg={24} md={24} sm={24} xm={24}>
-						<Icon type='user'/>
+						<i className={styles['anticon-id']+' anticon'} />
 						<span>账号ID：456465</span>
 					</Col>
 				</Row>
@@ -51,7 +51,7 @@ export default class AccounTinfo extends Component{
 				</Row>
 				<Row className={styles['mt30']} >
 					<Col lg={24} md={24} sm={24} xm={24}>
-						<Icon type='user'/>
+						<i className={styles['anticon-te1']+' anticon'} />
 						<span>技术支持：您尚未购买请点击</span>
 						<span className={styles['link_sp']+' '+ styles['br_sp']} >点此购买</span>
 					</Col>
