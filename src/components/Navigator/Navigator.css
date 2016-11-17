@@ -1,6 +1,6 @@
 header{font-size:16px;background:#282e39;color:#fff}
 header>.row{max-width:1200px;margin:auto}
-header>.row>div{line-height:80px;text-align:center}
+header>.row>div{line-height:80px;text-align:center;height: 80px;}
 header>.row>div:first-child{font-size:22px;font-weight:bold;font-family:initial;}
 header .hover:hover{background:#2D3441;}
 header .hover:hover .down,.outMeu:hover .caret_down{background:#2D3441;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
@@ -10,8 +10,8 @@ header .cloud{vertical-align:-6px;font-size:42px;font-size: 46px!important;}
 header .cloud:before{font-size: 32px!important;}
 
 header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:none}
-header .href{color:currentColor;}
-header .navhref{color:#FFF;display: inline-block;width: 100%;line-height: 80px;height: 100%;}
+header .href{color:#fff;}
+header .navhref{color:#FFF!important;display: inline-block;width: 100%;line-height: 80px;height: 100%;}
 header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .center_meu a{
 	color: white!important;
@@ -58,10 +58,10 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .dn{display: none}
 .actbar{width: 100%;height:600px;background: red;display: block;}
 .mlogin{padding-right: 10px;font-size: 14px;}
-.mnavbar{left: 0;top: 80px;width: 100%;height: calc(100% - 80px);z-index: 2;background: #282E39;}
+.mnavbar{left: 0;top: 79px;width: 100%;height: calc(100% - 80px);z-index: 2;background: #282E39;}
 .mnavbar li[class*="ant-menu-item"],.mnavbar li>div[class*="ant-menu-submenu-title"]{height: 60px!important;line-height: 60px!important;font-size: 16px!important;}
 .mnavbar div::after{font-size: 16px!important;}
-
+.mnavbar .iconnone div[class*="ant-menu-submenu-title"]::after{display: none!important;}
 .mnavbar>ul{background: #282E39;color:#fff;width: 100%!important;border: none;margin:0 auto; }
 .mnavbar>ul>li>div{background: #282E39}
 .mnavbar>ul>li>div:hover{background: #282E39}
@@ -75,7 +75,7 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 .center_meu,.center_meu ul {
 	background-color: #242c38!important;
 }
-.defaulthref:link{color: white;}
+.defaulthref:link,.mnavbar li[class*="ant-menu-item-selected"]>a.href,.mnavbar li[class*="ant-menu-item"]>a.href{color: white!important;}
 /* .defaulthref:active{color: white;}   
 .defaulthref:visited{color: white;}   */ 
 .defaulthref:hover{color: white;}
@@ -97,6 +97,7 @@ header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
 }
 
 @media screen and (max-width: 414px) {
+	header a.href span{color: #fff!important;}
 	.mnavbar>ul{width: 100%!important;}
 	.regBtn{width:90%;}
 	.mnavbar{position: absolute;overflow: auto;}
