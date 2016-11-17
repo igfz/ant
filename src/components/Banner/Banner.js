@@ -28,7 +28,7 @@ export default class Banner extends Component {
   render() {
   	let that = this
   	const settings = {
-  		speed:600,
+  		speed:200,
       dots: false,
       beforeChange: function (currentSlide, nextSlide) {
       	that.props.clickHandler(nextSlide)
