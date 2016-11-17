@@ -104,3 +104,9 @@ header .bars{margin-left: 16px;vertical-align:-8px;font-size:42px!important;}
 	.pf{position: fixed;}
 }
 
+@media screen and (max-width: 321px) {
+	.logo{width: 150px;height:35px;background-size: 150px 35px;margin-top: -17.5px;}
+	.mlogin{padding-right: 12px;font-size: 14px;}
+	header .bars{margin-left: 12px;font-size: 14px!important;}
+}
+
