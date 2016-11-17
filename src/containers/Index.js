@@ -34,8 +34,6 @@ class Index extends Component {
 
 				<div>
 
-					<Notify />
-
 					<Biz 
 						idx = {idx} 
 						clickHandler = {this.clickSlideHandler} />
