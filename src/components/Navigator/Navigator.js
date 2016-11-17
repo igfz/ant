@@ -411,8 +411,9 @@ class Navigator extends Component {
 				<header>
 					<Row type="flex" className={styles.row}>
 						<Col xs={11} sm={5} md={5} lg={5} className={ styles.servertitle }>
-							<Icon type="cloud-o" className={styles.cloud}/>
-							<Link to="/" className={styles.href}>SAAS服务</Link>
+							<Link to="/" className={styles.href}>
+								<span className={styles.logo}></span>
+							</Link>
 						</Col>
 						<Col xs={5} sm={15} md={0} lg={0}></Col>
 						<Col xs={0} sm={0} md={3} lg={3}  className={styles.menugroup+' '+styles.serverwp}>

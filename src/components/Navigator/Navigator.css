@@ -13,13 +13,14 @@ header .btn{max-width:100px;height:30px;background:#424B5C;color:#fff;border:non
 header .href{color:#fff;}
 header .navhref{color:#FFF!important;display: inline-block;width: 100%;line-height: 80px;height: 100%;}
 header .bars{margin-left: 10px;vertical-align:-8px;font-size:42px!important;}
+.servertitle a.href{display: inline-block;width: 170px;height: 100%;position: relative;}
 .center_meu a{
 	color: white!important;
 }
 .center_meu a:hover,.menugroup a:hover{
   color: #2588FF!important;
 }
-
+.logo{display: inline-block;width: 170px;height: 40px;background: url(../../img/logo.png) no-repeat 0 0;background-size: 170px 40px;position: absolute;left: 0;top:50%;margin-top: -20px;}
 .menugroup>ul>li>ul[class*="ant-menu"]>li:last-child,.menuserver>ul>li:last-child,.menuserver>ul>li>ul>li:last-child{padding-bottom: 20px;background: #242c38;}
 .menugroup>ul>li>ul[class*="ant-menu"]>li:first-child,.menuserver>ul>li:first-child{padding-top: 20px;height: 62px;box-sizing:border-box;background: #242c38;}
 .menuserver>ul>li>ul>li:first-child{margin-top: 20px}
