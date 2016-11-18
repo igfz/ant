@@ -409,7 +409,7 @@ class Navigator extends Component {
 	}
 
 	render() {
-		
+		let user="true"
 		return (
 			<div style={{ width:"100%",height:"100%" }}>
 				<header>
@@ -452,7 +452,7 @@ class Navigator extends Component {
 						</Col>
 						<Col xs={8} sm={4} md={0} lg={0} className={ styles.mbars }>
 								<span className={ styles.mlogin }>
-									<Link to="/login" className={styles.defaulthref}>登录</Link>
+									{user?<Icon type="user" className={styles.usericon}/>:<Link to="/login" className={styles.defaulthref}>登录</Link>}
 								</span>|
 								<Icon type="bars" className={styles.bars} 
 									onClick={()=>this.showNavbar()}/>
