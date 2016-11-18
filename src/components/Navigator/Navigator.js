@@ -174,7 +174,41 @@ const data=[
 					]
 				}
 			]
-
+		           		           		        
+const userData={
+	 				"id":"1",
+					"title":"章鱼彩票889",
+					"icon":"user",
+					"special":"0",
+					"route":"",
+					"data":[
+						{
+							"key":"2",
+							"title":"账户信息",
+							"route":"/usercenter/accountinfo"
+							},
+							{
+							"key":"3",
+							"title":"实名认证",
+							"route":"/usercenter/certification"
+							},
+							{
+							"key":"4",
+							"title":"费用信息",
+							"route":"/usercenter/costinfo"
+							},
+							{
+							"key":"5",
+							"title":"交易记录",
+							"route":"/usercenter/transactrecord"
+							},
+							{
+							"key":"5",
+							"title":"退出",
+							"route":"/login"
+							}
+					]
+}
 function handleClick(e) {
   console.log('click', e);
 }
@@ -314,43 +348,30 @@ class Navigator extends Component {
 	}
 
 	loginFlag(flag){
+		console.dir(userData.data,88888888)
 		if(flag){
 			return(
 					<Menu mode="horizontal" className={styles['center_meu']}>
 									<SubMenu 
 										title={<span>
 										<Link 	className={styles.navhref}>
-											<Icon type='user'/>章鱼1997<Icon type='caret-up'/>
+											<Icon type='user'/>{userData.title}
+											<Icon type='caret-up'/>
 										</Link>
 										</span>}>
-		            <Menu.Item key="setting:1">
-			            <Link to="/usercenter/accountinfo" className={styles.defaulthref}>
-			            		<span>账户信息</span>
-			            </Link>
-			           </Menu.Item>
-		            <Menu.Item key="setting:2">
-			            <Link to="/usercenter/certification" 
-			            	className={styles.defaulthref}>
-			            	实名认证
-			            </Link>
-		            </Menu.Item>
-		            <Menu.Item key="setting:3">
-			             <Link to="/usercenter/costinfo" 
-			             	className={styles.defaulthref}>
-			             		费用信息
-			             </Link>
-		             </Menu.Item>
-		            <Menu.Item key="setting:4">
-			            <Link to="/usercenter/transactrecord" 
-			            	className={styles.defaulthref}>
-			            		交易纪录
-			            </Link>
-		            </Menu.Item>
-		            <Menu.Item key="setting:5">
-			            <Link to="/login" className={styles.defaulthref}>
-			            退出
-			            </Link>
-		            </Menu.Item>
+										{
+											userData&&userData.data.map((item,index)=>{
+												return(
+													<Menu.Item key={'settinf:'+index}>
+							            <Link to={item.route} 
+							            	className={styles.defaulthref}>
+							            		<span>{item.title}</span>
+							            </Link>
+							           </Menu.Item>
+													)
+											})
+										}
+		            
 		        </SubMenu>
 	        </Menu>
 			)
