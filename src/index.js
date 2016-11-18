@@ -6,6 +6,7 @@ import App from 'App'
 import Index from 'Index'
 
 import Advantage from 'Advantage'
+import Budget from 'Budget'
 
 import ProductDesc from 'ProductDesc'
 import Demo from 'ProductDesc/Main/Demo'
@@ -61,6 +62,7 @@ ReactDOM.render(
 			<Route path="/" component={App}>
 				<IndexRoute component={Index}/>
 				<Route path="/advantage" component={Advantage}/>
+				<Route path="/budget" component={Budget}/>
 				<Route path="/product" component={ProductDesc}>
 					<IndexRoute component={Detail}/>
 					<Route path="/product/demo" component={Demo}/>

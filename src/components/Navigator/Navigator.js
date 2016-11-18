@@ -117,7 +117,7 @@ const data=[
 					"title":"预算",
 					"icon":"appstore",
 					"special":"0",
-					"route":"",
+					"route":"/budget",
 					"data":[]
 				},
 				{
