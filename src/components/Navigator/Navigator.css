@@ -60,7 +60,7 @@ header .bars{margin-left: 16px;vertical-align:-8px;font-size:42px!important;}
 .mlogin{padding-right: 16px;font-size: 16px;}
 .mnavbar{left: 0;top: 79px;width: 100%;height: calc(100% - 80px);z-index: 2;background: #282E39;}
 .mnavbar li[class*="ant-menu-item"],.mnavbar li>div[class*="ant-menu-submenu-title"]{height: 60px!important;line-height: 60px!important;font-size: 16px!important;}
-.mnavbar div::after{font-size: 16px!important;}
+.mnavbar div::after{font-size: 18px!important;}
 .mnavbar .iconnone div[class*="ant-menu-submenu-title"]::after{display: none!important;}
 .mnavbar>ul{background: #282E39;color:#fff;width: 100%!important;border: none;margin:0 auto; }
 .mnavbar>ul>li>div{background: #282E39}
@@ -90,10 +90,10 @@ header .bars{margin-left: 16px;vertical-align:-8px;font-size:42px!important;}
 }
 
 @media screen and (max-width: 768px) {
-	header>.row>.servertitle{text-align: left;padding-left: 10px;}
+	header>.row>.servertitle{text-align: left;padding-left: 20px;}
 	header i:before{font-size: 32px!important;}
 	.cloud+a{padding:0;}
-	header>.row>.mbars{text-align: right;padding-right: 10px;}
+	header>.row>.mbars{text-align: right;padding-right: 15px;}
 }
 
 @media screen and (max-width: 414px) {
@@ -106,7 +106,7 @@ header .bars{margin-left: 16px;vertical-align:-8px;font-size:42px!important;}
 
 @media screen and (max-width: 321px) {
 	.logo{width: 150px;height:35px;background-size: 150px 35px;margin-top: -17.5px;}
-	.mlogin{padding-right: 12px;font-size: 14px;}
-	header .bars{margin-left: 12px;font-size: 14px!important;}
+	.mlogin{padding-right: 12px;font-size: 13px;}
+	header .bars{margin-left: 12px;font-size: 13px!important;}
 }
 
