@@ -1,5 +1,4 @@
 
-@font-face{font-family:"anticon";src:url('../../../../img/saas.woff');}
 .anticon-wechart,.anticon-alipay{
 	color: #2E8BFF;
 	font-size: 30px;
@@ -37,7 +36,7 @@
 	background-color: #fff;
 }
 .wechat_btn{
-	margin-left: 15px;
+	margin-left: 19px;
 }
 .recharge div{
 	text-align: center;
@@ -71,7 +70,7 @@
 	background: #F8F8F8;
 	color: #B0B0B0;
 }
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 768px) {
 .anticon-wechart:before 
 { content: "\e631";
 	color: #1EC622;

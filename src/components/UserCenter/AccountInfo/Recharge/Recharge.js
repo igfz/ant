@@ -20,12 +20,12 @@ class Recharge extends Component{
 					 </Col>
 					</Row>
 					<Row className={styles['wrap_btn']} >
-					 <Col lg={11} md={11} sm={24} xs={24}>
+					 <Col lg={11} md={11} sm={11} xs={24}>
 					 		<Button className={styles['alipay_btn']}>
 					 			<i className={styles['anticon-alipay']+' anticon'} />
 					 		</Button>
 					 </Col>
-					 <Col lg={11} md={11} sm={24} xs={24}>
+					 <Col lg={11} md={11} sm={11} xs={24}>
 					 		<Button className={styles['wechat_btn']}>
 					 			<i className={styles['anticon-wechart']+' anticon'}/>
 					 		</Button>
