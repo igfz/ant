@@ -29,4 +29,13 @@ p.detail span{display: block;}
 	.article h3{font-size:18px;margin-top:50px;}
 	.article h4{font-size:16px;}
 	.article p{font-size:14px;margin:30px 0 50px;}
+	.article button{width: 90%;margin:0 auto;padding:0;text-align: center;}
+	.article div[class*="ant-row-flex"]{width: 100%}
+	.article div[class*="ant-row-flex"]>div{width: 25%;}
+}
+
+@media screen and (max-width: 414px) {
+	.slide{width: 90%;margin:0 auto;}
+	.sildewp{width: 100%;}
+	.price{margin-bottom: 30px;display: inline-block;}
 }

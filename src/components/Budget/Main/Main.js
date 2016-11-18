@@ -65,7 +65,7 @@ export default class Main extends Component {
 			<div style={{'maxWidth':'1200px','minHeight':'1200px','margin':'3% auto'}}>
 				
 				<Row type="flex" justify="space-between">
-					<Col xs={23} sm={23} md={6} lg={6}>
+					<Col xs={23} sm={23} md={6} lg={6} className={styles.sildewp}>
 						<div className={styles.slide}>
 							<div className={styles.title}>
 								<p>价格总计</p>
