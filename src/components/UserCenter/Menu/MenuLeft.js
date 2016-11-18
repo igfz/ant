@@ -14,7 +14,7 @@ let data=[
     ]
 
 export default class Menu extends Component {
-  componentDidMount(){
+/*  componentDidMount(){
     data.map(
       (items,index) => {
         if(window.location.hash.indexOf(items.route)!=-1){
@@ -22,8 +22,17 @@ export default class Menu extends Component {
         }
       }
     )
+  }*/
+  shouldComponentUpdate(){
+    data.map(
+      (items,index) => {
+        if(window.location.hash.indexOf(items.route)!=-1){
+          this.actRoute(this.refs["rt"+index],index,"flush")
+        }
+      }
+    )
+    return true;
   }
-
   constructor(props) {
     super(props)
     this.productRoute = this.productRoute.bind(this)
