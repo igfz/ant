@@ -12,7 +12,7 @@
 	.ctr_style{
 	width:100%;
 	color: #333333;
-	height:auto;
+	min-height:593px;
 	margin-bottom:75px;
 	
  }
