@@ -321,8 +321,70 @@ const Sider = React.createClass({
     );
   },
 });
+class UserSider extends Component{
+	constructor(props){
+		super(props);
+		this.state={
+		 current: '1',
+     openKeys: []
+		}
+		this.handleClick=this.handleClick.bind(this);
+		this.renderNavServers=this.renderNavServers.bind(this);
+	}
+
+	handleClick(e) {
+    //移动端路由关闭导航
+		let navbar = document.getElementById("usernavbar")
+		let body=document.getElementsByTagName("body")[0]
+	 	utils.addClassName(navbar,styles.dn)
+		utils.removeClassName(body,styles.pf)
+    this.setState({ current: e.key });
+  }
+  renderNavServers(x){
+		if(true){
+			return (
+				userData&&userData.data.map((item,index)=>{
+					return(
+						<SubMenu className={styles.iconnone}
+						 key={"sub"+index} title={<span>
+							<Link to={item.route} 
+								onClick={this.handleClick}>
+	    					<span className={styles['link_meb']}>
+	    						{item.title}
+	    					</span>
+	    				</Link>
+					</span>}>
+					</SubMenu>
+						)
+				})
+			)
+		}
+	}
+   render() {
+    return (
+    	<div className={styles.mnavbar}>
+	      <Menu
+	        mode="inline"
+	        openKeys={this.state.openKeys}
+	        selectedKeys={[this.state.current]}
+	        style={{ width: 240 }}
+	        onOpenChange={this.onOpenChange}
+	        onClick={this.handleClick}
+	      >
+	        {this.renderNavServers(0)}
+	      </Menu>
+	      <Button type="ghost" className={styles.regBtn} onClick={this.handleClick}>免费试用</Button>
+      </div>
+    );
+  }
+}
+
 
 class Navigator extends Component {
+	constructor(props){
+		super(props);
+		this.showUserNt=this.showUserNt.bind(this);
+	}
 	componentDidMount(){
 		//移动端路由关闭导航
 		let navbar = this.refs.navbar;
@@ -337,18 +399,30 @@ class Navigator extends Component {
 	}
 
 	showNavbar(){
-		let navbar = this.refs.navbar;
+		let navbar = this.refs.navbar,
+				usernavbar = this.refs.usernavbar;
 		utils.myToggleClass(navbar,styles.dn)
 		let body=document.getElementsByTagName("body")[0]
 		if(navbar.className.indexOf("dn")!=-1){
 			utils.removeClassName(body,styles.pf)
 		}else{
+			utils.addClassName(usernavbar,styles.dn)
 			utils.addClassName(body,styles.pf)
 		}
 	}
-
+  showUserNt(){
+  	let navbar = this.refs.navbar,
+				usernavbar = this.refs.usernavbar;
+		utils.myToggleClass(usernavbar,styles.dn)
+		let body=document.getElementsByTagName("body")[0]
+		if(navbar.className.indexOf("dn")!=-1){
+			utils.removeClassName(body,styles.pf)
+		}else{
+			utils.addClassName(navbar,styles.dn)
+			utils.addClassName(body,styles.pf)
+		}
+  }
 	loginFlag(flag){
-		console.dir(userData.data,88888888)
 		if(flag){
 			return(
 					<Menu mode="horizontal" className={styles['center_meu']}>
@@ -371,7 +445,6 @@ class Navigator extends Component {
 													)
 											})
 										}
-		            
 		        </SubMenu>
 	        </Menu>
 			)
@@ -473,7 +546,8 @@ class Navigator extends Component {
 						</Col>
 						<Col xs={8} sm={4} md={0} lg={0} className={ styles.mbars }>
 								<span className={ styles.mlogin }>
-									{user?<Icon type="user" className={styles.usericon}/>:<Link to="/login" className={styles.defaulthref}>登录</Link>}
+									{user?<Icon type="user" className={styles.usericon}
+									 onClick={this.showUserNt}/>:<Link to="/login" className={styles.defaulthref}>登录</Link>}
 								</span>|
 								<Icon type="bars" className={styles.bars} 
 									onClick={()=>this.showNavbar()}/>
@@ -483,6 +557,10 @@ class Navigator extends Component {
 				
 				<div id="navbar" ref="navbar" className={styles.dn}>
 					<Sider/>
+				</div>
+
+				<div id="usernavbar" ref="usernavbar" className={styles.dn}>
+					<UserSider/>
 				</div>
 
 			</div>
