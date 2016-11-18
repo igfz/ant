@@ -430,7 +430,8 @@ class Navigator extends Component {
 										title={<span>
 										<Link 	className={styles.navhref}>
 											<Icon type='user'/>{userData.title}
-											<Icon type='caret-up'/>
+											<Icon className={styles['arrow_h']} 
+												type='caret-down'/>
 										</Link>
 										</span>}>
 										{
