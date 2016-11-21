@@ -39,7 +39,7 @@ export default class FreeUse extends Component{
 									<span>应用描述</span>
 								</Row>
 								<Row>
-									<Input placeholder="Basic usage" />
+									<Input placeholder="描述123 描述abc" />
 								</Row>
 							</Col>
 						</Row>
