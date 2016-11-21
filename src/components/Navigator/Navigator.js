@@ -429,7 +429,7 @@ class Navigator extends Component {
 									<SubMenu 
 										title={<span>
 										<Link 	className={styles.navhref}>
-											<Icon type='user'/>{userData.title}
+											<Icon type='user' className={styles.usericon}/>{userData.title}
 											<Icon className={styles['arrow_h']} 
 												type='caret-down'/>
 										</Link>
