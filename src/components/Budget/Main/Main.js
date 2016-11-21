@@ -6,7 +6,7 @@ import styles from './Main.css'
 const IntegerStep = React.createClass({
   getInitialState() {
     return {
-      inputValue: 1,
+      inputValue: 500,
     };
   },
   onChange(value) {
@@ -18,12 +18,11 @@ const IntegerStep = React.createClass({
     return (
       <Row>
         <Col span={12}>
-          <Slider min={1} max={20} onChange={this.onChange} value={this.state.inputValue} />
+
+          <Slider min={1} max={1000} onChange={this.onChange} value={this.state.inputValue} />
         </Col>
         <Col span={4}>
-          <InputNumber min={1} max={20} style={{ marginLeft: '16px' }}
-            value={this.state.inputValue} onChange={this.onChange}
-          />
+        	<span>{this.state.inputValue}万次</span>
         </Col>
       </Row>
     );
