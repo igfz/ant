@@ -64,7 +64,7 @@ export default class Main extends Component {
 			<div style={{'maxWidth':'1200px','minHeight':'1200px','margin':'3% auto'}}>
 				
 				<Row type="flex" justify="space-between">
-					<Col xs={23} sm={23} md={6} lg={6} className={styles.sildewp}>
+					<Col xs={23} sm={6} md={6} lg={6} className={styles.sildewp}>
 						<div className={styles.slide}>
 							<div className={styles.title}>
 								<p>价格总计</p>
@@ -99,7 +99,7 @@ export default class Main extends Component {
 							</ul>
 						</div>
 					</Col>
-					<Col xs={23} sm={23} md={16} lg={16} className={styles.rightcol}>
+					<Col xs={23} sm={16} md={16} lg={16} className={styles.rightcol}>
 						<div className={styles.article}>
 							<h2><span className={styles.greater}>01</span>/选择服务模块</h2>
 							<h3>彩票服务</h3>

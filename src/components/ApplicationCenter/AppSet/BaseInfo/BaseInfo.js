@@ -11,12 +11,12 @@ export default class BaseInfo extends Component {
 				<h2 className={styles.title}>基本信息</h2>
 				<div className={styles.warp}>
 					<p>应用名称</p>
-					<Input placeholder="应用1" defaultValue="应用1"/>
+					<Input placeholder="应用1" />
 					<span className={styles.creatTime}>创建时间:2016-09-29</span>
 				</div>
 				<div className={styles.warp}>
 					<p>应用描述</p>
-					<Input placeholder="描述123描述abc" defaultValue="描述123描述abc"/>
+					<Input placeholder="描述123描述abc" />
 				</div>
 				<div className={styles.warp}>
 					<p>删除应用</p>
