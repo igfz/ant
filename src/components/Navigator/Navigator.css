@@ -97,6 +97,10 @@ header .bars{margin-left: 16px;vertical-align:-8px;font-size:42px!important;}
 .mnavbar li>div+ul div+ul li:hover{background: #4b5059}
 i.usericon{border:1px solid currentColor;border-radius: 20px;}
 i.usericon::before{font-size: 16px!important;padding:4px;}
+.mbars .bars:link,i.usericon:link{border-color:#fff;color:#fff;}
+.mbars .bars:hover,i.usericon:hover{border-color:#2db7f5;color:#2db7f5;}
+.mbars .bars:active,i.usericon:active{border-color:#fff;color:#fff;}
+.mbars .bars:visited,i.usericon:visited{border-color:#fff;color:#fff;}
 .regBtn{width: 40%;height:40px;font-size: 16px;margin:20px auto;display: block;margin-top: 60px;color:#fff;border-color: #fff;border-radius: 2px;}
 .link_meb{
 	color: #fff;
@@ -131,6 +135,8 @@ i.usericon::before{font-size: 16px!important;padding:4px;}
 	.regBtn{width:90%;}
 	.mnavbar{position: absolute;overflow: auto;}
 	.pf{position: fixed;}
+	.mbars .bars:hover,i.usericon:hover{border-color:#fff;color:#fff;}
+	.mbars .bars:active,i.usericon:active{border-color:#2db7f5;color:#2db7f5;}
 }
 
 @media screen and (max-width: 321px) {
