@@ -1,7 +1,7 @@
 
 .tabHd{margin:50px auto 60px;max-width:1200px;}
 .tabHd button{max-width:300px;width:100%;height:100%;padding:4% 0;background:#fff;color:#333;font-size:24px;border-radius:30px;margin:0 auto;display:block;}
-.tabHd .blue{background:#2f79e9;color:#fff;border:none}
+.tabHd .blue{background:#2e8bff;color:#fff;border:none}
 .tabHd .red{background:#00b56a;color:#fff;border:none}
 .tabHd .purple{background:#e64a4a;color:#fff;border:none}
 
@@ -18,7 +18,8 @@
 .buttonBoxI{position:absolute;left:0;bottom:20%;width:100%;padding:0 12%;}
 .buttonBoxO{width:100%;margin-top:10px;padding:0 12%;display:none;}
 .buttonBoxI button,.buttonBoxO button{width:100%;font-size:18px;padding-left:0;padding-right:0;text-align:center;}
-.buttonBoxO button{color:#2E8BFF;border-color:#2E8BFF;}    
+.buttonBoxO button{color:#2E8BFF;border-color:#2E8BFF;}
+.buttonBoxI button{background-color:#2E8BFF;border-color:#2E8BFF;}    
 .featureIteam:hover .detail{-webkit-transform:translateY(0px);opacity:1;transition:.4s;background-color:rgba(40,46,57,.9);}
 
 @media screen and (max-width: 768px) {

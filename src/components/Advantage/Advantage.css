@@ -10,7 +10,7 @@
 .animFadeIn div:last-child{-webkit-transform:translateX(0px);opacity:1;transition:.8s;}
 
 .btn{width:260px;height:70px;font-size:30px;margin:130px calc(50% - 130px)}
-.desc .blue{background:#2f79e9;color:#fff;border:none}
+.desc .blue{background:#2e8bff;color:#fff;border:none}
 .desc .red{background:#00b56a;color:#fff;border:none}
 .desc .purple{background:#e64a4a;color:#fff;border:none}
 

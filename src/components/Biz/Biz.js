@@ -45,13 +45,13 @@ export default class Biz extends Component {
           <h3>{items.subtitle}</h3>
           <p>支持平台：{items.platform}</p>
           <p>采用技术：{items.tech}</p>
-          <Row type="flex" justify="center" gutter={16} className={styles.buttonBoxI}>
-          	<Col span={12}>
+          <Row type="flex" justify="space-between" className={styles.buttonBoxI}>
+          	<Col span={11}>
             	<Button type="primary">
             		<Link to="/product">产品详情</Link>
             	</Button>
             </Col>
-            <Col span={12}>
+            <Col span={11}>
             	<Button type="primary">
             		<Link to="/product/demo">Demo</Link>
             	</Button>
