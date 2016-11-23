@@ -1,7 +1,7 @@
 .desc>li{height:480px;}
 .desc>li:nth-child(odd){background:#f8f8f8}
 .cont{height:calc(480px - 6%);max-width:1200px;margin:0 auto;padding:3% 0;overflow:hidden;}
-.cont h3{font-size:48px;colo:#333;font-weight:500;margin-top:26%;}
+.cont h3{font-size:48px;colo:#333;font-weight:normal;margin-top:26%;}
 .cont p{font-size:20px;margin-top:7%;}
 
 .cont div:first-child{-webkit-transform:translateX(-60%);opacity:0;}

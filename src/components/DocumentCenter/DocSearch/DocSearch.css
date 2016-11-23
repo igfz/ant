@@ -4,7 +4,7 @@
 .searchBox p{font-size:16px;color:#333;margin:20px 0 50px;}
 .searchBox p span{padding-right:15px;display:inline-block;}
 .list{min-height:1000px;padding-left:10px;}
-.list h3{font-size:16px;color:#333;margin-top:40px;font-weight:500;}
+.list h3{font-size:16px;color:#333;margin-top:40px;font-weight:normal;}
 .list h3:before{content:'•';position:absolute;margin-left:-10px;color:#E5E5E5;}
 .list p{font-size:14px;color:#333;margin-top:15px;}
 .page{margin:100px 0 200px; }

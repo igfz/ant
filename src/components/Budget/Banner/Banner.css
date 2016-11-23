@@ -3,7 +3,7 @@
 .bannerBox{max-width:1200px;margin:auto}
 
 .banner{height:320px;max-width:1200px;margin:0 auto;padding:4% 0;color:#fff;}
-.banner h3{font-size:58px;colo:#333;font-weight:500;margin:5% 0 3%;}
+.banner h3{font-size:58px;colo:#333;font-weight:normal;margin:5% 0 3%;}
 .banner .input{font-size:16px;margin-top:30px;width:600px;}
 .banner p{font-size:20px;color:#ccc;line-height: 34px;position: relative;padding-left: 20px;}
 .banner p>.losange{width: 8px;height: 8px;border:1px solid #fff;background: none;position: absolute;left: 0;top: 50%;margin-top: -4px;overflow: hidden;-webkit-transform:rotate(45deg)}

@@ -6,7 +6,7 @@
 
 .selfBox{background:#282E39;}
 .self{max-width:1200px;padding:1.6% 0;margin:0 auto;}
-.self h3{font-size:18px;line-height:32px;color:#fff;font-weight:500}
+.self h3{font-size:18px;line-height:32px;color:#fff;font-weight:normal}
 .self ul{display:inline-block;vertical-align:top;margin-top:10%;color:#B3B3B3}
 .self li{font-size:14px;line-height:30px;}
 

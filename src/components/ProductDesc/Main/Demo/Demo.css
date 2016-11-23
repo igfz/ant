@@ -5,7 +5,7 @@
 .item{border:solid 1px #ccc;height:150px;}
 .iconI{color:#fff;text-align:center;line-height:150px;font-size:48px;background:#2f79e9;}
 .iconA{color:#fff;text-align:center;line-height:150px;font-size:48px;background:#00b56a;}
-.item h4{font-size:24px;color:#333;text-align:center;padding:36px 0 22px;font-weight:500;}
+.item h4{font-size:24px;color:#333;text-align:center;padding:36px 0 22px;font-weight:normal;}
 .buttonBox{padding:0 3%}
 .item button{width:100%;}
 .blue{background:#2f79e9;border-color:#2f79e9;}
