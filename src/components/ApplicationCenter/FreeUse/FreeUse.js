@@ -12,8 +12,7 @@ export default class FreeUse extends Component{
 		return(
 			<div className={styles['wrap_content']}>
 				<Row>
-					<Col className={styles['pc_flag']} lg={4} md={4} sm={4} xs={4}></Col>
-					<Col lg={20} md={20} sm={24} xs={24} 
+					<Col push={1} lg={20} md={20} sm={24} xs={24} 
 						className={styles['mb50']} >
 						<Row className={styles['th']}>
 						 <Col>
