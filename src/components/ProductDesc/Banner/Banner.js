@@ -12,11 +12,17 @@ export default class ProductDesc extends Component {
 					<div className={styles.item}>
 						<Row  className={styles.banner}>
 							<Col xs={21} sm={21} md={12} lg={12} push = {1}>
-								<h3>彩票服务</h3>
+								<h3>足篮球竞猜</h3>
 								<p>
-									涵盖中国体育彩票下，竞彩足篮球、传统足彩、北京单场的全玩法赛程、固定奖金和SP值服务
+									<span className={styles.losange}></span>近百种足篮赛事赛程
 								</p>
-								<Button type="primary">了解更多</Button>
+								<p>
+									<span className={styles.losange}></span>足球拥有13种赛前玩法，19种赛中玩法
+								</p>
+								<p>
+									<span className={styles.losange}></span>玩法赔率即时更新
+								</p>
+								<Button type="primary">立即试用</Button>
 							</Col>
 							<Col xs={0} sm={0} md={7} lg={7} push = {4}>
 								<div className={styles.img}></div>
