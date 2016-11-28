@@ -24,7 +24,7 @@ export default class AppKey extends Component {
 					</Row>
 				</div>
 				<div className={styles.warp}>
-					<p>APP Key</p>
+					<p>Open Key</p>
 					<Row type="flex" justify="space-between">
 						<Col xs={24} sm={24} md={17} lg={17}>
 							<Input defaultValue="48HGHKDBE28HJ28HH2FFB-GT33" readOnly/>
@@ -38,7 +38,7 @@ export default class AppKey extends Component {
 					</Row>
 				</div>
 				<div className={styles.warp}>
-					<p>Master Key</p>
+					<p>Secret Key</p>
 					<Row type="flex" justify="space-between">
 						<Col xs={24} sm={24} md={17} lg={17}>
 							<Input defaultValue="48HGHKDBE28HJ28HH2FFB-GT33" readOnly/>
