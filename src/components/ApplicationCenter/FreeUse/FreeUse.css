@@ -45,7 +45,7 @@
 	position: relative;
 }
 .create_time{
-		z-index: 99;
+		z-index: 1;
     position: absolute;
     width: 177px;
     top: 5px;
@@ -94,7 +94,7 @@
 	position: relative;
 }
 .create_time{
-		z-index: 99;
+		z-index: 1;
     position: absolute;
     width: 177px;
     top: 0px;
