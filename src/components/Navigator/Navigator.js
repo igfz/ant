@@ -130,22 +130,22 @@ const data=[
 						{
 							"key":"14",
 							"title":"彩票服务文档",
-							"route":""
+							"route":"/documents/detail?lottery=1"
 						},
 						{
 							"key":"15",
 							"title":"竞猜游戏文档",
-							"route":""
+							"route":"/documents/detail?game=1"
 						},
 						{
 							"key":"16",
 							"title":"数据资讯文档",
-							"route":""
+							"route":"/documents/detail?message=1"
 						},
 						{
 							"key":"17",
 							"title":"其他文档",
-							"route":""
+							"route":"/documents/detail?rests=1"
 						}
 					]
 				},
@@ -281,7 +281,7 @@ const Sider = React.createClass({
 					</span>}>
 						{data[x]["data"].map((item,idx)=>
 							<Menu.Item key={"setting:"+idx}>
-									<span>{item.title}</span>
+									<Link to={item.route} className={styles.href}>{item.title}</Link>
 							</Menu.Item>
 						)}
 					</SubMenu>
