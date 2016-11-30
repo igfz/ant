@@ -14,7 +14,7 @@ export default class DocDetail extends Component {
 		}else if(url.indexOf("message")!=-1){
 			return "数据资讯"
 		}else{
-			return "竞猜软件"
+			return "其他"
 		}
 	}
 
@@ -25,7 +25,7 @@ export default class DocDetail extends Component {
 					<Breadcrumb separator=">">
 				    <Breadcrumb.Item>首页</Breadcrumb.Item>
 				    <Breadcrumb.Item href="">文档中心</Breadcrumb.Item>
-				    <Breadcrumb.Item href="">竞猜软件SDK文档</Breadcrumb.Item>
+				    <Breadcrumb.Item href="">{this.documentTitle()}SDK文档</Breadcrumb.Item>
 				  </Breadcrumb>
 				</div>
 				
@@ -48,6 +48,25 @@ export default class DocDetail extends Component {
 							<p>
 								提供标准的RESTful API接口，丰富的SDK包，客户端工具、控制台，您可以像使用文件一样，方便上传/下载、检索、管理用于Web网站或者移动应用海量的数据。
 							</p>
+							<Row className={styles["cloud-service"]}>
+					      <Col span={8} className={styles.servers}>
+					      	<div className={styles["servers-left"]}>
+					      		<Icon type="cloud-o" />
+					      		<p>ESC</p>
+					      		<p>云服务器</p>
+					      	</div>
+					      	<div className={styles["servers-describe"]}>WEB程序、数据库</div>
+					      </Col>
+					      <Col span={4}>内网访问</Col>
+					      <Col span={12} className={styles.servers}>
+					      	<div className={styles["servers-left"]}>
+					      		<Icon type="cloud-o" />
+					      		<p>OSS</p>
+					      		<p>云存储服务器</p>
+					      	</div>
+					      	<div className={styles["servers-describe"]}>静态脚本、附件、图片、视频/音频</div>
+					      </Col>
+					    </Row>
 							<h3>二级标题</h3>
 							<p>
 								COS使您的数据接入变得异常简单，COS提供标准的Restful API接口，帮助您便利的实现数据的上传、下载、查询、删除等功能。同时COS也为您提供了多种语言的SDK，您可以直接利用SDK进行二次开发，省去了复杂的接入成本。此外，Web控制台也可以帮助到您便捷地管理数据和监控数据。
@@ -56,10 +75,37 @@ export default class DocDetail extends Component {
 							<p>
 								COS为您提供了70余个上传节点，当您上传数据时，COS会为您自动选择最优的路径，帮您应对上传速度缓慢的问题，网络连通率可达99.9%。当你下载数据时，结合CDN使用还可以将源站内容发布到最接近终端的边缘节点，提高访问成功率，降低访问时延。
 							</p>
+							<Row className={styles["cloud-service"]}>
+					      <Col span={8} className={styles.servers}>
+					      	<div className={styles["servers-left"]}>
+					      		<Icon type="cloud-o" />
+					      		<p>ESC</p>
+					      		<p>云服务器</p>
+					      	</div>
+					      	<div className={styles["servers-describe"]}>WEB程序、数据库</div>
+					      </Col>
+					      <Col span={4}>内网访问</Col>
+					      <Col span={12} className={styles.servers}>
+					      	<div className={styles["servers-left"]}>
+					      		<Icon type="cloud-o" />
+					      		<p>OSS</p>
+					      		<p>云存储服务器</p>
+					      	</div>
+					      	<div className={styles["servers-describe"]}>静态脚本、附件、图片、视频/音频</div>
+					      </Col>
+					    </Row>
 							<h3>二级标题</h3>
 							<p>
 								COS使您的数据接入变得异常简单，COS提供标准的Restful API接口，帮助您便利的实现数据的上传、下载、查询、删除等功能。同时COS也为您提供了多种语言的SDK，您可以直接利用SDK进行二次开发，省去了复杂的接入成本。此外，Web控制台也可以帮助到您便捷地管理数据和监控数据。
 							</p>
+							<div className={styles.remark}>
+								<div>注：</div>
+								<div>
+									<p>1默认情况下，文件的删除权限是关闭的，需要进入控制台。</p>
+									<p>2默认情况下，文件的删除权限是关闭的，需要进入控制台。</p>
+									<p>3默认情况下，文件的删除权限是关闭的，需要进入控制台。</p>
+								</div>
+							</div>
 						</div>
 					</Col>
 				</Row>

@@ -6,6 +6,17 @@
 .article h3{font-size:22px;margin-top:60px;}
 .article h4{font-size:18px;}
 .article p{font-size:16px;color:#333;margin:30px 0 40px;}
+.cloud-service{text-align: center;display: -webkit-box;}
+.cloud-service p{margin:0;}
+.cloud-service i{font-size: 32px;color:#2E8BFF;}
+.cloud-service>div{height: 120px;display: -webkit-box;}
+.cloud-service>div:nth-child(2){line-height: 120px;text-align: center;display: block;}
+.servers{border: 1px solid #2E8BFF;}
+.servers-left{border-right: 1px dashed #c4c4c4;padding: 20px 20px 0;}
+.servers-describe{text-align: center;-webkit-box-flex:1;line-height: 120px;}
+.remark{background: #F8F8F8;display: -webkit-box;padding:10px 20px;box-sizing:border-box;}
+.remark p{line-height: 28px;font-size: 16px;color: #666666;margin:0;}
+.remark>div:first-child{line-height: 28px;font-size: 16px;color: #666666;}
 
 @media screen and (max-width: 768px) {
 	.breadcrumb{padding-left:5%;}
@@ -16,4 +27,11 @@
 	.article h3{font-size:18px;margin-top:50px;}
 	.article h4{font-size:16px;}
 	.article p{font-size:14px;margin:30px 0 50px;}
+	.cloud-service>div{height: 50px;}
+	.cloud-service i{font-size: 14px;}
+	.cloud-service p,.remark p{margin:0;}
+	.servers-left{padding: 0;}
+	.cloud-service>div:nth-child(2){line-height: 50px;}
+	.servers-left p{line-height: 14px;font-size: 12px;}
+	.servers-describe{text-align: center;-webkit-box-flex:1;line-height: 14px;}
 }
