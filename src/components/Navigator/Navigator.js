@@ -22,19 +22,19 @@ const data=[
 									"key":"1",
 									"title":"竞彩足篮球",
 									"describe":"提供竞彩足篮球的全部赛程和固定奖金服务，玩法全面",
-									"route":""
+									"route":"/product?type=jczlq"
 								},
 								{
 									"key":"2",
 									"title":"传统足彩",
 									"describe":"提供传统足彩的所有期次赛程和开奖信息服务，玩法全面",
-									"route":""
+									"route":"/product?type=ctzc"
 								},
 								{
 									"key":"3",
 									"title":"北京单场",
 									"describe":"提供北京单场的所有期次赛程、浮动SP值和开奖SP值服务，玩法全面",
-									"route":""
+									"route":"/product?type=bjdc"
 								}
 							]
 						},
@@ -46,19 +46,19 @@ const data=[
 									"key":"4",
 									"title":"足篮球竞猜",
 									"describe":"提供实时的足篮球赛前盘/滚球盘的赛程、赔率和操盘服务",
-									"route":""
+									"route":"/product?type=zlqjc"
 								},
 								{
 									"key":"5",
 									"title":"电竞竞猜",
 									"describe":"提供实时电子竞技赛前盘/滚球盘的赛程、赔率和操盘服务",
-									"route":""
+									"route":"/product?type=djjc"
 								},
 								{
 									"key":"6",
 									"title":"事件竞猜",
 									"describe":"提供多种事件竞猜的赔率和操盘服务，事件也可由用户定制",
-									"route":""
+									"route":"/product?type=sjjc"
 								}
 							]
 						},
@@ -70,43 +70,43 @@ const data=[
 									"key":"7",
 									"title":"赔率盘口",
 									"describe":"多家国外顶尖博彩公司实时赔率盘口汇总，先人一步拿到最新动态",
-									"route":""
+									"route":"/product?type=plpk"
 								},
 								{
 									"key":"8",
 									"title":"战绩交锋",
 									"describe":"球队历史战绩、交锋战绩、未来赛程安排一览无余",
-									"route":""
+									"route":"/product?type=zjjf"
 								},
 								{
 									"key":"9",
 									"title":"赛事排行",
 									"describe":"赛事排行榜、积分榜，更新及时数据准确",
-									"route":""
+									"route":"/product?type=ssph"
 								},
 								{
 									"key":"10",
 									"title":"出场阵容",
 									"describe":"首发阵容、阵型消息及时准确",
-									"route":""
+									"route":"/product?type=cczr"
 								},
 								{
 									"key":"11",
 									"title":"比分直播",
 									"describe":"比分、时间、场中事件直播，比视频更快更准",
-									"route":""
+									"route":"/product?type=bfzb"
 								},
 								{
 									"key":"12",
 									"title":"章鱼爆料",
 									"describe":"最及时的独家原创爆料新闻，多角度深层次解析球赛",
-									"route":""
+									"route":"/product?type=zybl"
 								},
 								{
 									"key":"13",
 									"title":"分析师推荐",
 									"describe":"近20位分析师，每日提供客观细致的赛前预测",
-									"route":""
+									"route":"/product?type=fxstj"
 								}
 							]
 						}
@@ -465,7 +465,7 @@ class Navigator extends Component {
 							{item["data"].map((items,idxs)=>
 					        <Menu.Item key={items.key}>
 					        	<h4 className={styles.navitems}>
-					        		<Link className={styles.href}>{items.title}</Link>
+					        		<Link to={items.route} className={styles.href}>{items.title}</Link>
 					        	</h4>
 					        	{items.describe}
 					        </Menu.Item>

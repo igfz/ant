@@ -29,14 +29,14 @@ export default class Biz extends Component {
         <Row type="flex" justify="space-between" className={styles.buttonBoxO}>
         	<Col span={11}>
           	<Button size="large" type="ghost">
-          		<Link to="/product">产品详情</Link>
+          		<Link to={items.detail}>产品详情</Link>
           	</Button>
           </Col>
           <Col span={2}>
           </Col>
           <Col span={11}>
           	<Button size="large" type="ghost">
-          		<Link to="/product/demo">Demo</Link>
+          		<Link to={items.demo}>Demo</Link>
           	</Button>
           </Col>
         </Row>
@@ -48,12 +48,12 @@ export default class Biz extends Component {
           <Row type="flex" justify="space-between" className={styles.buttonBoxI}>
           	<Col span={11}>
             	<Button type="primary">
-            		<Link to="/product">产品详情</Link>
+            		<Link to={items.detail}>产品详情</Link>
             	</Button>
             </Col>
             <Col span={11}>
             	<Button type="primary">
-            		<Link to="/product/demo">Demo</Link>
+            		<Link to={items.demo}>Demo</Link>
             	</Button>
             </Col>
           </Row>
@@ -73,8 +73,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=jczlq",
+		      "demo": "/product/demo?type=jczlq"
 		    },
 		    {
 		      "icon": "ctzc",
@@ -83,8 +83,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=ctzc",
+		      "demo": "/product/demo?type=ctzc"
 		    },
 		    {
 		      "icon": "bjdc",
@@ -93,8 +93,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=bjdc",
+		      "demo": "/product/demo?type=bjdc"
 		    },
 		    {
 		      "icon": "dlt",
@@ -103,8 +103,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=dlt",
+		      "demo": "/product/demo?type=dlt"
 		    }
 		  ],
 		  "1": [
@@ -115,8 +115,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=zlqjc",
+		      "demo": "/product/demo?type=zlqjc"
 		    },
 		    {
 		      "icon": "djjc",
@@ -125,8 +125,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=djjc",
+		      "demo": "/product/demo?type=djjc"
 		    },
 		    {
 		      "icon": "sjjc",
@@ -135,8 +135,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=sjjc",
+		      "demo": "/product/demo?type=sjjc"
 		    },
 		    {
 		      "icon": "xdgn",
@@ -145,8 +145,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=xdgn",
+		      "demo": "/product/demo?type=xdgn"
 		    }
 		  ],
 		  "2": [
@@ -157,8 +157,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=plpk",
+		      "demo": "/product/demo?type=plpk"
 		    },
 		    {
 		      "icon": "zjjf",
@@ -167,8 +167,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=zjjf",
+		      "demo": "/product/demo?type=zjjf"
 		    },
 		    {
 		      "icon": "ssph",
@@ -177,8 +177,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=ssph",
+		      "demo": "/product/demo?type=ssph"
 		    },
 		    {
 		      "icon": "cczr",
@@ -187,8 +187,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=cczr",
+		      "demo": "/product/demo?type=cczr"
 		    },
 		    {
 		      "icon": "bfzb",
@@ -197,8 +197,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=bfzb",
+		      "demo": "/product/demo?type=bfzb"
 		    },
 		    {
 		      "icon": "zybl",
@@ -207,8 +207,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=zybl",
+		      "demo": "/product/demo?type=zybl"
 		    },
 		    {
 		      "icon": "fxstj",
@@ -217,8 +217,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=fxstj",
+		      "demo": "/product/demo?type=fxstj"
 		    },
 		    {
 		      "icon": "qtgn",
@@ -227,8 +227,8 @@ export default class Biz extends Component {
 		      "subtitle": "竞彩",
 		      "platform": "ios、Android、H5",
 		      "tech": "Java 、 PHP、 .Net等语 言的SDK与Demo示例",
-		      "detail": "",
-		      "demo": ""
+		      "detail": "/product?type=qtgn",
+		      "demo": "/product/demo?type=qtgn"
 		    }
 		  ]
 		}
