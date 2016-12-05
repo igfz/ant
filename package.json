@@ -12,31 +12,10 @@
     "atest": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register './src/**/*.test.js' --recursive --grep"
   },
   "dependencies": {
-    "antd": "^2.1.0",
-    "autoprefixer-core": "^6.0.1",
-    "babel-core": "^6.14.0",
-    "babel-polyfill": "^6.3.14",
-    "body-parser": "^1.15.2",
-    "classnames": "^2.1.2",
-    "css-loader": "^0.24.0",
-    "isomorphic-fetch": "^2.2.1",
-    "json": "^9.0.4",
-    "json-loader": "^0.5.4",
-    "less-loader": "^2.2.3",
-    "postcss-color-rebeccapurple": "^2.0.0",
-    "postcss-loader": "^0.11.0",
-    "react": "^0.14.8",
-    "react-copy-to-clipboard": "^4.2.3",
-    "react-dom": "^0.14.7",
-    "react-redux": "^4.2.1",
-    "react-router": "^2.6.1",
-    "react-router-redux": "^4.0.5",
-    "redux": "^3.2.1",
-    "redux-thunk": "^1.0.3",
-    "rucksack-css": "^0.8.6",
-    "todomvc-app-css": "^2.0.6"
+
   },
   "devDependencies": {
+    "antd": "^2.1.0",
     "babel-core": "^6.3.15",
     "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.0",
@@ -80,6 +59,22 @@
     "webpack": "^1.9.11",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-dev-server": "^1.15.0",
-    "webpack-hot-middleware": "^2.9.1"
+    "webpack-hot-middleware": "^2.9.1",
+    "autoprefixer-core": "^6.0.1",
+    "babel-polyfill": "^6.3.14",
+    "body-parser": "^1.15.2",
+    "classnames": "^2.1.2",
+    "isomorphic-fetch": "^2.2.1",
+    "json": "^9.0.4",
+    "postcss-color-rebeccapurple": "^2.0.0",
+    "react": "^0.14.8",
+    "react-copy-to-clipboard": "^4.2.3",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.2.1",
+    "react-router": "^2.6.1",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.2.1",
+    "redux-thunk": "^1.0.3",
+    "rucksack-css": "^0.8.6"
   }
 }

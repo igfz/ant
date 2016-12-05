@@ -69,7 +69,7 @@ module.exports = function (options) {
   const extensions = ['', '.js', '.jsx'];
   const publicPath = options.devServer ?
     'http://127.0.0.1:' + webserverPort + '/dist/' :
-		'/dist/';
+		'';
 
   const output = {
     path: DIST_PATH,
